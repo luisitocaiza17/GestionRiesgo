@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Saludsa - Portal Brokers</title>
+
+    <style>
+        .loading-container {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            line-height: 100px;
+            color: #fff;
+            text-align: center;
+            z-index: 100000;
+        }
+    </style>
+    <script>
+        var browser = detectIE();
+        if (browser)
+            alert('El aplicativo esta optimizado para ser usado con FireFox, Chrome y Opera, por favor use cualquiera de estos navegadores para aprovechar todas las caracteristicas de la app.');
+        function detectIE() {
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf('MSIE ');
+            if (msie > 0) {
+                // IE 10 or older => return version number
+                //return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+                return true;
+            }
+            var trident = ua.indexOf('Trident/');
+            if (trident > 0) {
+                // IE 11 => return version number
+                var rv = ua.indexOf('rv:');
+                //return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+                return true;
+            }
+            //var edge = ua.indexOf('Edge/');
+            //if (edge > 0) {
+                // Edge (IE 12+) => return version number
+                //return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+            //    return true;
+            //}
+            // other browser
+            return false;
+        }
+    </script>
+</head>
+<body id="principal" style="display:none;">
+    <div id="header"></div>
+    <div id="menu"></div>
+    <div id="content">
+        <div style="text-align:center">
+            <div class="CenterBox">
+                <h1><img src="../images/TerminosCondiciones.png" /> Términos y Condiciones</h1>
+
+                <br />
+                A continuación se presenta el texto de Términos y Condiciones vigente para el portal SmartPlan:
+                <br /><br /><br />
+
+                <div id="DescripcionCortaTC" style="font-weight:bold; text-transform:uppercase;"></div>
+                <hr />
+                <div style="text-align:right">
+                    <button id="btn_DescargarTerminos">Descargar en PDF</button>
+                </div>
+                <b>Resumen de Últimos Cambios: </b><br /><br />
+                <div id="ResumenTC" style="width:100%;"></div>
+                <br /><br />
+                <b>Contenido Completo: </b><br /><br />
+                <div id="ContenidoTC" style="height: 200px; border: 1px solid rgba(0, 0, 0, 0.4); width:96%; overflow:scroll;padding:10px 10px 10px 10px; text-align:left"></div>
+                <br /><br /><br />
+
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+    <div id="loading-container" class="loading-container"><img src="../images/preloading.GIF" /><br><span id="loading-msg"></span></div>
+    <script src="../js/headjs/head.min.js" data-headjs-load="../Scripts/Init.js"></script>
+</body>
+</html>

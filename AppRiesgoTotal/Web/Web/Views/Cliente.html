@@ -1,0 +1,1359 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Saludsa - Portal Brokers</title>
+
+    <style>
+        .loading-container {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            line-height: 100px;
+            color: #fff;
+            text-align: center;
+            z-index: 100000;
+        }
+    </style>
+    <script>
+        var browser = detectIE();
+        if (browser)
+            alert('El aplicativo esta optimizado para ser usado con FireFox, Chrome y Opera, por favor use cualquiera de estos navegadores para aprovechar todas las caracteristicas de la app.');
+        function detectIE() {
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf('MSIE ');
+            if (msie > 0) {
+                // IE 10 or older => return version number
+                //return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+                return true;
+            }
+            var trident = ua.indexOf('Trident/');
+            if (trident > 0) {
+                // IE 11 => return version number
+                var rv = ua.indexOf('rv:');
+                //return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+                return true;
+            }
+            //var edge = ua.indexOf('Edge/');
+            //if (edge > 0) {
+            //    // Edge (IE 12+) => return version number
+            //    //return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+            //    return true;
+            //}
+            // other browser
+            return false;
+        }
+    </script>
+</head>
+<body id="principal" style="display:none;">
+    <div id="header"></div>
+    <div id="menu"></div>
+    <div id="content">
+
+        <div style="text-align:center">
+            <div class="CenterBox">
+                <h1 id="lblCliente"><img src="../images/Clientes.png" />&nbsp;&nbsp;&nbsp;Consulta de Datos de Clientes</h1>
+                <hr>
+                <p>A continuación podrá revisar información sobre sus Afiliados, Empresa o Planes contratados.</p>
+                <!--Seccion de tipo de Busqueda-->
+                <div id="criterioBusqueda">
+                    <h2>Criterios de Búsqueda:</h2>
+                    <fieldset>
+                        <div class="Centrado">
+                            <p>Seleccione uno de los criterios de búsqueda para poder continuar.</p>
+                            <input id="OpcionesBusqueda" type="text" />                            
+                            <br />
+                            <br />
+                            <div id="VerPlanOpciones">
+                                <div style="width:100%" id="grupoBroker3">
+                                    <div style="text-align:center">
+                                        <div id="lbl3" class="fieldBox">
+                                            <p>Unidades:</p> <button id="btn_SeleccionarAgentes3">Seleccionar...</button>
+                                            <br /> <label id="lbl_GrupoAgentes3"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fieldBox">
+                                    <label>Formato de visualización:</label><br />
+                                    <div id="rb_formatoProducto">
+                                        <span>
+                                            Pantalla
+                                        </span>
+                                        <span>
+                                            Descargar
+                                        </span>
+                                    </div>
+                                </div>
+                                <br />
+                                <p>Seleccione el tipo de Plan.</p>
+                                <input id="PlanContratadoOpc" type="text" />
+                                <br />
+                            </div>
+                        </div>
+                        <br />
+                    </fieldset>
+                </div>
+                <div id="regresarOpc">
+                    <div style="text-align:right"><button id="btn_back"><img src="../images/regresar.png" /></button></div>
+                </div>
+                <!-- Seccion Plan Contratado -->
+                <div id="seccionPlanContratadoLista">
+                    <h2 id="tituloPlan"></h2>
+                    <fieldset>
+                        <br />
+                        <label id="txtTituloPlan"></label>
+                        <br />
+                        <!--Seccion grilla-->
+                        <br />
+                        <div id="gridPlanesR">
+
+                        </div>
+                        <br />
+                        <!--Seccion Descargable-->
+                        <div id="pnl_ResultadoReporteadorProInd" style="display:none;">
+                            <iframe id="iframeReporteadoProdInd" frameborder="0" width="100%" height="500"></iframe>
+                        </div>
+                        <br />
+                    </fieldset>
+
+                </div>
+                <!-- Seccion de busqueda especifica -->
+                <div id="BusquedaEspecifica">
+                    <h2 id="tituloBusquedaEspecifica"></h2>
+                    <fieldset>
+                        <!-- Seccion busqueda Afiliado -->
+                        <div class="Centrado">
+                            <div id="seccionBusquedaAfiliado">
+                                <div style="width:100%">
+                                    <div style="text-align:center">
+                                        <div class="fieldBox">
+                                            <label>Nombres y Apellidos:&nbsp;</label><input type="text" id="inp_nombre_busqueda" placeholder="nombre y apellidos">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width:100%">
+                                    <div style="text-align:center">
+                                        <div id="lbl" class="fieldBox">
+                                            <label>Cédula/Pasaporte:&nbsp;</label> <input type="text" id="inp_cedula_busqueda" placeholder="cédula/pasaporte">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width:100%">
+                                    <div style="text-align:center">
+                                        <div id="lbl" class="fieldBox">
+                                            <label>Número de Contrato:&nbsp;</label> <input type="text" id="inp_numero_contrato_busqueda" placeholder="número de contrato">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width:100%" id="grupoBroker2">
+                                    <div style="text-align:center">
+                                        <div id="lbl2" class="fieldBox">
+                                            <p>Unidades:</p> <button id="btn_SeleccionarAgentes2">Seleccionar...</button>
+                                            <br /> <label id="lbl_GrupoAgentes2"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <br />
+                                <div style="width:100%">
+                                    <div style="text-align:center">
+                                        <button id="btn_Buscar_Afiliado">
+                                            Buscar
+                                        </button>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+                        </div>
+                        <!-- Seccion busqueda Empresa -->
+                        <div class="Centrado">
+                            <div id="seccionBusquedaEmpresa">
+                                <div style="width:100%">
+                                    <div style="text-align:center">
+                                        <div class="fieldBox">
+                                            <p>Razón Social:</p><input type="text" id="inp_RazonSocial_busqueda" placeholder="Razón Social">
+                                        </div>
+
+                                        <div class="fieldBox">
+                                            <p>Ruc:</p><input type="text" id="inp_ruc_busqueda" onkeypress="return validateNumber(event)" placeholder="Número de Ruc">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width:100%">
+                                    <div style="text-align:center">
+                                        <div id="lbl" class="fieldBox">
+                                            <p>Número de Empresa:</p> <input type="text" id="inp_empresa_busqueda" onkeypress="return validateNumber(event)" placeholder="Número de Empresa">
+                                        </div>
+                                        <div id="lbl" class="fieldBox">
+                                            <p>Número de Lista:</p> <input type="text" id="inp_lista_busqueda" onkeypress="return validateNumber(event)" placeholder="Número de Lista">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width:100%" id="grupoBroker">
+                                    <div style="text-align:center">
+                                        <div id="lbl" class="fieldBox">
+                                            <p>Unidades:</p> <button id="btn_SeleccionarAgentes">Seleccionar...</button>
+                                            <br /> <label id="lbl_GrupoAgentes"></label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <br />
+                                <div style="width:100%">
+                                    <div style="text-align:center">
+                                        <button id="btn_Buscar_Empresa"> Buscar </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <br />
+                <br />
+                <!--Grilla que se carga con informacion de la busqueda filtrada-->
+                <div id="gridBusqueda"></div>
+                <!-- Seccion que muestra los tabs y los datos especificos de la seleccion de usuarios y empresas -->
+                <div id="seccionDetallesSeleccionados">
+                    <div id="tabstrip">
+                        <!--Seccion de titulos de tabs-->
+                        <ul>
+                            <li class="k-state-active">
+                                <label id="txtPestaniaUno"></label>
+                            </li>
+                            <li>
+                                <label id="txtPestaniaDos"></label>
+                            </li>
+                            <li>
+                                <label id="txtPestaniaTres"></label>
+                            </li>
+                            <li>
+                                <label id="txtPestaniaCuatro"></label>
+                            </li>
+                        </ul>
+                        <!-- Seccion de la Informacion del Contrato -->
+                        <div>
+                            <!-- Seccion de informacion del Afiliado -->
+                            <div id="informacionTitular">
+                                <h2>Titular:</h2>
+                                <fieldset>
+                                    <div style="width:100%">
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Número Contrato:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblNumContrato">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Producto:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblProducto">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Plan:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblPlan">cargando...</label>
+                                        </div>
+
+
+                                    </div>
+                                    <div style="width:100%">
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Estado del contrato:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblEstadoContrato">cargando...</label>
+                                        </div>
+
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Inicio Vigencia:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblInicioVigencia">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Fin Vigencia:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblFinVigencia">cargando...</label>
+                                        </div>
+                                    </div>
+                                    <div style="width:100%" id="asignacionCorredorLabels">
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Asignación Broker:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblAsignacionCorredor">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Fecha Desde:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblFechaDesde">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Fecha Hasta:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblFechaHasta">cargando...</label>
+                                        </div>
+                                    </div>
+                                    <div style="width:100%">
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Ejecutivo de Cuenta:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblEjecutivoCuenta">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Titular con Beneficios:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblTitularConBeneficios">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Región:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblRegion">cargando...</label>
+                                        </div>
+
+                                    </div>
+                                    <div style="width:100%">
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Cédula:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblCedula">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Fecha Nacimiento:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblFechaNacimiento">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Edad:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblEdad">cargando...</label>
+                                        </div>
+                                    </div>
+                                    <div style="width:100%">
+
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Estado Civil:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblEstadoCivil">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Antigüedad en Salud:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblAntiguedad">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label><b>Pendiente Pago:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinido">
+                                            <label id="lblPendientePago">cargando...</label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <!-- Seccion de Informacion de Empresa -->
+                            <div id="informacionEmpresa">
+                                <h2>Empresa:</h2>
+                                <fieldset>
+                                    <div style="width:100%">
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Nombre Empresa:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblEmpresaEmpresa">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Fecha Inicio Vigencia:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblFechaInicioVigenciaEmpresa">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Fecha Fin Vigencia:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblFechaFinVigenciaEmpresa">cargando...</label>
+                                        </div>
+                                    </div>
+                                    <div style="width:100%">
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Número Empresa:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblNumeroNumeroEmpresa">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Ruc:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblRucEmpresa">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Razón Social:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblRazonSocialEmpresa">cargando...</label>
+                                        </div>
+
+                                    </div>
+                                    <div style="width:100%">
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Número Sucursal:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblNumeroNumeroSucursal">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Nombre Sucursal:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblNombreNombreSucursal">cargando...</label>
+                                        </div>
+                                        <!--<div class="fieldBoxDefinidoMedio">
+                                        <label><b>Alias Sucursal:</b></label>
+                                    </div>
+                                    <div class="fieldBoxDefinidoMedio">
+                                        <label id="lblNombreAliasSucursal">cargando...</label>
+                                    </div>-->
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Estado:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblEstadoEmpresa">cargando...</label>
+                                        </div>
+                                    </div>
+                                    <div style="width:100%">
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Producto:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblProductoEmpresa">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Región:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblRegionEmpresa">cargando...</label>
+                                        </div>
+                                    </div>
+                                    <div style="width:100%">
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Antiguedad en Salud:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblAntiguedadEmpresa">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Ejecutivo de Cuenta:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblEjecutivoCuentaEmpresa">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Pendiente Pago:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblPendientePagoEmpresa">cargando...</label>
+                                        </div>
+                                    </div>
+                                    <div style="width:100%">
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Número Afiliados:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblNumeroAfiliadosEmpresa">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Número Beneficiarios:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblNumeroBeneficiariosEmpresa">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Total Usuarios:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblTotalUsuariosEmpresa">cargando...</label>
+                                        </div>
+                                    </div>
+                                    <div style="width:100%" id="asignacionCorredorLabelsEmpresa">
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Asignación Broker:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblAsignacionCorredorEmpresa">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Fecha Inicio:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblFechaInicioEmpresa">cargando...</label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label><b>Fecha Fin:</b></label>
+                                        </div>
+                                        <div class="fieldBoxDefinidoMedio">
+                                            <label id="lblFechaFinEmpresa">cargando...</label>
+                                        </div>
+                                       
+                                       
+                                    </div>
+                                    <div style="width:100%">
+
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <br />
+                            <!-- Seccion de beneificiario solo para los afiliados -->
+                            <div id="seccionBeneficiarios">
+                                <h2>Beneficiarios:</h2>
+                                <fieldset>
+                                    <br />
+                                    Listado de Beneficiarios atados al Afiliado
+                                    <br />
+                                </fieldset>
+                                <br />
+                                <div id="gridBeneficiarios"></div>
+                            </div>
+                            <!-- Arbol de documentacion de soporte -->
+                            <!--<h2>Documentos de Soporte:</h2>
+                        <fieldset>
+                            <div id="example">
+                                <div class="demo-section k-content">
+                                    <ul id="treeview">
+                                        <li data-expanded="true">
+                                            <span class="k-sprite folder"></span>
+                                            My Web Site
+                                            <ul>
+                                                <li data-expanded="true">
+                                                    <span class="k-sprite folder"></span>images
+                                                    <ul>
+                                                        <li><span class="k-sprite image"></span>logo.png</li>
+                                                        <li><span class="k-sprite image"></span>body-back.png</li>
+                                                        <li><span class="k-sprite image"></span>my-photo.jpg</li>
+                                                    </ul>
+                                                </li>
+                                                <li data-expanded="true">
+                                                    <span class="k-sprite folder"></span>resources
+                                                    <ul>
+                                                        <li data-expanded="true">
+                                                            <span class="k-sprite folder"></span>pdf
+                                                            <ul>
+                                                                <li><span class="k-sprite pdf"></span>brochure.pdf</li>
+                                                                <li><span class="k-sprite pdf"></span>prices.pdf</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><span class="k-sprite folder"></span>zip</li>
+                                                    </ul>
+                                                </li>
+                                                <li><span class="k-sprite html"></span>about.html</li>
+                                                <li><span class="k-sprite html"></span>contacts.html</li>
+                                                <li><span class="k-sprite html"></span>index.html</li>
+                                                <li><span class="k-sprite html"></span>portfolio.html</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </fieldset>-->
+                        </div>
+                        <!-- Detalle de Cuotas -->
+                        <div>
+                            <!-- Seccion de facturas por empresa -->
+                            <div id="SeccionFacturacionEmpresas">
+                                <div class="Centrado">
+                                    <div id="rb_formato3">
+                                        <span id="buttonFacturasEmpresas">
+                                            Facturas Empresa
+                                        </span>
+                                        <span id="buttonReportesMovimientos">
+                                            Reportes de Movimientos
+                                        </span>
+                                    </div>
+                                </div>
+                                <br />
+                                <div id="gridFormasPagosEmpresas"></div>
+                                <br />
+                            </div>
+                            <div id="seccionFormasDePagos">
+                                <h2>Forma de Pago:</h2>
+                                <fieldset>
+                                    <div id="formaPagoIndependiente">
+                                        <div class="Centrado">
+                                            <div style="width:100%" id="factCedu">
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label><b>Facturar a Cédula:</b></label>
+                                                </div>
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label id="lblfacturarCedula">cargando...</label>
+                                                </div>
+                                            </div>
+                                            <div style="width:100%" id="factRuc">
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label><b>Facturar a Ruc:</b></label>
+                                                </div>
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label id="lblfacturarRuc">cargando...</label>
+                                                </div>
+                                            </div>
+                                            <div style="width:100%" id="factPasa">
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label><b>Facturar a Pasaporte:</b></label>
+                                                </div>
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label id="lblfacturarPasaporte">cargando...</label>
+                                                </div>
+                                            </div>
+                                            <div style="width:100%">
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label><b>Forma de Pago</b></label>
+                                                </div>
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label id="lblfacturarFormaPago">cargando...</label>
+                                                </div>
+                                            </div>
+                                            <div style="width:100%">
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label><b>Nombre Dueño de Cuenta:</b></label>
+                                                </div>
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label id="lblNombreDuenioTarjeta">cargando...</label>
+                                                </div>
+                                            </div>
+                                            <!--<div style="width:100%">
+                                            <div class="fieldBoxDefinidoUnitario">
+                                                <label><b>Fecha de Pago:</b></label>
+                                            </div>
+                                            <div class="fieldBoxDefinidoUnitario">
+                                                <label id="lblfechaPago">cargando...</label>
+                                            </div>
+                                        </div>-->
+                                            <div id="formaPagoDebitoAfiliado">
+                                                <div style="width:100%">
+                                                    <div class="fieldBoxDefinidoUnitario">
+                                                        <label><b>Banco/tarjeta:</b></label>
+                                                    </div>
+                                                    <div class="fieldBoxDefinidoUnitario">
+                                                        <label id="lblfacturarBanco">cargando...</label>
+                                                    </div>
+                                                </div>
+                                                <div style="width:100%">
+                                                    <div class="fieldBoxDefinidoUnitario">
+                                                        <label><b>Tipo de Cuenta:</b></label>
+                                                    </div>
+                                                    <div class="fieldBoxDefinidoUnitario">
+                                                        <label id="lblfacturarTipoCuenta">cargando...</label>
+                                                    </div>
+                                                </div>
+                                                <div style="width:100%">
+                                                    <div class="fieldBoxDefinidoUnitario">
+                                                        <label><b>Número Cuenta Debito:</b></label>
+                                                    </div>
+                                                    <div class="fieldBoxDefinidoUnitario">
+                                                        <label id="lblfacturarNumeroCuentaDebito">cargando...</label>
+                                                    </div>
+                                                </div>
+                                                <div style="width:100%">
+                                                    <div class="fieldBoxDefinidoUnitario">
+                                                        <label><b>Fecha Fin de Tarjeta:</b></label>
+                                                    </div>
+                                                    <div class="fieldBoxDefinidoUnitario">
+                                                        <label id="lblfechaFinTarjeta">cargando...</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="formaPagoEmpresa">
+                                        <div class="Centrado">
+                                            <div style="width:100%">
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label><b>Facturar a Ruc:</b></label>
+                                                </div>
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label id="lblfacturarRucEmpresa">cargando...</label>
+                                                </div>
+                                            </div>
+                                            <div style="width:100%">
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label><b>Nombre Empresa:</b></label>
+                                                </div>
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label id="lblfacturarNombreEmpresa">cargando...</label>
+                                                </div>
+                                            </div>
+                                            <div style="width:100%">
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label><b>Forma de Pago</b></label>
+                                                </div>
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label id="lblfacturarFormaPagoEmpresa">cargando...</label>
+                                                </div>
+                                            </div>
+                                            <div id="formaPagoDebito">
+                                                <div style="width:100%">
+                                                    <div class="fieldBoxDefinidoUnitario">
+                                                        <label><b>Banco:</b></label>
+                                                    </div>
+                                                    <div class="fieldBoxDefinidoUnitario">
+                                                        <label id="lblfacturarBancoEmpresa">cargando...</label>
+                                                    </div>
+                                                </div>
+                                                <div style="width:100%">
+                                                    <div class="fieldBoxDefinidoUnitario">
+                                                        <label><b>Tipo de Cuenta:</b></label>
+                                                    </div>
+                                                    <div class="fieldBoxDefinidoUnitario">
+                                                        <label id="lblfacturarTipoCuentaEmpresa">cargando...</label>
+                                                    </div>
+                                                </div>
+                                                <div style="width:100%">
+                                                    <div class="fieldBoxDefinidoUnitario">
+                                                        <label><b>Número Cuenta:</b></label>
+                                                    </div>
+                                                    <div class="fieldBoxDefinidoUnitario">
+                                                        <label id="lblfacturarNumeroCuentaDebitoEmpresa">cargando...</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="width:100%">
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label><b>Periodo de Pago:</b></label>
+                                                </div>
+                                                <div class="fieldBoxDefinidoUnitario">
+                                                    <label id="lblfacturarPeriodoPago">cargando...</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <br />
+                            </div>
+                            <div id="DetalleFacturacionAfiliado">
+                                <h2>Detalle Facturación:</h2>
+                                <fieldset>
+                                    <!-- Busqueda Afiliado -->
+                                    <div id="BusquedaformaPagoIndependiente">
+                                        <div style="width:100%">
+                                            <div class="fieldBox">
+                                                <label><b>Número Factura:</b></label><br />
+                                                <input type="text" id="inp_numero_facturar" placeholder="Número Factura">
+                                            </div>
+                                            <div class="fieldBox">
+                                                <label><b>Fecha Desde:</b></label><br />
+                                                <input type="text" id="inp_desde_facturar" placeholder="Fecha Desde">
+                                            </div>
+                                            <div class="fieldBox">
+                                                <label><b>Fecha Hasta:</b></label><br />
+                                                <input type="text" id="inp_hasta_facturar" placeholder="Fecha Hasta">
+                                            </div>
+                                            <div class="fieldBox">
+                                                <br />
+                                                <button id="btn_Buscar_Factura">
+                                                    Buscar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Busqueda de empresas -->
+                                    <div id="BusquedaformaPagoEmpresa">
+
+                                    </div>
+                                </fieldset>
+                                <br />
+                                <div id="gridFacturacion">
+
+                                </div>
+                            </div>
+
+                            <!-- Seccion de empresas reportes de movimientos -->
+                            <div id="seccionEmpresaReporteMovimiento">
+                                <div class="Centrado">
+                                    <h2>Reporte de movimientos (<label id="lblMovimientosLista"></label>)</h2>
+                                </div>
+                                <fieldset>
+                                    <div style="width:100%">
+                                        <div class="fieldBox">
+                                            <label>Tipo Movimiento:</label><br />
+                                            <input id="opcionesTipoMovimiento">
+                                        </div>
+                                        <div class="fieldBox" id="box_Identificacion">
+                                            <label>Cédula / Pasaporte:</label><br />
+                                            <input type="text" id="txt_Identificacion" style="width: 150px" />
+                                        </div>
+                                        <div class="fieldBox">
+                                            <label>Fecha (Desde-Hasta):</label><br />
+                                            <input type="text" id="dt_Desde" /> - <input type="text" id="dt_Hasta" />
+                                        </div>
+                                        <div class="fieldBox">
+                                            <label>Formato de visualización:</label><br />
+                                            <div id="rb_formato">
+                                                <span>
+                                                    Pantalla
+                                                </span>
+                                                <span>
+                                                    Descargar
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="fieldBox">
+                                            <br />
+                                            <button id="btn_GenerarReporte">Generar Reporte</button>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                                <div id="ventana_SelectLista" style="display:none">
+                                    <div id="grid_SelectLista"></div>
+                                    <br />
+                                    <div style="text-align:right">
+                                        <button id="btn_AceptarFiltroMovimientosEmpresas">Aceptar</button>
+                                    </div>
+                                </div>
+                                <br />
+                                <br />
+                                <div id="pnl_ResultadoWeb" style="display:none;">
+                                    <div id="grid_Resultado"></div>
+                                </div>
+
+                                <div id="pnl_ResultadoReporteador" style="display:none;">
+                                    <iframe id="iframeReporteador" frameborder="0" width="100%" height="500"></iframe>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Reclamos Clientes -->
+                        <div>
+                            <!-- Seccion de reclamos de afiliado -->
+                            <div id="seccionRAfiliado">
+
+                                <div style="text-align:center">
+                                    <div id="rb_ReportesAfiliados">
+                                        <span id="butReporteReclamosAfiliado">
+                                            Reporte Reclamos
+                                        </span>
+                                        <span id="butReportePreAutorizacionesAfiliado">
+                                            Reporte Pre-Autorizaciones
+                                        </span>
+                                        <span id="butCartas">
+                                            Devoluciones y Negativas
+                                        </span>
+                                    </div>
+                                </div>
+                                <div id="ReporteReclamosAf">
+                                    <h2>Busqueda de Reclamos:</h2>
+                                    <fieldset>
+                                        <div style="width:100%">
+                                            <div class="fieldBox">
+                                                <label><b>Fecha Desde:</b></label><br />
+                                                <input type="text" id="inp_desde_reclamo" placeholder="Fecha Desde">
+                                            </div>
+                                            <div class="fieldBox">
+                                                <label><b>Fecha Hasta:</b></label><br />
+                                                <input type="text" id="inp_hasta_reclamo" placeholder="Fecha Hasta">
+                                            </div>
+                                            <div class="fieldBox">
+                                                <label><b>Número Liquidación:</b></label><br />
+                                                <input type="text" id="inp_numero_liquidacion_reclamo" placeholder="Número Liquidación">
+                                            </div>
+                                            <div class="fieldBox">
+                                                <label><b>Número Sobre:</b></label><br />
+                                                <input type="text" id="inp_numero_sobre_reclamo" placeholder="Número Sobre">
+                                            </div>
+                                            <div class="fieldBox" id="seccionBeneficiarioOpcion">
+                                                <label><b>Beneficiarios:</b></label><br />
+                                                <input id="OpcionesBusquedaBeneficiario" type="text" />
+                                            </div>
+
+                                            <div class="fieldBox">
+                                                <br />
+                                                <button id="btn_Buscar_Reclamo">
+                                                    Buscar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <br />
+                                    <div id="gridReclamos">
+
+                                    </div>
+                                </div>
+                                <div id="ReporteAutorizacionesAf">
+                                    <h2>Busqueda de Pre-Autorizaciones:</h2>
+                                    <fieldset>
+                                        <div style="width:100%">
+                                            <div class="fieldBox">
+                                                <label><b>Fecha Desde:</b></label><br />
+                                                <input type="text" id="inp_desde_autorizacioniesAf" placeholder="Fecha Desde">
+                                            </div>
+                                            <div class="fieldBox">
+                                                <label><b>Fecha Hasta:</b></label><br />
+                                                <input type="text" id="inp_hasta_autorizacioniesAf" placeholder="Fecha Hasta">
+                                            </div>
+                                            <!--<div class="fieldBox">
+                                            <label><b>Codigo Cobertura:</b></label><br />
+                                            <input type="text" id="inp_cod_cobertura_autorizacioniesAf" placeholder="Número Liquidación">
+                                        </div>-->
+                                            <div class="fieldBox">
+                                                <br />
+                                                <button id="btn_Buscar_autorizacioniesAf">
+                                                    Buscar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <br />
+                                    <div id="gridautorizacioniesAf">
+
+                                    </div>
+                                </div>
+                                <div id="Cartas">
+                                    <h2>Busqueda de Cartas:</h2>
+                                    <fieldset>
+                                        <br /> A continuación podra ver las cartas que contiene el contrato seleccionado
+                                        <div style="width:100%">
+                                            <div class="fieldBox" id="seccionBeneficiarioOpcionCarta">
+                                                <label><b>Beneficiarios:</b></label><br />
+                                                <input id="OpcionesBusquedaBeneficiarioCarta" type="text" />
+                                            </div>
+                                            <div class="fieldBox">
+                                                <br />
+                                                <button id="btn_Buscar_Carta">
+                                                    Buscar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <br />
+                                    <div id="gridCartas">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Seccion EMPRESAS -->
+                            <!-- Seccion de Reportes Empresa -->
+                            <div id="seccionREmpresa">
+                                <div style="text-align:center">
+                                    <div id="rb_Reportes">
+                                        <span id="butReporteLiquidacion">
+                                            Reporte Liquidaciones
+                                        </span>
+                                        <span id="butReporteCopagos">
+                                            Reporte Copagos
+                                        </span>
+                                        <span id="butReporteAutorizaciones">
+                                            Reporte Autorizaciones
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- Seccion reporte de Siniestralidad -->
+                                <div id="seccionReporteLiquidacion">
+                                    <h2>Reporte de Liquidaciones de gastos médicos (<label id="lblLiquidacionLista"></label>)</h2>
+                                    <fieldset>
+                                        <div style="width:100%">
+                                            <div class="fieldBox">
+                                                <label>Fecha:</label><br />
+                                                Desde: <input type="text" id="dt_DesdeLiquidacion" /> - Hasta: <input type="text" id="dt_HastaLiquidacion" />
+                                            </div>
+                                            <div class="fieldBox">
+                                                <label>Cédula / Pasaporte:</label><br />
+                                                <input type="text" id="txt_IdentificacionLiquidacion" style="width: 150px" />
+                                            </div>
+                                            <div class="fieldBox">
+                                                <label>Formato de visualización:</label><br />
+                                                <div id="rb_formato2">
+                                                    <span>
+                                                        Pantalla
+                                                    </span>
+                                                    <span>
+                                                        Descargar
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div style="text-align:center">
+                                            <button id="btn_GenerarReporteLiquidacion">Generar Reporte</button>
+                                        </div>
+                                    </fieldset>
+
+                                    <div id="ventana_SelectListaLiquidacion" style="display:none">
+                                        <br />
+                                        <br />
+                                        <div id="grid_SelectListaLiquidacion"></div>
+                                        <br />
+                                        <div style="text-align:right">
+                                            <button id="btn_AceptarFiltroLiquidacion">Aceptar</button>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <br />
+                                    <div id="pnl_ResultadoWebLiquidacion" style="display:none;">
+                                        <div id="grid_ResultadoLiquidacion"></div>
+                                    </div>
+                                    <div id="pnl_ResultadoReporteadorLiquidacion" style="display:none;">
+                                        <iframe id="iframeReporteadorLiquidacion" frameborder="0" width="100%" height="500"></iframe>
+                                    </div>
+                                </div>
+                                <!-- Seccion de Reporte de Copagos -->
+                                <div id="seccionReporteCopago">
+                                    <h2>Reporte de Copagos (<label id="lblCopagosLista"></label>)</h2>
+                                    <fieldset>
+                                        <div style="width:100%">
+                                            <div class="fieldBox">
+                                                <label>Estado Copago:</label><br />
+                                                <input id="opcionesEstadoFacturaCopagos">
+                                            </div>
+                                            <div class="fieldBox">
+                                                <label>Cédula / Pasaporte:</label><br />
+                                                <input type="text" id="txt_IdentificacionCopagos" style="width: 150px" />
+                                            </div>
+                                            <div class="fieldBox">
+                                                <label>Fecha:</label><br />
+                                                Desde: <input type="text" id="dt_DesdeCopagos" /> - Hasta: <input type="text" id="dt_HastaCopagos" />
+                                            </div>
+                                            <div class="fieldBox">
+                                                <label>Formato de visualización:</label><br />
+                                                <div id="rb_formatoCopagos">
+                                                    <span>
+                                                        Pantalla
+                                                    </span>
+                                                    <span>
+                                                        Descargar
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div style="text-align:center">
+                                            <button id="btn_GenerarReporteCopagos">Generar Reporte</button>
+                                        </div>
+                                    </fieldset>
+                                    <div id="ventana_SelectListaCopagos" style="display:none">
+                                        <br />
+                                        <br />
+                                        <div id="grid_SelectListaCopagos"></div>
+                                        <br />
+                                        <div style="text-align:right">
+                                            <button id="btn_AceptarFiltroCopagos">Aceptar</button>
+                                        </div>
+                                    </div>
+
+                                    <div id="pnl_ResultadoWebCopagos" style="display:none;">
+                                        <br />
+                                        <br />
+                                        <div id="grid_ResultadoCopagos"></div>
+                                    </div>
+
+                                    <div id="pnl_ResultadoReporteadorCopagos" style="display:none;">
+                                        <br />
+                                        <br />
+                                        <iframe id="iframeReporteadorCopagos" frameborder="0" width="100%" height="500"></iframe>
+                                    </div>
+                                    <br />
+                                    * Este reporte corresponde a los valores económicos generados por cualquier diferencia o exceso, así como los Valores No Cubierto, Copago y Deducible adeudados a Saludsa
+
+                                </div>
+                                <!-- Seccion de reporte de Autorizaciones -->
+                                <div id="seccionReporteAutorizaicones">
+                                    <h2>Reporte de Pre-Autorizaciones</h2>
+                                    <fieldset>
+                                        <div style="width:100%">
+                                            <div class="fieldBox">
+                                                <label>Fecha:</label><br />
+                                                Desde: <input type="text" id="dt_DesdeAutorizacionesR" /> - Hasta: <input type="text" id="dt_HastaAutorizacionesR" />
+                                            </div>
+                                            <div class="fieldBox" id="box_IdentificacionAutorizacionesR">
+                                                <label>Cédula / Pasaporte:</label><br />
+                                                <input type="text" id="txt_IdentificacionAutorizacionesR" style="width: 150px" />
+                                            </div>
+                                            <div class="fieldBox">
+                                                <label>Formato de visualización:</label><br />
+                                                <div id="rb_formatoAutorizacionesR">
+                                                    <span>
+                                                        Pantalla
+                                                    </span>
+                                                    <span>
+                                                        Descargar
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <button id="btn_GenerarReporteAutorizacionesR">Generar Reporte</button>
+                                    </fieldset>
+
+                                    <div id="ventana_SelectListaAutorizacionesR" style="display:none">
+                                        <br />
+                                        <br />
+                                        <div id="grid_SelectListaAutorizacionesR"></div>
+                                        <br />
+                                        <div style="text-align:right">
+                                            <button id="btn_AceptarFiltroAutorizacionesR">Aceptar</button>
+                                        </div>
+                                    </div>
+                                    <div id="pnl_ResultadoWebAutorizacionesR" style="display:none;">
+                                        <br />
+                                        <br />
+                                        <div id="grid_ResultadoAutorizacionesR"></div>
+                                    </div>
+
+                                    <div id="pnl_ResultadoReporteadorAutorizacionesR" style="display:none;">
+                                        <br />
+                                        <br />
+                                        <iframe id="iframeReporteadorAutorizacionesR" frameborder="0" width="100%" height="500"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Siniestraliadad -->
+                        <div>
+                            <!-- Siniestralidad de Afiliados -->
+                            <div id="siniestralidadAfiliados">
+                                <h2>Siniestralidad:</h2>
+                                <fieldset>
+                                    <div style="width:100%">
+                                        <div class="fieldBox">
+                                            <h3>SINIESTRALIDAD VIGENTE</h3>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div style="width:100%">
+                                        <div class="fieldBox">
+                                            <label><b>Período:</b></label><br />
+                                            <input type="text" id="inp_siniestralidad_periodo_vigente" placeholder="Periodo">
+                                        </div>
+                                        <div class="fieldBox">
+                                            <label><b>Total Bonificado:</b></label><br />
+                                            <input type="text" id="inp_siniestralidad_bonificado_vigente" placeholder="Total Bonificado">
+                                        </div>
+                                        <div class="fieldBox">
+                                            <label><b>Total Facturado:</b></label><br />
+                                            <input type="text" id="inp_siniestralidad_facturado_vigente" placeholder="Total Facturado">
+                                        </div>
+                                        <div class="fieldBox">
+                                            <label><b>Siniestralidad:</b></label><br />
+                                            <input type="text" id="inp_siniestralidad_vigente" placeholder="Siniestralidad">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <br />
+
+                            </div>
+                            <!-- Siniestralidad Empresas -->
+                            <div id="siniestralidadEmpresas">
+                                <h2>Siniestralidad:</h2>
+                                <fieldset>
+                                    <div style="width:100%">
+
+                                        <div class="fieldBox">
+                                            <label>Fecha:</label><br />
+                                            Desde: <input type="text" id="dt_DesdeSiniestralidad" /> - Hasta: <input type="text" id="dt_HastaSiniestralidad" />
+                                        </div>
+                                        <div class="fieldBox" id="box_IdentificacionSiniestralidad">
+                                            <label>Identificación:</label><br />
+                                            <input type="text" id="txt_IdentificacionSiniestralidad" style="width: 150px" />
+                                        </div>
+                                        <div class="fieldBox">
+                                            <label>Tipo de Reporte</label><br />
+                                            <input id="tipoReporteSiniestralida" class="tamanioMediano" type="text" />
+                                        </div>
+                                    </div>
+                                    <br />
+
+                                </fieldset>
+                                <div id="ventana_SelectListaSiniestralidad" style="display:none">
+                                    <br />
+                                    <br />
+                                    <div id="grid_SelectListaSiniestralidad"></div>
+                                    <br />
+                                    <div style="text-align:right">
+                                        <button id="btn_AceptarFiltroSiniestralidad">Aceptar</button>
+                                    </div>
+                                </div>
+                                <div class="demo-section k-content wide">
+                                    <div id="line_ResultadoSiniestralidad"></div>
+                                </div>
+
+                                <div id="pnl_ResultadoReporteadorSiniestralidad" style="display:none;">
+                                    <br />
+                                    <br />
+                                    <iframe id="iframeReporteadorSiniestralidad" frameborder="0" width="100%" height="500"></iframe>
+                                </div>
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Seleccion de Broker-->
+        <div id="ventana_GrupoAgentes" style="display:none;">
+            <div id="grid_GrupoAgentes"></div>
+            <br />
+            <button id="btn_AceptarGrupoAgentes">Aceptar</button>
+        </div>
+        <!--Detalle de Valor Cuota-->
+        <div id="ventana_Cuota" style="display:none;">
+
+            <div style="width:100%">
+                <div class="fieldBoxDefinidoMedio">
+                    <label>Número Factura:</label><br />
+                    <label id="VC_numeroFactura">cargado..</label><br />
+                </div>
+                <div class="fieldBoxDefinidoMedio">
+                    <label>Valor Cuota:</label><br />
+                    <label id="VC_valorCuota">cargado..</label><br />
+                </div>
+            </div>
+            <div style="width:100%">
+                <div class="fieldBoxDefinidoMedio">
+                    <label>Valor Servicios Adicionales:</label><br />
+                    <label id="VC_valorServiciosAdicionales">cargado..</label><br />
+                </div>
+                <div class="fieldBoxDefinidoMedio">
+                    <label>Valor Gastos Administrativos:</label><br />
+                    <label id="VC_valorGastosAdministrativos">cargado..</label><br />
+                </div>
+            </div>
+            <div style="width:100%">
+                <div class="fieldBoxDefinidoMedio">
+                    <label>Valor Tarjetas:</label><br />
+                    <label id="VC_valorTarjetas">cargado..</label><br />
+                </div>
+                <div class="fieldBoxDefinidoMedio">
+                    <label>Valor Seguro Campesino:</label><br />
+                    <label id="VC_valorSeguroCampesimo">cargado..</label><br />
+                </div>
+            </div>
+            <div style="width:100%">
+                    <div class="fieldBoxDefinidoMedio">
+                        <label>Total:</label><br />
+                        <label id="VC_total">cargado..</label><br />
+                    </div>
+            </div>
+            <br />
+            <button id="btn_CerrarCuota">Cerrar</button>
+        </div>
+                <!-- Template de grilla Afiliado-->
+                <script type="text/x-kendo-template" id="template">
+                    <table id="tableDetalle">
+                        <tr height="5">
+                            <td rowspan="4"><button onclick="funcionDetalle(#= CodigoContrato #);" class="k-button">Ver</button></td>
+                            <td colspan="4"><B>TITULAR</B></td>
+                        </tr>
+                        <tr height="5">
+                            <td colspan="2"><b>Nombres y Apellidos:</b> #= NombresApellidos #</td>
+                            <td><b>Cédula:</b> #= Cedula #</td>
+                            <td><b>Número Persona:</b> #= NumeroPersona #</td>
+                        </tr>
+                        <tr height="5">
+                            <td colspan="4"><B>EMPRESA</B></td>
+                        </tr>
+                        <tr height="5">
+                            <td colspan="2"><b>Razón Social:</b> #= RazonSocial #</td>
+                            <td><b>Número Empresa:</b> #= NumeroEmpresa #</td>
+                            <td><b>Sucursal:</b> #= Sucursal #</td>
+                        </tr>
+                    </table>
+                </script>
+                <!-- Template de grilla Empresa-->
+                <script type="text/x-kendo-template" id="templateEmpresa">
+                    <table id="tableDetalle">
+                        <tr height="5">
+                            <td rowspan="4"><button onclick="funcionDetalleEmpresa(#= NumeroSucursal #);" class="k-button">Ver</button></td>
+                            <td colspan="4"><B>EMPRESA</B></td>
+                        </tr>
+                        <tr height="5">
+                            <td><b>Número Empresa:</b><p> #= NumeroEmpresa #</p></td>
+                            <td><b>Razón Social:</b><p> #= RazonSocial #</p></td>
+                            <td><b>Ruc:</b><p> #= RUCEmpresa #</p></td>
+                            <td><b>Código Producto:</b><p> #= CodigoProducto #</p></td>
+                        </tr>
+                    </table>
+                </script>
+                <!--  Template de informacion de estados grilla usuarios-->
+                <script id="EstadosTemplate" type="text/x-kendo-template">
+                    # if (ContratoCodigoEstado === 1){ #
+                    <img src="../images/azul.png" alt="Activo" /> Activo
+                    # } else if (ContratoCodigoEstado === 2){ #
+                    <img src="../images/amarillo.png" alt="Anulado" /> Anulado <!--//revisar en caso de errores-->
+                    # } else { #
+                    # } #
+                </script>
+                <!--  Template de informacion de estados grilla Facturacion-->
+                <script id="EstadosFacturacion" type="text/x-kendo-template">
+                    # if (Estado === 26){ #
+                    <img src="../images/azul.png" alt="Cobrado" /> Cobrado
+                    # } else if (Estado === 29){ #
+                    <img src="../images/amarillo.png" alt="Mora" /> Mora <!--//revisar en caso de errores-->
+                    # } else if (Estado === 36){ #
+                    <img src="../images/negro.png" alt="Impreso" /> Impresa
+                    # } #
+                </script>
+                <!--  Template de informacion de estados grilla Reclamos-->
+                <script id="EstadosReclamos" type="text/x-kendo-template">
+                    # if (Estado === 'hecho'){ #
+                    <img src="../images/amarillo.png" alt="PROCESANDO" /> Estado Hecho
+                    # } else if (Estado === 2){ #
+                    <img src="../images/azul.png" alt="PENDIENTE APROBACIÓN" /> PENDIENTE APROBACIÓN <!--//revisar en caso de errores-->
+                    # } else if (Estado === 3){ #
+                    <img src="../images/negro.png" alt="GENERANDO INCLUSIONES" /> GENERANDO INCLUSIONES
+                    # } else if (Estado === 'Pagado'){ #
+                    <img src="../images/verde.png" alt="APROBADO" /> PAGADO
+                    # } else if (Estado === 5){ #
+                    <img src="../images/rojo.png" alt="ERROR" /> ERROR
+                    # } else if (Estado === 6){ #
+                    <img src="../images/azul.png" alt="PENDIENTE APROBACIÓN" /> PENDIENTE APROBACIÓN
+                    # } else { #
+                    # } #
+                </script>
+                <!--  Template de informacion de estados grilla Facturacion Empresa-->
+                <script id="EstadosFacturacionEmpresa" type="text/x-kendo-template">
+                    # if (Estado === 'pagada'){ #
+                    <img src="../images/amarillo.png" alt="PROCESANDO" /> Estado Cobrado
+                    # } else if (Estado === 'Impreso'){ #
+                    <img src="../images/azul.png" alt="PENDIENTE APROBACIÓN" /> Estado Cobrado <!--//revisar en caso de errores-->
+                    # } else if (Estado === 3){ #
+                    <img src="../images/negro.png" alt="GENERANDO INCLUSIONES" /> GENERANDO INCLUSIONES
+                    # } else if (Estado === 'Pagado'){ #
+                    <img src="../images/verde.png" alt="APROBADO" /> PAGADO
+                    # } else if (Estado === 'Cobrado'){ #
+                    <img src="../images/verde.png" alt="COBRADO" /> COBRADO
+                    # } else if (Estado === 5){ #
+                    <img src="../images/rojo.png" alt="ERROR" /> ERROR
+                    # } else if (Estado === 6){ #
+                    <img src="../images/azul.png" alt="PENDIENTE APROBACIÓN" /> PENDIENTE APROBACIÓN
+                    # } else { #
+                    # } #
+                </script>
+            </div>
+    <div id="footer"></div>
+    <div id="loading-container" class="loading-container"><img src="../images/preloading.GIF" /><br><span id="loading-msg"></span></div>
+    <script src="../js/headjs/head.min.js" data-headjs-load="../Scripts/Init.js"></script>
+</body>
+</html>

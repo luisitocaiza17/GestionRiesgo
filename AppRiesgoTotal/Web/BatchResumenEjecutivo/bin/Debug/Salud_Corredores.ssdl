@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Salud_CorredoresModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PC_AgenteVenta">
+    <Key>
+      <PropertyRef Name="codigo-agente-venta" />
+    </Key>
+    <Property Name="codigo-agente-venta" Type="int" Nullable="false" />
+    <Property Name="codigo-grupo-agentes" Type="int" />
+    <Property Name="codigo-vendedor" Type="varchar" MaxLength="16" />
+    <Property Name="persona-numero" Type="int" />
+    <Property Name="empresa-numero" Type="int" />
+    <Property Name="codigo-sucursal" Type="int" />
+    <Property Name="tipo-agente-venta" Type="varchar" MaxLength="30" />
+    <Property Name="codigo-director" Type="int" />
+    <Property Name="numero-vendedores" Type="int" />
+    <Property Name="fecha-ingreso-agente" Type="datetime" />
+    <Property Name="fecha-salida-agente" Type="datetime" />
+    <Property Name="region" Type="varchar" MaxLength="16" />
+    <Property Name="codigo-grupo" Type="int" />
+    <Property Name="nombre-agente-venta" Type="varchar" MaxLength="90" />
+    <Property Name="grupo-venta" Type="varchar" MaxLength="4" />
+    <Property Name="porcentaje-comision" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="numero-cuenta-contable" Type="varchar" MaxLength="40" />
+    <Property Name="estado-agente-venta" Type="int" />
+    <Property Name="comision-renov" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="estado" Type="int" />
+    <Property Name="fecha-modificacion" Type="datetime" />
+    <Property Name="digitador-modificacion" Type="varchar" MaxLength="40" />
+    <Property Name="hora-creacion" Type="varchar" MaxLength="16" />
+    <Property Name="hora-modificacion" Type="varchar" MaxLength="16" />
+    <Property Name="prog-modificacion" Type="varchar" MaxLength="50" />
+    <Property Name="fecha-creacion" Type="datetime" />
+    <Property Name="digitador-creacion" Type="varchar" MaxLength="40" />
+    <Property Name="prog-creacion" Type="varchar" MaxLength="50" />
+    <Property Name="fecha-anulacion" Type="datetime" />
+    <Property Name="digitador-anulacion" Type="varchar" MaxLength="30" />
+    <Property Name="hora-anulacion" Type="varchar" MaxLength="20" />
+    <Property Name="razon-social-broker" Type="varchar" MaxLength="200" />
+    <Property Name="ruc-broker" Type="varchar" MaxLength="26" />
+    <Property Name="prog-anulacion" Type="varchar" MaxLength="50" />
+    <Property Name="usuarioweb" Type="varchar" MaxLength="30" />
+    <Property Name="claveweb" Type="varchar" MaxLength="20" />
+    <Property Name="email-broker" Type="varchar" MaxLength="100" />
+    <Property Name="tipo-contribuyente" Type="int" />
+    <Property Name="nivel" Type="int" />
+    <Property Name="codigo-tipo" Type="int" />
+    <Property Name="imprime-documento" Type="bit" />
+    <Property Name="permiso" Type="bit" />
+    <Property Name="us_login" Type="varchar" MaxLength="40" />
+    <Property Name="aplica-poo" Type="bit" />
+    <Property Name="aplica-cor" Type="bit" />
+    <Property Name="aplica-ind" Type="bit" />
+    <Property Name="active_directory_user" Type="varchar" MaxLength="60" />
+    <Property Name="renovacion-email-broker" Type="varchar" MaxLength="100" />
+    <Property Name="representante_legal" Type="varchar" MaxLength="200" />
+    <Property Name="contacto_nombre" Type="varchar" MaxLength="200" />
+    <Property Name="contratoAgenciamiento" Type="varbinary(max)" />
+    <Property Name="comunicacionesEmail" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="PC_Auditoria">
+    <Key>
+      <PropertyRef Name="AuditoriaID" />
+    </Key>
+    <Property Name="AuditoriaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Aplicacion" Type="varchar" MaxLength="255" />
+    <Property Name="Proceso" Type="varchar" MaxLength="255" />
+    <Property Name="Detalle" Type="varchar(max)" />
+    <Property Name="UsuarioMod" Type="varchar" MaxLength="50" />
+    <Property Name="FechaMod" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PC_AuditoriaDetalle">
+    <Key>
+      <PropertyRef Name="AuditoriaDetalleID" />
+    </Key>
+    <Property Name="AuditoriaDetalleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AuditoriaID" Type="int" Nullable="false" />
+    <Property Name="Campo" Type="varchar" MaxLength="255" />
+    <Property Name="ValorAnterior" Type="varchar" MaxLength="2000" />
+    <Property Name="ValorActual" Type="varchar" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="PC_EstadisticaNavegacion">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUsuario" Type="int" />
+    <Property Name="NombreUsuario" Type="varchar" MaxLength="100" />
+    <Property Name="IdCorredor" Type="int" />
+    <Property Name="FechaHoraVisita" Type="datetime" Nullable="false" />
+    <Property Name="IdPermiso" Type="int" />
+  </EntityType>
+  <EntityType Name="PC_Permiso">
+    <Key>
+      <PropertyRef Name="IDPermiso" />
+    </Key>
+    <Property Name="IDPermiso" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Activo" Type="bit" />
+    <Property Name="Seleccionable" Type="bit" />
+  </EntityType>
+  <EntityType Name="PC_PermisoUsuario">
+    <Key>
+      <PropertyRef Name="IDPermiso" />
+      <PropertyRef Name="IDUsuario" />
+      <PropertyRef Name="IDCorredor" />
+    </Key>
+    <Property Name="IDPermiso" Type="int" Nullable="false" />
+    <Property Name="IDUsuario" Type="int" Nullable="false" />
+    <Property Name="IDCorredor" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PC_ResumenEjecutivo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FechaCreación" Type="datetime" Nullable="false" />
+    <Property Name="FechaConsulta" Type="datetime" />
+    <Property Name="AgenteVentaId" Type="int" />
+    <Property Name="Producto" Type="varchar" MaxLength="10" />
+    <Property Name="Region" Type="varchar" MaxLength="25" />
+    <Property Name="ClientesActivos" Type="int" />
+    <Property Name="ClientesMora" Type="int" />
+    <Property Name="Anulados" Type="int" />
+    <Property Name="Valor" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Comision" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PC_Rol">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PC_TerminosCondiciones">
+    <Key>
+      <PropertyRef Name="TerminosCondicionesID" />
+    </Key>
+    <Property Name="TerminosCondicionesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DescripcionCorta" Type="varchar" MaxLength="250" />
+    <Property Name="ResumenCambios" Type="varchar" MaxLength="4000" />
+    <Property Name="ContenidoCompleto" Type="varchar(max)" />
+    <Property Name="PDFContenido" Type="varbinary(max)" />
+    <Property Name="Publicado" Type="bit" />
+  </EntityType>
+  <EntityType Name="PC_Usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdCorredor" Type="int" Nullable="false" />
+    <Property Name="Cedula" Type="varchar" MaxLength="50" />
+    <Property Name="NombreApellido" Type="varchar" MaxLength="100" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Telefono" Type="varchar" MaxLength="20" />
+    <Property Name="NombreUsuario" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Contrasena" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="TelefonoFijo" Type="varchar" MaxLength="20" />
+    <Property Name="Extension" Type="varchar" MaxLength="10" />
+    <Property Name="RUCEmpresa" Type="varchar" MaxLength="50" />
+    <Property Name="FechaCreacion" Type="datetime" />
+    <Property Name="Estado" Type="int" Nullable="false" />
+    <Property Name="TerminosCondicionesAprobado" Type="int" />
+    <Property Name="Region" Type="varchar" MaxLength="50" />
+    <Property Name="PermisoPlan" Type="varchar" MaxLength="50" />
+    <Property Name="TipoDocumento" Type="varchar" MaxLength="50" />
+    <Property Name="fechaNacimiento" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PC_UsuarioRol">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+      <PropertyRef Name="IdRol" />
+    </Key>
+    <Property Name="IdUsuario" Type="int" Nullable="false" />
+    <Property Name="IdRol" Type="int" Nullable="false" />
+    <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Salud_Corredores.dbo.PC_UsuarioAdmin_VTA' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PC_UsuarioAdmin_VTA">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="IdCorredor" />
+      <PropertyRef Name="IdGrupo" />
+      <PropertyRef Name="NombreUsuario" />
+      <PropertyRef Name="Contrasena" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="IdCorredor" Type="int" Nullable="false" />
+    <Property Name="IdGrupo" Type="int" Nullable="false" />
+    <Property Name="Cedula" Type="varchar" MaxLength="50" />
+    <Property Name="NombreApellido" Type="varchar" MaxLength="100" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Telefono" Type="varchar" MaxLength="20" />
+    <Property Name="NombreUsuario" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Contrasena" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="TelefonoFijo" Type="varchar" MaxLength="20" />
+    <Property Name="Extension" Type="varchar" MaxLength="10" />
+    <Property Name="RUCEmpresa" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_PC_AuditoriaDetalle_PC_Auditoria">
+    <End Role="PC_Auditoria" Type="Self.PC_Auditoria" Multiplicity="1" />
+    <End Role="PC_AuditoriaDetalle" Type="Self.PC_AuditoriaDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_Auditoria">
+        <PropertyRef Name="AuditoriaID" />
+      </Principal>
+      <Dependent Role="PC_AuditoriaDetalle">
+        <PropertyRef Name="AuditoriaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SEG_PermisoUsuario_SEG_Permiso">
+    <End Role="PC_Permiso" Type="Self.PC_Permiso" Multiplicity="1" />
+    <End Role="PC_PermisoUsuario" Type="Self.PC_PermisoUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_Permiso">
+        <PropertyRef Name="IDPermiso" />
+      </Principal>
+      <Dependent Role="PC_PermisoUsuario">
+        <PropertyRef Name="IDPermiso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SEG_PermisoUsuario_SEG_Usuario">
+    <End Role="PC_Usuario" Type="Self.PC_Usuario" Multiplicity="1" />
+    <End Role="PC_PermisoUsuario" Type="Self.PC_PermisoUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PC_PermisoUsuario">
+        <PropertyRef Name="IDUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsuarioRol_IdRol_Rol_Id">
+    <End Role="PC_Rol" Type="Self.PC_Rol" Multiplicity="1" />
+    <End Role="PC_UsuarioRol" Type="Self.PC_UsuarioRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_Rol">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PC_UsuarioRol">
+        <PropertyRef Name="IdRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsuarioRol_IdUsuario_Usuario_Id">
+    <End Role="PC_Usuario" Type="Self.PC_Usuario" Multiplicity="1" />
+    <End Role="PC_UsuarioRol" Type="Self.PC_UsuarioRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PC_UsuarioRol">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="Salud_CorredoresModelStoreContainer">
+    <EntitySet Name="PC_AgenteVenta" EntityType="Self.PC_AgenteVenta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PC_Auditoria" EntityType="Self.PC_Auditoria" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PC_AuditoriaDetalle" EntityType="Self.PC_AuditoriaDetalle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PC_EstadisticaNavegacion" EntityType="Self.PC_EstadisticaNavegacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PC_Permiso" EntityType="Self.PC_Permiso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PC_PermisoUsuario" EntityType="Self.PC_PermisoUsuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PC_ResumenEjecutivo" EntityType="Self.PC_ResumenEjecutivo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PC_Rol" EntityType="Self.PC_Rol" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PC_TerminosCondiciones" EntityType="Self.PC_TerminosCondiciones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PC_Usuario" EntityType="Self.PC_Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PC_UsuarioRol" EntityType="Self.PC_UsuarioRol" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PC_UsuarioAdmin_VTA" EntityType="Self.PC_UsuarioAdmin_VTA" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PC_UsuarioAdmin_VTA].[Id] AS [Id], 
+    [PC_UsuarioAdmin_VTA].[IdCorredor] AS [IdCorredor], 
+    [PC_UsuarioAdmin_VTA].[IdGrupo] AS [IdGrupo], 
+    [PC_UsuarioAdmin_VTA].[Cedula] AS [Cedula], 
+    [PC_UsuarioAdmin_VTA].[NombreApellido] AS [NombreApellido], 
+    [PC_UsuarioAdmin_VTA].[Email] AS [Email], 
+    [PC_UsuarioAdmin_VTA].[Telefono] AS [Telefono], 
+    [PC_UsuarioAdmin_VTA].[NombreUsuario] AS [NombreUsuario], 
+    [PC_UsuarioAdmin_VTA].[Contrasena] AS [Contrasena], 
+    [PC_UsuarioAdmin_VTA].[TelefonoFijo] AS [TelefonoFijo], 
+    [PC_UsuarioAdmin_VTA].[Extension] AS [Extension], 
+    [PC_UsuarioAdmin_VTA].[RUCEmpresa] AS [RUCEmpresa]
+    FROM [dbo].[PC_UsuarioAdmin_VTA] AS [PC_UsuarioAdmin_VTA]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_PC_AuditoriaDetalle_PC_Auditoria" Association="Self.FK_PC_AuditoriaDetalle_PC_Auditoria">
+      <End Role="PC_Auditoria" EntitySet="PC_Auditoria" />
+      <End Role="PC_AuditoriaDetalle" EntitySet="PC_AuditoriaDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SEG_PermisoUsuario_SEG_Permiso" Association="Self.FK_SEG_PermisoUsuario_SEG_Permiso">
+      <End Role="PC_Permiso" EntitySet="PC_Permiso" />
+      <End Role="PC_PermisoUsuario" EntitySet="PC_PermisoUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SEG_PermisoUsuario_SEG_Usuario" Association="Self.FK_SEG_PermisoUsuario_SEG_Usuario">
+      <End Role="PC_Usuario" EntitySet="PC_Usuario" />
+      <End Role="PC_PermisoUsuario" EntitySet="PC_PermisoUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsuarioRol_IdRol_Rol_Id" Association="Self.FK_UsuarioRol_IdRol_Rol_Id">
+      <End Role="PC_Rol" EntitySet="PC_Rol" />
+      <End Role="PC_UsuarioRol" EntitySet="PC_UsuarioRol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsuarioRol_IdUsuario_Usuario_Id" Association="Self.FK_UsuarioRol_IdUsuario_Usuario_Id">
+      <End Role="PC_Usuario" EntitySet="PC_Usuario" />
+      <End Role="PC_UsuarioRol" EntitySet="PC_UsuarioRol" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

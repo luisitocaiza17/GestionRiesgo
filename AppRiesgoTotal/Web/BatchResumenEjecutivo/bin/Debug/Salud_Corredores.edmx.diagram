@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="000e914925754bd98935287634ee276e" Name="Diagram1" ZoomLevel="80">
+        <EntityTypeShape EntityType="Salud_CorredoresModel.PC_AgenteVenta" Width="1.5" PointX="2.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Salud_CorredoresModel.PC_Auditoria" Width="1.5" PointX="5.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Salud_CorredoresModel.PC_AuditoriaDetalle" Width="1.5" PointX="8" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Salud_CorredoresModel.PC_EstadisticaNavegacion" Width="1.5" PointX="5.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Salud_CorredoresModel.PC_Permiso" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Salud_CorredoresModel.PC_PermisoUsuario" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Salud_CorredoresModel.PC_ResumenEjecutivo" Width="1.5" PointX="7.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Salud_CorredoresModel.PC_Rol" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Salud_CorredoresModel.PC_TerminosCondiciones" Width="1.5" PointX="4.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Salud_CorredoresModel.PC_Usuario" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Salud_CorredoresModel.PC_UsuarioRol" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Salud_CorredoresModel.sysdiagrams" Width="1.5" PointX="6.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Salud_CorredoresModel.PC_UsuarioAdmin_VTA" Width="1.5" PointX="8.75" PointY="10.125" IsExpanded="true" />
+        <AssociationConnector Association="Salud_CorredoresModel.FK_PC_AuditoriaDetalle_PC_Auditoria" ManuallyRouted="false" />
+        <AssociationConnector Association="Salud_CorredoresModel.FK_SEG_PermisoUsuario_SEG_Permiso" ManuallyRouted="false" />
+        <AssociationConnector Association="Salud_CorredoresModel.FK_SEG_PermisoUsuario_SEG_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="Salud_CorredoresModel.FK_UsuarioRol_IdRol_Rol_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="Salud_CorredoresModel.FK_UsuarioRol_IdUsuario_Usuario_Id" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

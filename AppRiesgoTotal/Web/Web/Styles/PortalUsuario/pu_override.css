@@ -1,0 +1,22 @@
+﻿@media (max-width: 768px) {
+    .as_TextoHomeR {
+        font-size: 14px;
+        padding-top: 10px;
+    }
+    .or_carouselR {
+        padding-bottom: 5px;
+    }
+    .or_border {
+        border-right: none;
+    }
+    .or_profileIcon {
+        text-align: center;
+    }
+    .or_profileH3 {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .or_profileP {
+        text-align: center;
+    }
+}

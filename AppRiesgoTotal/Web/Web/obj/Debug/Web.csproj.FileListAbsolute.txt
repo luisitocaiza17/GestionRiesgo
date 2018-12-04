@@ -1,0 +1,746 @@
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\obj\Debug\Web.csproj.CoreCompileInputs.cache
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.ReportViewer.Common.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.ReportViewer.Design.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.ReportViewer.WebDesign.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.ReportViewer.WinForms.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.SqlServer.Types.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Newtonsoft.Json.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\RestSharp.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\EnvDTE.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Shell.14.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Shell.Design.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\stdole.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.VSHelp.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Utilities.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.10.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.14.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Threading.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.11.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.ProjectAggregator.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Imaging.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.12.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.ComponentModelHost.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.ImageCatalog.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Designer.Interfaces.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.TemplateWizardInterface.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Text.Data.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Text.UI.Wpf.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Text.UI.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Package.LanguageService.14.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Debugger.InteropA.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\EnvDTE80.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Language.Intellisense.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.Build.Tasks.Core.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Data.Services.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\VSLangProj.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Shell.Interop.11.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Data.Core.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\VSLangProj80.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.ManagedInterfaces.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.WCFReference.Interop.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Data.Framework.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Editor.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\System.Threading.Tasks.Dataflow.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.GraphModel.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.CoreUtility.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.MSXML.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.Build.Utilities.Core.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Text.Logic.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.Build.Framework.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\VSLangProj2.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Newtonsoft.Json.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Shell.14.0.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Shell.Design.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Utilities.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.10.0.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.14.0.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Threading.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.11.0.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Imaging.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.12.0.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.ImageCatalog.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Designer.Interfaces.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.TemplateWizardInterface.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Text.Data.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Text.UI.Wpf.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Text.UI.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Package.LanguageService.14.0.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Language.Intellisense.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Data.Framework.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Editor.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.CoreUtility.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Microsoft.VisualStudio.Text.Logic.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\obj\Debug\Web.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\obj\Debug\Web.pdb
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Web.dll.config
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Web.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\Web.pdb
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\csc.exe
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\csc.exe.config
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\csc.rsp
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\csi.exe
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\csi.exe.config
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\csi.rsp
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.AppContext.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Console.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Diagnostics.Process.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.IO.Compression.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.IO.Pipes.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Security.AccessControl.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Security.Claims.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Threading.Thread.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.ValueTuple.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Xml.XPath.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\vbc.exe
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\vbc.exe.config
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\vbc.rsp
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\VBCSCompiler.exe
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\VBCSCompiler.exe.config
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.Collections.Immutable.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\bin\roslyn\System.IO.FileSystem.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalContratante\Web\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Web.dll.config
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Web.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Web.pdb
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\csc.exe
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\csc.exe.config
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\csc.rsp
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\csi.exe
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\csi.exe.config
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\csi.rsp
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.AppContext.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Collections.Immutable.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Console.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Diagnostics.Process.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.IO.Compression.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.IO.FileSystem.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.IO.Pipes.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Security.AccessControl.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Security.Claims.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Threading.Thread.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.ValueTuple.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Xml.XPath.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\vbc.exe
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\vbc.exe.config
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\vbc.rsp
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\VBCSCompiler.exe
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\roslyn\VBCSCompiler.exe.config
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.ReportViewer.Common.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.ReportViewer.Design.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.ReportViewer.WebDesign.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.ReportViewer.WinForms.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.SqlServer.Types.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Newtonsoft.Json.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\RestSharp.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\EnvDTE.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Shell.14.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Shell.Design.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\stdole.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.VSHelp.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Utilities.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.10.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.14.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Threading.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.11.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.ProjectAggregator.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Imaging.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.12.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.ComponentModelHost.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.ImageCatalog.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Designer.Interfaces.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.TemplateWizardInterface.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Text.Data.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Text.UI.Wpf.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Text.UI.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Package.LanguageService.14.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Debugger.InteropA.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\EnvDTE80.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Language.Intellisense.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.Build.Tasks.Core.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Data.Services.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\VSLangProj.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Shell.Interop.11.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Data.Core.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\VSLangProj80.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.ManagedInterfaces.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.WCFReference.Interop.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Data.Framework.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Editor.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\System.Threading.Tasks.Dataflow.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.GraphModel.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.CoreUtility.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.MSXML.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.Build.Utilities.Core.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Text.Logic.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.Build.Framework.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\VSLangProj2.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Newtonsoft.Json.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Shell.14.0.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Shell.Design.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Utilities.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.10.0.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.14.0.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Threading.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.11.0.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Imaging.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.12.0.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.ImageCatalog.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Designer.Interfaces.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.TemplateWizardInterface.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Text.Data.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Text.UI.Wpf.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Text.UI.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Package.LanguageService.14.0.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Language.Intellisense.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Data.Framework.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Editor.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.CoreUtility.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\Microsoft.VisualStudio.Text.Logic.xml
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\obj\Debug\Web.csproj.CoreCompileInputs.cache
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\obj\Debug\Web.dll
+D:\Desarrollo\SALUD_Corporativo2\PortalCorredores\Web\Web\obj\Debug\Web.pdb
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\obj\Debug\Web.csproj.CoreCompileInputs.cache
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Web.dll.config
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Web.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Web.pdb
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\csc.exe
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\csc.exe.config
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\csc.rsp
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\csi.exe
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\csi.exe.config
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\csi.rsp
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.AppContext.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Collections.Immutable.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Console.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.IO.Compression.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.IO.FileSystem.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.ValueTuple.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Xml.XPath.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\vbc.exe
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\vbc.exe.config
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\vbc.rsp
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\VBCSCompiler.exe
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\VBCSCompiler.exe.config
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.ReportViewer.Common.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.ReportViewer.Design.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.ReportViewer.WebDesign.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.ReportViewer.WinForms.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.SqlServer.Types.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Newtonsoft.Json.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\RestSharp.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\EnvDTE.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Shell.14.0.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Shell.Design.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\stdole.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.VSHelp.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Utilities.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.10.0.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.14.0.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Threading.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.11.0.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.ProjectAggregator.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Imaging.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.12.0.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.ComponentModelHost.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.ImageCatalog.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Designer.Interfaces.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.TemplateWizardInterface.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Text.Data.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Text.UI.Wpf.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Text.UI.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Package.LanguageService.14.0.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Debugger.InteropA.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\EnvDTE80.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Language.Intellisense.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.Build.Tasks.Core.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Data.Services.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\VSLangProj.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Shell.Interop.11.0.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Data.Core.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\VSLangProj80.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.ManagedInterfaces.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.WCFReference.Interop.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Data.Framework.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Editor.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\System.Threading.Tasks.Dataflow.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.GraphModel.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.CoreUtility.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.MSXML.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.Build.Utilities.Core.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Text.Logic.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.Build.Framework.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\VSLangProj2.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Newtonsoft.Json.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Shell.14.0.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Shell.Design.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Utilities.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.10.0.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.14.0.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Threading.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.11.0.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Imaging.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Shell.Immutable.12.0.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.ImageCatalog.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Designer.Interfaces.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.TemplateWizardInterface.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Text.Data.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Text.UI.Wpf.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Text.UI.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Package.LanguageService.14.0.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Language.Intellisense.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Data.Framework.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Editor.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.CoreUtility.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.Text.Logic.xml
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\obj\Debug\Web.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\obj\Debug\Web.pdb
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Globalization.Calendars.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Net.Http.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Net.Sockets.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Corredores\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\RestSharp.xml
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Web.dll.config
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Web.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Web.pdb
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\csc.exe
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\csc.exe.config
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\csc.rsp
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\csi.exe
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\csi.exe.config
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\csi.rsp
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.AppContext.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Collections.Immutable.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Console.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Globalization.Calendars.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.IO.Compression.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.IO.FileSystem.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Net.Http.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Net.Sockets.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.ValueTuple.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Xml.XPath.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\vbc.exe
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\vbc.exe.config
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\vbc.rsp
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\VBCSCompiler.exe
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\roslyn\VBCSCompiler.exe.config
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.ReportViewer.Common.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.ReportViewer.Design.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.ReportViewer.WebDesign.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.ReportViewer.WinForms.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.SqlServer.Types.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Newtonsoft.Json.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\RestSharp.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\EnvDTE.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\stdole.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.VSHelp.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.ComponentModelHost.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.TemplateWizardInterface.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\EnvDTE80.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.Build.Tasks.Core.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\VSLangProj.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\VSLangProj80.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.GraphModel.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.MSXML.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.Build.Utilities.Core.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.Build.Framework.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\VSLangProj2.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Newtonsoft.Json.xml
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\RestSharp.xml
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\Microsoft.VisualStudio.TemplateWizardInterface.xml
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\obj\Debug\Web.dll
+D:\Maestria Sotware\Gestion de Riesgos\Aplicativo\PortalCorredores\Desarrollo\PortalBrokers\Web\Web\obj\Debug\Web.pdb

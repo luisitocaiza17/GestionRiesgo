@@ -1,0 +1,1279 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35E0EE30-1C52-4D32-A4D4-D2DB2E34CA11}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web</RootNamespace>
+    <AssemblyName>Web</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TypeScriptTarget>ES2015</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir>
+    </TypeScriptOutDir>
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>False</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot>
+    </TypeScriptMapRoot>
+    <TypeScriptSourceRoot>
+    </TypeScriptSourceRoot>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.5.4.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.5.4\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config.js" />
+    <Content Include="Config.js.map" />
+    <Content Include="favicon.ico" />
+    <Content Include="images\amarillo.png" />
+    <Content Include="images\apagar.png" />
+    <Content Include="images\asignacionCorredores.png" />
+    <Content Include="images\azul.png" />
+    <Content Include="images\Banner10.png" />
+    <Content Include="images\Banner11.png" />
+    <Content Include="images\Banner12.png" />
+    <Content Include="images\barrasuperior.jpg" />
+    <Content Include="images\btnAsignacionCorredor.jpg" />
+    <Content Include="images\btnCambioClave.jpg" />
+    <Content Include="images\btnCerrarSesion.jpg" />
+    <Content Include="images\btnContratoAgenciamiento.jpg" />
+    <Content Include="images\btnEstadisticaEnrolamiento.jpg" />
+    <Content Include="images\btnFacturacion.jpg" />
+    <Content Include="images\btnGuiaUso.jpg" />
+    <Content Include="images\btnLiquidacionComisiones.jpg" />
+    <Content Include="images\btnPerfilesAccesos.jpg" />
+    <Content Include="images\btnPreautorizaciones.jpg" />
+    <Content Include="images\btnSiniestralidad.jpg" />
+    <Content Include="images\btnTerminosCondiciones.jpg" />
+    <Content Include="images\Cajalogin.png" />
+    <Content Include="images\CambioClave.png" />
+    <Content Include="images\candado.png" />
+    <Content Include="images\candado2.png" />
+    <Content Include="images\CerrarSesion.png" />
+    <Content Include="images\Clientes.png" />
+    <Content Include="images\coloricons-sprite.png" />
+    <Content Include="images\contratoAgenciamiento.png" />
+    <Content Include="images\CSaC.png" />
+    <Content Include="images\estadisticaEnrolamiento.png" />
+    <Content Include="images\Facturacion.png" />
+    <Content Include="images\Formularios.png" />
+    <Content Include="images\foto1.png" />
+    <Content Include="images\Foto2.jpg" />
+    <Content Include="images\Foto3.jpg" />
+    <Content Include="images\Foto4.png" />
+    <Content Include="images\Foto5.png" />
+    <Content Include="images\guiaUso.png" />
+    <Content Include="images\IMAGE1.PNG" />
+    <Content Include="images\IMAGE3.PNG" />
+    <Content Include="images\imagen-broker-Principal.jpg" />
+    <Content Include="images\imagen-broker_1.jpg" />
+    <Content Include="images\imagen0.jpg" />
+    <Content Include="images\imagen1.jpg" />
+    <Content Include="images\imagen2.jpg" />
+    <Content Include="images\imagen3.jpg" />
+    <Content Include="images\imagen4.jpg" />
+    <Content Include="images\imagen5.jpg" />
+    <Content Include="images\imagen_home_portalbroker.jpg" />
+    <Content Include="images\indice.png" />
+    <Content Include="images\Kv-presentaciones-internas-Cerotramites.jpg" />
+    <Content Include="images\Kv-presentaciones-internas-medico.jpg" />
+    <Content Include="images\Kv-presentaciones-internas-Video-Consulta.jpg" />
+    <Content Include="images\liquidacionComisiones.png" />
+    <Content Include="images\logo-portal-saludsa-brokers_w.png" />
+    <Content Include="images\logo-portal-saludsa-brokers_wm.png" />
+    <Content Include="images\logo-salud.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logoBrokers.png" />
+    <Content Include="images\mmenu.png" />
+    <Content Include="images\negro.png" />
+    <Content Include="images\next.png" />
+    <Content Include="images\perfil.png" />
+    <Content Include="images\perfil2.png" />
+    <Content Include="images\perfilesAcceso.png" />
+    <Content Include="images\PoliticaComisiones.png" />
+    <Content Include="images\preautorizaciones.png" />
+    <Content Include="images\prefacturaok.png" />
+    <Content Include="images\preloading3.GIF" />
+    <Content Include="images\preloading_2.GIF" />
+    <Content Include="images\preloading_b.GIF" />
+    <Content Include="images\preloading_c.GIF" />
+    <Content Include="images\prev.png" />
+    <Content Include="images\regresar.png" />
+    <Content Include="images\ResumenEjecutivo.png" />
+    <Content Include="images\rojo.png" />
+    <Content Include="images\siniestralidad.png" />
+    <Content Include="images\spacer.gif" />
+    <Content Include="images\TerminosCondiciones.png" />
+    <Content Include="images\verde.png" />
+    <Content Include="js\cryptojs\.gitignore" />
+    <Content Include="js\cryptojs\Gruntfile.js" />
+    <Content Include="js\cryptojs\grunt\config\clean.js" />
+    <Content Include="js\cryptojs\grunt\config\copy.js" />
+    <Content Include="js\cryptojs\grunt\config\jshint.js" />
+    <Content Include="js\cryptojs\grunt\config\jsonlint.js" />
+    <Content Include="js\cryptojs\grunt\config\modularize.js" />
+    <Content Include="js\cryptojs\grunt\config\update_json.js" />
+    <Content Include="js\cryptojs\grunt\tasks\modularize.js" />
+    <Content Include="js\cryptojs\src\aes.js" />
+    <Content Include="js\cryptojs\src\cipher-core.js" />
+    <Content Include="js\cryptojs\src\core.js" />
+    <Content Include="js\cryptojs\src\enc-base64.js" />
+    <Content Include="js\cryptojs\src\enc-utf16.js" />
+    <Content Include="js\cryptojs\src\evpkdf.js" />
+    <Content Include="js\cryptojs\src\format-hex.js" />
+    <Content Include="js\cryptojs\src\hmac.js" />
+    <Content Include="js\cryptojs\src\lib-typedarrays.js" />
+    <Content Include="js\cryptojs\src\md5.js" />
+    <Content Include="js\cryptojs\src\mode-cfb.js" />
+    <Content Include="js\cryptojs\src\mode-ctr-gladman.js" />
+    <Content Include="js\cryptojs\src\mode-ctr.js" />
+    <Content Include="js\cryptojs\src\mode-ecb.js" />
+    <Content Include="js\cryptojs\src\mode-ofb.js" />
+    <Content Include="js\cryptojs\src\pad-ansix923.js" />
+    <Content Include="js\cryptojs\src\pad-iso10126.js" />
+    <Content Include="js\cryptojs\src\pad-iso97971.js" />
+    <Content Include="js\cryptojs\src\pad-nopadding.js" />
+    <Content Include="js\cryptojs\src\pad-zeropadding.js" />
+    <Content Include="js\cryptojs\src\pbkdf2.js" />
+    <Content Include="js\cryptojs\src\rabbit-legacy.js" />
+    <Content Include="js\cryptojs\src\rabbit.js" />
+    <Content Include="js\cryptojs\src\rc4.js" />
+    <Content Include="js\cryptojs\src\ripemd160.js" />
+    <Content Include="js\cryptojs\src\sha1.js" />
+    <Content Include="js\cryptojs\src\sha224.js" />
+    <Content Include="js\cryptojs\src\sha256.js" />
+    <Content Include="js\cryptojs\src\sha3.js" />
+    <Content Include="js\cryptojs\src\sha384.js" />
+    <Content Include="js\cryptojs\src\sha512.js" />
+    <Content Include="js\cryptojs\src\tripledes.js" />
+    <Content Include="js\cryptojs\src\x64-core.js" />
+    <Content Include="js\cryptojs\test\aes-profile.js" />
+    <Content Include="js\cryptojs\test\aes-test.js" />
+    <Content Include="js\cryptojs\test\cipher-test.js" />
+    <Content Include="js\cryptojs\test\des-profile.js" />
+    <Content Include="js\cryptojs\test\des-test.js" />
+    <Content Include="js\cryptojs\test\enc-base64-test.js" />
+    <Content Include="js\cryptojs\test\enc-hex-test.js" />
+    <Content Include="js\cryptojs\test\enc-latin1-test.js" />
+    <Content Include="js\cryptojs\test\enc-utf16-test.js" />
+    <Content Include="js\cryptojs\test\enc-utf8-test.js" />
+    <Content Include="js\cryptojs\test\evpkdf-profile.js" />
+    <Content Include="js\cryptojs\test\evpkdf-test.js" />
+    <Content Include="js\cryptojs\test\format-openssl-test.js" />
+    <Content Include="js\cryptojs\test\hmac-md5-profile.js" />
+    <Content Include="js\cryptojs\test\hmac-md5-test.js" />
+    <Content Include="js\cryptojs\test\hmac-sha224-test.js" />
+    <Content Include="js\cryptojs\test\hmac-sha256-test.js" />
+    <Content Include="js\cryptojs\test\hmac-sha384-test.js" />
+    <Content Include="js\cryptojs\test\hmac-sha512-test.js" />
+    <Content Include="js\cryptojs\test\kdf-openssl-test.js" />
+    <Content Include="js\cryptojs\test\lib-base-test.js" />
+    <Content Include="js\cryptojs\test\lib-cipherparams-test.js" />
+    <Content Include="js\cryptojs\test\lib-passwordbasedcipher-test.js" />
+    <Content Include="js\cryptojs\test\lib-serializablecipher-test.js" />
+    <Content Include="js\cryptojs\test\lib-typedarrays-test.js" />
+    <Content Include="js\cryptojs\test\lib-wordarray-test.js" />
+    <Content Include="js\cryptojs\test\md5-profile.js" />
+    <Content Include="js\cryptojs\test\md5-test.js" />
+    <Content Include="js\cryptojs\test\mode-cbc-test.js" />
+    <Content Include="js\cryptojs\test\mode-cfb-test.js" />
+    <Content Include="js\cryptojs\test\mode-ctr-test.js" />
+    <Content Include="js\cryptojs\test\mode-ecb-test.js" />
+    <Content Include="js\cryptojs\test\mode-ofb-test.js" />
+    <Content Include="js\cryptojs\test\pad-ansix923-test.js" />
+    <Content Include="js\cryptojs\test\pad-iso10126-test.js" />
+    <Content Include="js\cryptojs\test\pad-iso97971-test.js" />
+    <Content Include="js\cryptojs\test\pad-pkcs7-test.js" />
+    <Content Include="js\cryptojs\test\pad-zeropadding-test.js" />
+    <Content Include="js\cryptojs\test\pbkdf2-profile.js" />
+    <Content Include="js\cryptojs\test\pbkdf2-test.js" />
+    <Content Include="js\cryptojs\test\profile.html" />
+    <Content Include="js\cryptojs\test\rabbit-legacy-test.js" />
+    <Content Include="js\cryptojs\test\rabbit-profile.js" />
+    <Content Include="js\cryptojs\test\rabbit-test.js" />
+    <Content Include="js\cryptojs\test\rc4-profile.js" />
+    <Content Include="js\cryptojs\test\rc4-test.js" />
+    <Content Include="js\cryptojs\test\ripemd160-test.js" />
+    <Content Include="js\cryptojs\test\sha1-profile.js" />
+    <Content Include="js\cryptojs\test\sha1-test.js" />
+    <Content Include="js\cryptojs\test\sha224-test.js" />
+    <Content Include="js\cryptojs\test\sha256-profile.js" />
+    <Content Include="js\cryptojs\test\sha256-test.js" />
+    <Content Include="js\cryptojs\test\sha3-profile.js" />
+    <Content Include="js\cryptojs\test\sha3-test.js" />
+    <Content Include="js\cryptojs\test\sha384-test.js" />
+    <Content Include="js\cryptojs\test\sha512-profile.js" />
+    <Content Include="js\cryptojs\test\sha512-test.js" />
+    <Content Include="js\cryptojs\test\test.html" />
+    <Content Include="js\cryptojs\test\tripledes-profile.js" />
+    <Content Include="js\cryptojs\test\tripledes-test.js" />
+    <Content Include="js\cryptojs\test\x64-word-test.js" />
+    <Content Include="js\cryptojs\test\x64-wordarray-test.js" />
+    <Content Include="js\filesaver\FileSaver.js" />
+    <Content Include="js\kendoui\js\cultures\kendo.culture.es-EC.min.js" />
+    <Content Include="js\kendoui\js\jquery.min.map" />
+    <Content Include="js\kendoui\js\kendo.all.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.angular.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.autocomplete.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.binder.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.button.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.buttongroup.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.calendar.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.color.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.colorpicker.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.columnmenu.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.columnsorter.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.combobox.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.core.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.data.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.data.odata.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.data.signalr.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.data.xml.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.dataviz.barcode.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.dataviz.chart.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.dataviz.core.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.dataviz.diagram.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.dataviz.gauge.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.dataviz.map.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.dataviz.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.dataviz.mobile.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.dataviz.qrcode.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.dataviz.sparkline.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.dataviz.stock.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.dataviz.themes.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.dataviz.treemap.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.dateinput.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.datepicker.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.datetimepicker.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.dialog.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.dom.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.draganddrop.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.drawing.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.dropdownlist.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.editable.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.editor.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.excel.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.filebrowser.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.filtercell.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.filtermenu.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.fx.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.gantt.list.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.gantt.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.gantt.timeline.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.grid.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.groupable.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.imagebrowser.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.list.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.listbox.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.listview.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.maskedtextbox.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mediaplayer.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.menu.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.actionsheet.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.application.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.button.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.buttongroup.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.collapsible.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.drawer.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.listview.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.loader.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.modalview.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.navbar.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.pane.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.popover.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.scroller.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.scrollview.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.shim.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.splitview.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.switch.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.tabstrip.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.mobile.view.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.multiselect.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.notification.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.numerictextbox.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.ooxml.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.pager.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.panelbar.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.pdf.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.pivot.configurator.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.pivot.fieldmenu.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.pivotgrid.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.popup.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.progressbar.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.reorderable.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.resizable.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.responsivepanel.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.router.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.scheduler.agendaview.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.scheduler.dayview.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.scheduler.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.scheduler.monthview.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.scheduler.recurrence.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.scheduler.timelineview.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.scheduler.view.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.selectable.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.slider.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.sortable.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.splitter.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.spreadsheet.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.tabstrip.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.timepicker.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.timezones.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.toolbar.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.tooltip.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.touch.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.treelist.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.treeview.draganddrop.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.treeview.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.upload.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.userevents.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.validator.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.view.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.virtuallist.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.web.min.js.map" />
+    <Content Include="js\kendoui\js\kendo.window.min.js.map" />
+    <Content Include="js\kendoui\js\messages\kendo.messages.es-EC.min.js" />
+    <Content Include="js\kendoui\README" />
+    <Content Include="js\kendoui\styles\fonts\DejaVu\DejaVuSans-Bold.ttf" />
+    <Content Include="js\kendoui\styles\fonts\DejaVu\DejaVuSans-BoldOblique.ttf" />
+    <Content Include="js\kendoui\styles\fonts\DejaVu\DejaVuSans-ExtraLight.ttf" />
+    <Content Include="js\kendoui\styles\fonts\DejaVu\DejaVuSans-Oblique.ttf" />
+    <Content Include="js\kendoui\styles\fonts\DejaVu\DejaVuSans.ttf" />
+    <Content Include="js\kendoui\styles\fonts\DejaVu\DejaVuSansMono-Bold.ttf" />
+    <Content Include="js\kendoui\styles\fonts\DejaVu\DejaVuSansMono-BoldOblique.ttf" />
+    <Content Include="js\kendoui\styles\fonts\DejaVu\DejaVuSansMono-Oblique.ttf" />
+    <Content Include="js\kendoui\styles\fonts\DejaVu\DejaVuSansMono.ttf" />
+    <Content Include="js\kendoui\styles\fonts\DejaVu\DejaVuSerif-Bold.ttf" />
+    <Content Include="js\kendoui\styles\fonts\DejaVu\DejaVuSerif-BoldItalic.ttf" />
+    <Content Include="js\kendoui\styles\fonts\DejaVu\DejaVuSerif-Italic.ttf" />
+    <Content Include="js\kendoui\styles\fonts\DejaVu\DejaVuSerif.ttf" />
+    <Content Include="js\kendoui\styles\fonts\glyphs\KendoUIGlyphs.eot" />
+    <Content Include="js\kendoui\styles\fonts\glyphs\KendoUIGlyphs.ttf" />
+    <Content Include="js\kendoui\styles\fonts\glyphs\KendoUIGlyphs.woff" />
+    <Content Include="js\kendoui\styles\fonts\glyphs\WebComponentsIcons.eot" />
+    <Content Include="js\kendoui\styles\fonts\glyphs\WebComponentsIcons.ttf" />
+    <Content Include="js\kendoui\styles\fonts\glyphs\WebComponentsIcons.woff" />
+    <Content Include="js\kendoui\styles\images\kendoui.ttf" />
+    <Content Include="js\kendoui\styles\images\kendoui.woff" />
+    <Content Include="js\kendoui\styles\kendo.black.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.black.mobile.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.blueopal.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.blueopal.mobile.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.bootstrap-v4.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.bootstrap.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.bootstrap.mobile.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.common-bootstrap.core.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.common-bootstrap.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.common-fiori.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.common-material.core.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.common-material.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.common-nova.core.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.common-nova.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.common-office365.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.common.core.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.common.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.black.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.blueopal.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.bootstrap.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.default.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.fiori.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.flat.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.highcontrast.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.material.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.materialblack.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.metro.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.metroblack.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.mobile.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.moonlight.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.nova.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.office365.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.silver.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.uniform.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.default-v2.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.default.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.default.mobile.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.fiori.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.fiori.mobile.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.flat.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.flat.mobile.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.highcontrast.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.highcontrast.mobile.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.material.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.material.mobile.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.materialblack.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.materialblack.mobile.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.metro.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.metro.mobile.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.metroblack.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.metroblack.mobile.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.mobile.all.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.mobile.android.dark.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.mobile.android.light.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.mobile.blackberry.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.mobile.common.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.mobile.fiori.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.mobile.flat.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.mobile.ios.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.mobile.material.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.mobile.meego.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.mobile.nova.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.mobile.office365.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.mobile.wp8.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.moonlight.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.moonlight.mobile.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.nova.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.nova.mobile.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.office365.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.office365.mobile.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.rtl.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.silver.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.silver.mobile.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.uniform.min.css.map" />
+    <Content Include="js\kendoui\styles\kendo.uniform.mobile.min.css.map" />
+    <Content Include="js\cryptojs\.jshintrc" />
+    <Content Include="js\cryptojs\CONTRIBUTING.md" />
+    <Content Include="js\cryptojs\docs\QuickStartGuide.wiki" />
+    <Content Include="js\cryptojs\LICENSE" />
+    <Content Include="js\cryptojs\package.json" />
+    <Content Include="js\cryptojs\README.md" />
+    <Content Include="js\slick\.gitignore" />
+    <Content Include="js\slick\index.html" />
+    <Content Include="js\slick\slick\ajax-loader.gif" />
+    <Content Include="js\slick\slick\fonts\slick.svg" />
+    <Content Include="js\slick\slick\slick-theme.css" />
+    <Content Include="js\slick\slick\slick.css" />
+    <Content Include="js\slick\slick\slick.js" />
+    <Content Include="js\slick\slick\slick.min.js" />
+    <Content Include="js\tooltip\LICENSE" />
+    <Content Include="js\tooltip\README.md" />
+    <Content Include="js\slick\bower.json" />
+    <Content Include="js\slick\component.json" />
+    <Content Include="js\slick\CONTRIBUTING.markdown" />
+    <Content Include="js\slick\ISSUE_TEMPLATE.md" />
+    <Content Include="js\slick\LICENSE" />
+    <Content Include="js\slick\Makefile" />
+    <Content Include="js\slick\package.json" />
+    <Content Include="js\slick\README.markdown" />
+    <Content Include="js\slick\slick.jquery.json" />
+    <Content Include="js\slick\slick\config.rb" />
+    <Content Include="js\slick\slick\fonts\slick.eot" />
+    <Content Include="js\slick\slick\fonts\slick.ttf" />
+    <Content Include="js\slick\slick\fonts\slick.woff" />
+    <Content Include="js\slick\slick\slick-theme.less" />
+    <Content Include="js\slick\slick\slick-theme.scss" />
+    <Content Include="js\slick\slick\slick.less" />
+    <Content Include="js\slick\slick\slick.scss" />
+    <Content Include="js\kendoui\js\cultures\kendo.culture.es-EC.min.js.map" />
+    <Content Include="js\kendoui\js\messages\kendo.messages.es-EC.min.js.map" />
+    <None Include="packages.config" />
+    <Content Include="Reports\ReportDataSet.xsc">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\ReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\ReportDataSet.xss">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Scripts\ActivacionUsuario.js.map" />
+    <Content Include="Scripts\AdministradorUsuarios.js.map" />
+    <Content Include="Scripts\Cliente.js" />
+    <Content Include="Scripts\ContratoAgenciamiento.js" />
+    <Content Include="Scripts\Formularios.js" />
+    <Content Include="Scripts\GuiaUso.js" />
+    <Content Include="Scripts\Home.js" />
+    <Content Include="Scripts\Init.js" />
+    <Content Include="Scripts\Login.js" />
+    <Content Include="Scripts\Politica_Comisiones.js" />
+    <Content Include="Scripts\Proxy.js" />
+    <Content Include="Scripts\ReporteAsignacionCorredor.js" />
+    <Content Include="Scripts\ReporteLiquidacionComisiones.js" />
+    <Content Include="Scripts\ReportePreAutorizaciones.js" />
+    <Content Include="Scripts\Reportes.js" />
+    <Content Include="Scripts\ReporteSiniestralidad.js" />
+    <Content Include="Scripts\ResumenEjecutivo.js" />
+    <Content Include="Scripts\TerminosCondiciones.js.map" />
+    <Content Include="Scripts\ResumenEjecutivo.js.map" />
+    <Content Include="Scripts\ReporteSiniestralidad.js.map" />
+    <Content Include="Scripts\Reportes.js.map" />
+    <Content Include="Scripts\ReportePreAutorizaciones.js.map" />
+    <Content Include="Scripts\ReporteAsignacionCorredor.js.map" />
+    <Content Include="Scripts\ReporteLiquidacionComisiones.js.map" />
+    <Content Include="Scripts\GuiaUso.js.map" />
+    <Content Include="Scripts\Home.js.map" />
+    <Content Include="Scripts\Init.js.map" />
+    <Content Include="Scripts\Login.js.map" />
+    <Content Include="Scripts\Politica_Comisiones.js.map" />
+    <Content Include="Scripts\Proxy.js.map" />
+    <Content Include="Scripts\CambioClave.js.map" />
+    <Content Include="Scripts\Cliente.js.map" />
+    <Content Include="Scripts\ContratoAgenciamiento.js.map" />
+    <Content Include="Scripts\Formularios.js.map" />
+    <Content Include="Resources\FORMULARIO_DE_RECLAMACION.pdf" />
+    <Content Include="Resources\SOLICITUD_DE_COBERTURA_COBERTURA_V4.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\preloading.GIF" />
+    <Content Include="Index.html" />
+    <Content Include="js\headjs\head.core.js" />
+    <Content Include="js\headjs\head.core.min.js" />
+    <Content Include="js\headjs\head.js" />
+    <Content Include="js\headjs\head.min.js" />
+    <Content Include="js\kendoui\changelog.html" />
+    <Content Include="js\kendoui\js\angular.min.js" />
+    <Content Include="js\kendoui\js\jquery.min.js" />
+    <Content Include="js\kendoui\js\jszip.min.js" />
+    <Content Include="js\kendoui\js\kendo.all.min.js" />
+    <Content Include="js\kendoui\js\kendo.angular.min.js" />
+    <Content Include="js\kendoui\js\kendo.autocomplete.min.js" />
+    <Content Include="js\kendoui\js\kendo.binder.min.js" />
+    <Content Include="js\kendoui\js\kendo.button.min.js" />
+    <Content Include="js\kendoui\js\kendo.buttongroup.min.js" />
+    <Content Include="js\kendoui\js\kendo.calendar.min.js" />
+    <Content Include="js\kendoui\js\kendo.color.min.js" />
+    <Content Include="js\kendoui\js\kendo.colorpicker.min.js" />
+    <Content Include="js\kendoui\js\kendo.columnmenu.min.js" />
+    <Content Include="js\kendoui\js\kendo.columnsorter.min.js" />
+    <Content Include="js\kendoui\js\kendo.combobox.min.js" />
+    <Content Include="js\kendoui\js\kendo.core.min.js" />
+    <Content Include="js\kendoui\js\kendo.data.min.js" />
+    <Content Include="js\kendoui\js\kendo.data.odata.min.js" />
+    <Content Include="js\kendoui\js\kendo.data.signalr.min.js" />
+    <Content Include="js\kendoui\js\kendo.data.xml.min.js" />
+    <Content Include="js\kendoui\js\kendo.dataviz.barcode.min.js" />
+    <Content Include="js\kendoui\js\kendo.dataviz.chart.min.js" />
+    <Content Include="js\kendoui\js\kendo.dataviz.core.min.js" />
+    <Content Include="js\kendoui\js\kendo.dataviz.diagram.min.js" />
+    <Content Include="js\kendoui\js\kendo.dataviz.gauge.min.js" />
+    <Content Include="js\kendoui\js\kendo.dataviz.map.min.js" />
+    <Content Include="js\kendoui\js\kendo.dataviz.min.js" />
+    <Content Include="js\kendoui\js\kendo.dataviz.mobile.min.js" />
+    <Content Include="js\kendoui\js\kendo.dataviz.qrcode.min.js" />
+    <Content Include="js\kendoui\js\kendo.dataviz.sparkline.min.js" />
+    <Content Include="js\kendoui\js\kendo.dataviz.stock.min.js" />
+    <Content Include="js\kendoui\js\kendo.dataviz.themes.min.js" />
+    <Content Include="js\kendoui\js\kendo.dataviz.treemap.min.js" />
+    <Content Include="js\kendoui\js\kendo.dateinput.min.js" />
+    <Content Include="js\kendoui\js\kendo.datepicker.min.js" />
+    <Content Include="js\kendoui\js\kendo.datetimepicker.min.js" />
+    <Content Include="js\kendoui\js\kendo.dialog.min.js" />
+    <Content Include="js\kendoui\js\kendo.dom.min.js" />
+    <Content Include="js\kendoui\js\kendo.draganddrop.min.js" />
+    <Content Include="js\kendoui\js\kendo.drawing.min.js" />
+    <Content Include="js\kendoui\js\kendo.dropdownlist.min.js" />
+    <Content Include="js\kendoui\js\kendo.editable.min.js" />
+    <Content Include="js\kendoui\js\kendo.editor.min.js" />
+    <Content Include="js\kendoui\js\kendo.excel.min.js" />
+    <Content Include="js\kendoui\js\kendo.filebrowser.min.js" />
+    <Content Include="js\kendoui\js\kendo.filtercell.min.js" />
+    <Content Include="js\kendoui\js\kendo.filtermenu.min.js" />
+    <Content Include="js\kendoui\js\kendo.fx.min.js" />
+    <Content Include="js\kendoui\js\kendo.gantt.list.min.js" />
+    <Content Include="js\kendoui\js\kendo.gantt.min.js" />
+    <Content Include="js\kendoui\js\kendo.gantt.timeline.min.js" />
+    <Content Include="js\kendoui\js\kendo.grid.min.js" />
+    <Content Include="js\kendoui\js\kendo.groupable.min.js" />
+    <Content Include="js\kendoui\js\kendo.imagebrowser.min.js" />
+    <Content Include="js\kendoui\js\kendo.list.min.js" />
+    <Content Include="js\kendoui\js\kendo.listbox.min.js" />
+    <Content Include="js\kendoui\js\kendo.listview.min.js" />
+    <Content Include="js\kendoui\js\kendo.maskedtextbox.min.js" />
+    <Content Include="js\kendoui\js\kendo.mediaplayer.min.js" />
+    <Content Include="js\kendoui\js\kendo.menu.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.actionsheet.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.application.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.button.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.buttongroup.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.collapsible.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.drawer.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.listview.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.loader.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.modalview.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.navbar.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.pane.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.popover.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.scroller.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.scrollview.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.shim.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.splitview.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.switch.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.tabstrip.min.js" />
+    <Content Include="js\kendoui\js\kendo.mobile.view.min.js" />
+    <Content Include="js\kendoui\js\kendo.multiselect.min.js" />
+    <Content Include="js\kendoui\js\kendo.notification.min.js" />
+    <Content Include="js\kendoui\js\kendo.numerictextbox.min.js" />
+    <Content Include="js\kendoui\js\kendo.ooxml.min.js" />
+    <Content Include="js\kendoui\js\kendo.pager.min.js" />
+    <Content Include="js\kendoui\js\kendo.panelbar.min.js" />
+    <Content Include="js\kendoui\js\kendo.pdf.min.js" />
+    <Content Include="js\kendoui\js\kendo.pivot.configurator.min.js" />
+    <Content Include="js\kendoui\js\kendo.pivot.fieldmenu.min.js" />
+    <Content Include="js\kendoui\js\kendo.pivotgrid.min.js" />
+    <Content Include="js\kendoui\js\kendo.popup.min.js" />
+    <Content Include="js\kendoui\js\kendo.progressbar.min.js" />
+    <Content Include="js\kendoui\js\kendo.reorderable.min.js" />
+    <Content Include="js\kendoui\js\kendo.resizable.min.js" />
+    <Content Include="js\kendoui\js\kendo.responsivepanel.min.js" />
+    <Content Include="js\kendoui\js\kendo.router.min.js" />
+    <Content Include="js\kendoui\js\kendo.scheduler.agendaview.min.js" />
+    <Content Include="js\kendoui\js\kendo.scheduler.dayview.min.js" />
+    <Content Include="js\kendoui\js\kendo.scheduler.min.js" />
+    <Content Include="js\kendoui\js\kendo.scheduler.monthview.min.js" />
+    <Content Include="js\kendoui\js\kendo.scheduler.recurrence.min.js" />
+    <Content Include="js\kendoui\js\kendo.scheduler.timelineview.min.js" />
+    <Content Include="js\kendoui\js\kendo.scheduler.view.min.js" />
+    <Content Include="js\kendoui\js\kendo.selectable.min.js" />
+    <Content Include="js\kendoui\js\kendo.slider.min.js" />
+    <Content Include="js\kendoui\js\kendo.sortable.min.js" />
+    <Content Include="js\kendoui\js\kendo.splitter.min.js" />
+    <Content Include="js\kendoui\js\kendo.spreadsheet.min.js" />
+    <Content Include="js\kendoui\js\kendo.tabstrip.min.js" />
+    <Content Include="js\kendoui\js\kendo.timepicker.min.js" />
+    <Content Include="js\kendoui\js\kendo.timezones.min.js" />
+    <Content Include="js\kendoui\js\kendo.toolbar.min.js" />
+    <Content Include="js\kendoui\js\kendo.tooltip.min.js" />
+    <Content Include="js\kendoui\js\kendo.touch.min.js" />
+    <Content Include="js\kendoui\js\kendo.treelist.min.js" />
+    <Content Include="js\kendoui\js\kendo.treeview.draganddrop.min.js" />
+    <Content Include="js\kendoui\js\kendo.treeview.min.js" />
+    <Content Include="js\kendoui\js\kendo.upload.min.js" />
+    <Content Include="js\kendoui\js\kendo.userevents.min.js" />
+    <Content Include="js\kendoui\js\kendo.validator.min.js" />
+    <Content Include="js\kendoui\js\kendo.view.min.js" />
+    <Content Include="js\kendoui\js\kendo.virtuallist.min.js" />
+    <Content Include="js\kendoui\js\kendo.web.min.js" />
+    <Content Include="js\kendoui\js\kendo.webcomponents.js" />
+    <Content Include="js\kendoui\js\kendo.window.min.js" />
+    <Content Include="js\kendoui\js\pako_deflate.min.js" />
+    <Content Include="js\kendoui\styles\Black\editor.png" />
+    <Content Include="js\kendoui\styles\Black\imagebrowser.png" />
+    <Content Include="js\kendoui\styles\Black\indeterminate.gif" />
+    <Content Include="js\kendoui\styles\Black\loading-image.gif" />
+    <Content Include="js\kendoui\styles\Black\loading.gif" />
+    <Content Include="js\kendoui\styles\Black\loading_2x.gif" />
+    <Content Include="js\kendoui\styles\Black\markers.png" />
+    <Content Include="js\kendoui\styles\Black\markers_2x.png" />
+    <Content Include="js\kendoui\styles\Black\slider-h.gif" />
+    <Content Include="js\kendoui\styles\Black\slider-v.gif" />
+    <Content Include="js\kendoui\styles\Black\sprite.png" />
+    <Content Include="js\kendoui\styles\Black\sprite_2x.png" />
+    <Content Include="js\kendoui\styles\Black\sprite_kpi.png" />
+    <Content Include="js\kendoui\styles\Black\sprite_kpi_2x.png" />
+    <Content Include="js\kendoui\styles\BlueOpal\editor.png" />
+    <Content Include="js\kendoui\styles\BlueOpal\imagebrowser.png" />
+    <Content Include="js\kendoui\styles\BlueOpal\indeterminate.gif" />
+    <Content Include="js\kendoui\styles\BlueOpal\loading-image.gif" />
+    <Content Include="js\kendoui\styles\BlueOpal\loading.gif" />
+    <Content Include="js\kendoui\styles\BlueOpal\loading_2x.gif" />
+    <Content Include="js\kendoui\styles\BlueOpal\markers.png" />
+    <Content Include="js\kendoui\styles\BlueOpal\markers_2x.png" />
+    <Content Include="js\kendoui\styles\BlueOpal\slider-h.gif" />
+    <Content Include="js\kendoui\styles\BlueOpal\slider-v.gif" />
+    <Content Include="js\kendoui\styles\BlueOpal\sprite.png" />
+    <Content Include="js\kendoui\styles\BlueOpal\sprite_2x.png" />
+    <Content Include="js\kendoui\styles\BlueOpal\sprite_kpi.png" />
+    <Content Include="js\kendoui\styles\BlueOpal\sprite_kpi_2x.png" />
+    <Content Include="js\kendoui\styles\Bootstrap\editor.png" />
+    <Content Include="js\kendoui\styles\Bootstrap\imagebrowser.png" />
+    <Content Include="js\kendoui\styles\Bootstrap\indeterminate.gif" />
+    <Content Include="js\kendoui\styles\Bootstrap\loading-image.gif" />
+    <Content Include="js\kendoui\styles\Bootstrap\loading.gif" />
+    <Content Include="js\kendoui\styles\Bootstrap\loading_2x.gif" />
+    <Content Include="js\kendoui\styles\Bootstrap\markers.png" />
+    <Content Include="js\kendoui\styles\Bootstrap\markers_2x.png" />
+    <Content Include="js\kendoui\styles\Bootstrap\slider-h.gif" />
+    <Content Include="js\kendoui\styles\Bootstrap\slider-v.gif" />
+    <Content Include="js\kendoui\styles\Bootstrap\sprite.png" />
+    <Content Include="js\kendoui\styles\Bootstrap\sprite_2x.png" />
+    <Content Include="js\kendoui\styles\Bootstrap\sprite_kpi.png" />
+    <Content Include="js\kendoui\styles\Bootstrap\sprite_kpi_2x.png" />
+    <Content Include="js\kendoui\styles\Default\editor.png" />
+    <Content Include="js\kendoui\styles\Default\imagebrowser.png" />
+    <Content Include="js\kendoui\styles\Default\indeterminate.gif" />
+    <Content Include="js\kendoui\styles\Default\loading-image.gif" />
+    <Content Include="js\kendoui\styles\Default\loading.gif" />
+    <Content Include="js\kendoui\styles\Default\loading_2x.gif" />
+    <Content Include="js\kendoui\styles\Default\markers.png" />
+    <Content Include="js\kendoui\styles\Default\markers_2x.png" />
+    <Content Include="js\kendoui\styles\Default\slider-h.gif" />
+    <Content Include="js\kendoui\styles\Default\slider-v.gif" />
+    <Content Include="js\kendoui\styles\Default\sprite.png" />
+    <Content Include="js\kendoui\styles\Default\sprite_2x.png" />
+    <Content Include="js\kendoui\styles\Default\sprite_kpi.png" />
+    <Content Include="js\kendoui\styles\Default\sprite_kpi_2x.png" />
+    <Content Include="js\kendoui\styles\Fiori\editor.png" />
+    <Content Include="js\kendoui\styles\Fiori\imagebrowser.png" />
+    <Content Include="js\kendoui\styles\Fiori\indeterminate.gif" />
+    <Content Include="js\kendoui\styles\Fiori\loading-image.gif" />
+    <Content Include="js\kendoui\styles\Fiori\loading.gif" />
+    <Content Include="js\kendoui\styles\Fiori\loading_2x.gif" />
+    <Content Include="js\kendoui\styles\Fiori\markers.png" />
+    <Content Include="js\kendoui\styles\Fiori\markers_2x.png" />
+    <Content Include="js\kendoui\styles\Fiori\slider-h.gif" />
+    <Content Include="js\kendoui\styles\Fiori\slider-v.gif" />
+    <Content Include="js\kendoui\styles\Fiori\sprite.png" />
+    <Content Include="js\kendoui\styles\Fiori\sprite_2x.png" />
+    <Content Include="js\kendoui\styles\Fiori\sprite_kpi.png" />
+    <Content Include="js\kendoui\styles\Fiori\sprite_kpi_2x.png" />
+    <Content Include="js\kendoui\styles\Flat\editor.png" />
+    <Content Include="js\kendoui\styles\Flat\imagebrowser.png" />
+    <Content Include="js\kendoui\styles\Flat\indeterminate.gif" />
+    <Content Include="js\kendoui\styles\Flat\loading-image.gif" />
+    <Content Include="js\kendoui\styles\Flat\loading.gif" />
+    <Content Include="js\kendoui\styles\Flat\loading_2x.gif" />
+    <Content Include="js\kendoui\styles\Flat\markers.png" />
+    <Content Include="js\kendoui\styles\Flat\markers_2x.png" />
+    <Content Include="js\kendoui\styles\Flat\slider-h.gif" />
+    <Content Include="js\kendoui\styles\Flat\slider-v.gif" />
+    <Content Include="js\kendoui\styles\Flat\sprite.png" />
+    <Content Include="js\kendoui\styles\Flat\sprite_2x.png" />
+    <Content Include="js\kendoui\styles\Flat\sprite_kpi.png" />
+    <Content Include="js\kendoui\styles\Flat\sprite_kpi_2x.png" />
+    <Content Include="js\kendoui\styles\fonts\DejaVu\LICENSE.txt" />
+    <Content Include="js\kendoui\styles\fonts\glyphs\KendoUIGlyphs.svg" />
+    <Content Include="js\kendoui\styles\fonts\glyphs\WebComponentsIcons.svg" />
+    <Content Include="js\kendoui\styles\HighContrast\editor.png" />
+    <Content Include="js\kendoui\styles\HighContrast\imagebrowser.png" />
+    <Content Include="js\kendoui\styles\HighContrast\indeterminate.gif" />
+    <Content Include="js\kendoui\styles\HighContrast\loading-image.gif" />
+    <Content Include="js\kendoui\styles\HighContrast\loading.gif" />
+    <Content Include="js\kendoui\styles\HighContrast\loading_2x.gif" />
+    <Content Include="js\kendoui\styles\HighContrast\markers.png" />
+    <Content Include="js\kendoui\styles\HighContrast\markers_2x.png" />
+    <Content Include="js\kendoui\styles\HighContrast\slider-h.gif" />
+    <Content Include="js\kendoui\styles\HighContrast\slider-v.gif" />
+    <Content Include="js\kendoui\styles\HighContrast\sprite.png" />
+    <Content Include="js\kendoui\styles\HighContrast\sprite_2x.png" />
+    <Content Include="js\kendoui\styles\HighContrast\sprite_kpi.png" />
+    <Content Include="js\kendoui\styles\HighContrast\sprite_kpi_2x.png" />
+    <Content Include="js\kendoui\styles\images\back.png" />
+    <Content Include="js\kendoui\styles\images\kendoui.svg" />
+    <Content Include="js\kendoui\styles\images\wp8_icons.png" />
+    <Content Include="js\kendoui\styles\images\wp8_inverseicons.png" />
+    <Content Include="js\kendoui\styles\kendo.black.min.css" />
+    <Content Include="js\kendoui\styles\kendo.black.mobile.min.css" />
+    <Content Include="js\kendoui\styles\kendo.blueopal.min.css" />
+    <Content Include="js\kendoui\styles\kendo.blueopal.mobile.min.css" />
+    <Content Include="js\kendoui\styles\kendo.bootstrap-v4.min.css" />
+    <Content Include="js\kendoui\styles\kendo.bootstrap.min.css" />
+    <Content Include="js\kendoui\styles\kendo.bootstrap.mobile.min.css" />
+    <Content Include="js\kendoui\styles\kendo.common-bootstrap.core.min.css" />
+    <Content Include="js\kendoui\styles\kendo.common-bootstrap.min.css" />
+    <Content Include="js\kendoui\styles\kendo.common-fiori.min.css" />
+    <Content Include="js\kendoui\styles\kendo.common-material.core.min.css" />
+    <Content Include="js\kendoui\styles\kendo.common-material.min.css" />
+    <Content Include="js\kendoui\styles\kendo.common-nova.core.min.css" />
+    <Content Include="js\kendoui\styles\kendo.common-nova.min.css" />
+    <Content Include="js\kendoui\styles\kendo.common-office365.min.css" />
+    <Content Include="js\kendoui\styles\kendo.common.core.min.css" />
+    <Content Include="js\kendoui\styles\kendo.common.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.black.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.blueopal.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.bootstrap.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.default.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.fiori.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.flat.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.highcontrast.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.material.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.materialblack.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.metro.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.metroblack.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.mobile.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.moonlight.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.nova.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.office365.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.silver.min.css" />
+    <Content Include="js\kendoui\styles\kendo.dataviz.uniform.min.css" />
+    <Content Include="js\kendoui\styles\kendo.default-v2.min.css" />
+    <Content Include="js\kendoui\styles\kendo.default.min.css" />
+    <Content Include="js\kendoui\styles\kendo.default.mobile.min.css" />
+    <Content Include="js\kendoui\styles\kendo.fiori.min.css" />
+    <Content Include="js\kendoui\styles\kendo.fiori.mobile.min.css" />
+    <Content Include="js\kendoui\styles\kendo.flat.min.css" />
+    <Content Include="js\kendoui\styles\kendo.flat.mobile.min.css" />
+    <Content Include="js\kendoui\styles\kendo.highcontrast.min.css" />
+    <Content Include="js\kendoui\styles\kendo.highcontrast.mobile.min.css" />
+    <Content Include="js\kendoui\styles\kendo.material.min.css" />
+    <Content Include="js\kendoui\styles\kendo.material.mobile.min.css" />
+    <Content Include="js\kendoui\styles\kendo.materialblack.min.css" />
+    <Content Include="js\kendoui\styles\kendo.materialblack.mobile.min.css" />
+    <Content Include="js\kendoui\styles\kendo.metro.min.css" />
+    <Content Include="js\kendoui\styles\kendo.metro.mobile.min.css" />
+    <Content Include="js\kendoui\styles\kendo.metroblack.min.css" />
+    <Content Include="js\kendoui\styles\kendo.metroblack.mobile.min.css" />
+    <Content Include="js\kendoui\styles\kendo.mobile.all.min.css" />
+    <Content Include="js\kendoui\styles\kendo.mobile.android.dark.min.css" />
+    <Content Include="js\kendoui\styles\kendo.mobile.android.light.min.css" />
+    <Content Include="js\kendoui\styles\kendo.mobile.blackberry.min.css" />
+    <Content Include="js\kendoui\styles\kendo.mobile.common.min.css" />
+    <Content Include="js\kendoui\styles\kendo.mobile.fiori.min.css" />
+    <Content Include="js\kendoui\styles\kendo.mobile.flat.min.css" />
+    <Content Include="js\kendoui\styles\kendo.mobile.ios.min.css" />
+    <Content Include="js\kendoui\styles\kendo.mobile.material.min.css" />
+    <Content Include="js\kendoui\styles\kendo.mobile.meego.min.css" />
+    <Content Include="js\kendoui\styles\kendo.mobile.nova.min.css" />
+    <Content Include="js\kendoui\styles\kendo.mobile.office365.min.css" />
+    <Content Include="js\kendoui\styles\kendo.mobile.wp8.min.css" />
+    <Content Include="js\kendoui\styles\kendo.moonlight.min.css" />
+    <Content Include="js\kendoui\styles\kendo.moonlight.mobile.min.css" />
+    <Content Include="js\kendoui\styles\kendo.nova.min.css" />
+    <Content Include="js\kendoui\styles\kendo.nova.mobile.min.css" />
+    <Content Include="js\kendoui\styles\kendo.office365.min.css" />
+    <Content Include="js\kendoui\styles\kendo.office365.mobile.min.css" />
+    <Content Include="js\kendoui\styles\kendo.rtl.min.css" />
+    <Content Include="js\kendoui\styles\kendo.silver.min.css" />
+    <Content Include="js\kendoui\styles\kendo.silver.mobile.min.css" />
+    <Content Include="js\kendoui\styles\kendo.uniform.min.css" />
+    <Content Include="js\kendoui\styles\kendo.uniform.mobile.min.css" />
+    <Content Include="js\kendoui\styles\MaterialBlack\editor.png" />
+    <Content Include="js\kendoui\styles\MaterialBlack\imagebrowser.png" />
+    <Content Include="js\kendoui\styles\MaterialBlack\indeterminate.gif" />
+    <Content Include="js\kendoui\styles\MaterialBlack\loading-image.gif" />
+    <Content Include="js\kendoui\styles\MaterialBlack\loading.gif" />
+    <Content Include="js\kendoui\styles\MaterialBlack\loading_2x.gif" />
+    <Content Include="js\kendoui\styles\MaterialBlack\markers.png" />
+    <Content Include="js\kendoui\styles\MaterialBlack\markers_2x.png" />
+    <Content Include="js\kendoui\styles\MaterialBlack\slider-h.gif" />
+    <Content Include="js\kendoui\styles\MaterialBlack\slider-v.gif" />
+    <Content Include="js\kendoui\styles\MaterialBlack\sprite.png" />
+    <Content Include="js\kendoui\styles\MaterialBlack\sprite_2x.png" />
+    <Content Include="js\kendoui\styles\MaterialBlack\sprite_kpi.png" />
+    <Content Include="js\kendoui\styles\MaterialBlack\sprite_kpi_2x.png" />
+    <Content Include="js\kendoui\styles\Material\editor.png" />
+    <Content Include="js\kendoui\styles\Material\imagebrowser.png" />
+    <Content Include="js\kendoui\styles\Material\indeterminate.gif" />
+    <Content Include="js\kendoui\styles\Material\loading-image.gif" />
+    <Content Include="js\kendoui\styles\Material\loading.gif" />
+    <Content Include="js\kendoui\styles\Material\loading_2x.gif" />
+    <Content Include="js\kendoui\styles\Material\markers.png" />
+    <Content Include="js\kendoui\styles\Material\markers_2x.png" />
+    <Content Include="js\kendoui\styles\Material\slider-h.gif" />
+    <Content Include="js\kendoui\styles\Material\slider-v.gif" />
+    <Content Include="js\kendoui\styles\Material\sprite.png" />
+    <Content Include="js\kendoui\styles\Material\sprite_2x.png" />
+    <Content Include="js\kendoui\styles\Material\sprite_kpi.png" />
+    <Content Include="js\kendoui\styles\Material\sprite_kpi_2x.png" />
+    <Content Include="js\kendoui\styles\MetroBlack\editor.png" />
+    <Content Include="js\kendoui\styles\MetroBlack\imagebrowser.png" />
+    <Content Include="js\kendoui\styles\MetroBlack\indeterminate.gif" />
+    <Content Include="js\kendoui\styles\MetroBlack\loading-image.gif" />
+    <Content Include="js\kendoui\styles\MetroBlack\loading.gif" />
+    <Content Include="js\kendoui\styles\MetroBlack\loading_2x.gif" />
+    <Content Include="js\kendoui\styles\MetroBlack\markers.png" />
+    <Content Include="js\kendoui\styles\MetroBlack\markers_2x.png" />
+    <Content Include="js\kendoui\styles\MetroBlack\slider-h.gif" />
+    <Content Include="js\kendoui\styles\MetroBlack\slider-v.gif" />
+    <Content Include="js\kendoui\styles\MetroBlack\sprite.png" />
+    <Content Include="js\kendoui\styles\MetroBlack\sprite_2x.png" />
+    <Content Include="js\kendoui\styles\MetroBlack\sprite_kpi.png" />
+    <Content Include="js\kendoui\styles\MetroBlack\sprite_kpi_2x.png" />
+    <Content Include="js\kendoui\styles\Metro\editor.png" />
+    <Content Include="js\kendoui\styles\Metro\imagebrowser.png" />
+    <Content Include="js\kendoui\styles\Metro\indeterminate.gif" />
+    <Content Include="js\kendoui\styles\Metro\loading-image.gif" />
+    <Content Include="js\kendoui\styles\Metro\loading.gif" />
+    <Content Include="js\kendoui\styles\Metro\loading_2x.gif" />
+    <Content Include="js\kendoui\styles\Metro\markers.png" />
+    <Content Include="js\kendoui\styles\Metro\markers_2x.png" />
+    <Content Include="js\kendoui\styles\Metro\slider-h.gif" />
+    <Content Include="js\kendoui\styles\Metro\slider-v.gif" />
+    <Content Include="js\kendoui\styles\Metro\sprite.png" />
+    <Content Include="js\kendoui\styles\Metro\sprite_2x.png" />
+    <Content Include="js\kendoui\styles\Metro\sprite_kpi.png" />
+    <Content Include="js\kendoui\styles\Metro\sprite_kpi_2x.png" />
+    <Content Include="js\kendoui\styles\Moonlight\editor.png" />
+    <Content Include="js\kendoui\styles\Moonlight\imagebrowser.png" />
+    <Content Include="js\kendoui\styles\Moonlight\indeterminate.gif" />
+    <Content Include="js\kendoui\styles\Moonlight\loading-image.gif" />
+    <Content Include="js\kendoui\styles\Moonlight\loading.gif" />
+    <Content Include="js\kendoui\styles\Moonlight\loading_2x.gif" />
+    <Content Include="js\kendoui\styles\Moonlight\markers.png" />
+    <Content Include="js\kendoui\styles\Moonlight\markers_2x.png" />
+    <Content Include="js\kendoui\styles\Moonlight\slider-h.gif" />
+    <Content Include="js\kendoui\styles\Moonlight\slider-v.gif" />
+    <Content Include="js\kendoui\styles\Moonlight\sprite.png" />
+    <Content Include="js\kendoui\styles\Moonlight\sprite_2x.png" />
+    <Content Include="js\kendoui\styles\Moonlight\sprite_kpi.png" />
+    <Content Include="js\kendoui\styles\Moonlight\sprite_kpi_2x.png" />
+    <Content Include="js\kendoui\styles\Nova\editor.png" />
+    <Content Include="js\kendoui\styles\Nova\imagebrowser.png" />
+    <Content Include="js\kendoui\styles\Nova\indeterminate.gif" />
+    <Content Include="js\kendoui\styles\Nova\loading-image.gif" />
+    <Content Include="js\kendoui\styles\Nova\loading.gif" />
+    <Content Include="js\kendoui\styles\Nova\loading_2x.gif" />
+    <Content Include="js\kendoui\styles\Nova\markers.png" />
+    <Content Include="js\kendoui\styles\Nova\markers_2x.png" />
+    <Content Include="js\kendoui\styles\Nova\slider-h.gif" />
+    <Content Include="js\kendoui\styles\Nova\slider-v.gif" />
+    <Content Include="js\kendoui\styles\Nova\sprite.png" />
+    <Content Include="js\kendoui\styles\Nova\sprite_2x.png" />
+    <Content Include="js\kendoui\styles\Nova\sprite_kpi.png" />
+    <Content Include="js\kendoui\styles\Nova\sprite_kpi_2x.png" />
+    <Content Include="js\kendoui\styles\Office365\editor.png" />
+    <Content Include="js\kendoui\styles\Office365\imagebrowser.png" />
+    <Content Include="js\kendoui\styles\Office365\indeterminate.gif" />
+    <Content Include="js\kendoui\styles\Office365\loading-image.gif" />
+    <Content Include="js\kendoui\styles\Office365\loading.gif" />
+    <Content Include="js\kendoui\styles\Office365\loading_2x.gif" />
+    <Content Include="js\kendoui\styles\Office365\markers.png" />
+    <Content Include="js\kendoui\styles\Office365\markers_2x.png" />
+    <Content Include="js\kendoui\styles\Office365\slider-h.gif" />
+    <Content Include="js\kendoui\styles\Office365\slider-v.gif" />
+    <Content Include="js\kendoui\styles\Office365\sprite.png" />
+    <Content Include="js\kendoui\styles\Office365\sprite_2x.png" />
+    <Content Include="js\kendoui\styles\Office365\sprite_kpi.png" />
+    <Content Include="js\kendoui\styles\Office365\sprite_kpi_2x.png" />
+    <Content Include="js\kendoui\styles\Silver\editor.png" />
+    <Content Include="js\kendoui\styles\Silver\imagebrowser.png" />
+    <Content Include="js\kendoui\styles\Silver\indeterminate.gif" />
+    <Content Include="js\kendoui\styles\Silver\loading-image.gif" />
+    <Content Include="js\kendoui\styles\Silver\loading.gif" />
+    <Content Include="js\kendoui\styles\Silver\loading_2x.gif" />
+    <Content Include="js\kendoui\styles\Silver\markers.png" />
+    <Content Include="js\kendoui\styles\Silver\markers_2x.png" />
+    <Content Include="js\kendoui\styles\Silver\slider-h.gif" />
+    <Content Include="js\kendoui\styles\Silver\slider-v.gif" />
+    <Content Include="js\kendoui\styles\Silver\sprite.png" />
+    <Content Include="js\kendoui\styles\Silver\sprite_2x.png" />
+    <Content Include="js\kendoui\styles\Silver\sprite_kpi.png" />
+    <Content Include="js\kendoui\styles\Silver\sprite_kpi_2x.png" />
+    <Content Include="js\kendoui\styles\textures\brushed-metal.png" />
+    <Content Include="js\kendoui\styles\textures\dots1.png" />
+    <Content Include="js\kendoui\styles\textures\dots10.png" />
+    <Content Include="js\kendoui\styles\textures\dots11.png" />
+    <Content Include="js\kendoui\styles\textures\dots12.png" />
+    <Content Include="js\kendoui\styles\textures\dots13.png" />
+    <Content Include="js\kendoui\styles\textures\dots2.png" />
+    <Content Include="js\kendoui\styles\textures\dots3.png" />
+    <Content Include="js\kendoui\styles\textures\dots4.png" />
+    <Content Include="js\kendoui\styles\textures\dots5.png" />
+    <Content Include="js\kendoui\styles\textures\dots6.png" />
+    <Content Include="js\kendoui\styles\textures\dots7.png" />
+    <Content Include="js\kendoui\styles\textures\dots8.png" />
+    <Content Include="js\kendoui\styles\textures\dots9.png" />
+    <Content Include="js\kendoui\styles\textures\glass-lighter.png" />
+    <Content Include="js\kendoui\styles\textures\glass.png" />
+    <Content Include="js\kendoui\styles\textures\highlight.png" />
+    <Content Include="js\kendoui\styles\textures\hsv-gradient.png" />
+    <Content Include="js\kendoui\styles\textures\hue.png" />
+    <Content Include="js\kendoui\styles\textures\leather1.png" />
+    <Content Include="js\kendoui\styles\textures\leather2.png" />
+    <Content Include="js\kendoui\styles\textures\noise.png" />
+    <Content Include="js\kendoui\styles\textures\stripe1.png" />
+    <Content Include="js\kendoui\styles\textures\stripe2.png" />
+    <Content Include="js\kendoui\styles\textures\stripe3.png" />
+    <Content Include="js\kendoui\styles\textures\stripe4.png" />
+    <Content Include="js\kendoui\styles\textures\stripe5.png" />
+    <Content Include="js\kendoui\styles\textures\stripe6.png" />
+    <Content Include="js\kendoui\styles\textures\transparency.png" />
+    <Content Include="js\kendoui\styles\textures\transtexture.png" />
+    <Content Include="js\kendoui\styles\Uniform\editor.png" />
+    <Content Include="js\kendoui\styles\Uniform\imagebrowser.png" />
+    <Content Include="js\kendoui\styles\Uniform\indeterminate.gif" />
+    <Content Include="js\kendoui\styles\Uniform\loading-image.gif" />
+    <Content Include="js\kendoui\styles\Uniform\loading.gif" />
+    <Content Include="js\kendoui\styles\Uniform\loading_2x.gif" />
+    <Content Include="js\kendoui\styles\Uniform\markers.png" />
+    <Content Include="js\kendoui\styles\Uniform\markers_2x.png" />
+    <Content Include="js\kendoui\styles\Uniform\slider-h.gif" />
+    <Content Include="js\kendoui\styles\Uniform\slider-v.gif" />
+    <Content Include="js\kendoui\styles\Uniform\sprite.png" />
+    <Content Include="js\kendoui\styles\Uniform\sprite_2x.png" />
+    <Content Include="js\kendoui\styles\Uniform\sprite_kpi.png" />
+    <Content Include="js\kendoui\styles\Uniform\sprite_kpi_2x.png" />
+    <Content Include="js\headjs\head.core.min.js.map" />
+    <Content Include="js\headjs\head.min.js.map" />
+    <Content Include="js\tooltip\css\styles.css" />
+    <Content Include="js\tooltip\css\tooltip.css" />
+    <Content Include="js\tooltip\example.html" />
+    <Content Include="js\tooltip\js\Tooltip.js" />
+    <Content Include="Navigation\Footer.html" />
+    <Content Include="Navigation\Header.html" />
+    <Content Include="Navigation\Menu.html" />
+    <Content Include="Reports\Reporte.aspx" />
+    <Content Include="Reports\Vacio.html" />
+    <Content Include="Scripts\ActivacionUsuario.js" />
+    <Content Include="Scripts\AdministradorUsuarios.js" />
+    <Content Include="Scripts\CambioClave.js" />
+    <Content Include="Scripts\TerminosCondiciones.js" />
+    <Content Include="Styles\AdministradorUsuarios.css" />
+    <Content Include="Styles\CambioClave.css" />
+    <Content Include="Styles\Cliente.css" />
+    <Content Include="Styles\ContratoAgenciamiento.css" />
+    <Content Include="Styles\EstadisticaActivacion.css" />
+    <Content Include="Styles\Formularios.css" />
+    <Content Include="Styles\GuiaUso.css" />
+    <Content Include="Styles\Login.css" />
+    <Content Include="Styles\Home.css" />
+    <Content Include="Styles\ActivacionUsuario.css" />
+    <Content Include="Styles\Politica_Comisiones.css" />
+    <Content Include="Styles\PortalUsuario\pu_bootstrap.css" />
+    <Content Include="Styles\PortalUsuario\pu_font-awesome.css" />
+    <Content Include="Styles\PortalUsuario\pu_override.css" />
+    <Content Include="Styles\PortalUsuario\pu_Site.css" />
+    <Content Include="Styles\ReporteAsignacionCorredor.css" />
+    <Content Include="Styles\ReporteLiquidacionComisiones.css" />
+    <Content Include="Styles\ReportePreAutorizaciones.css" />
+    <Content Include="Styles\Reportes.css" />
+    <Content Include="Styles\ReporteSiniestralidad.css" />
+    <Content Include="Styles\ResumenEjecutivo.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\TerminosCondiciones.css" />
+    <Content Include="Views\CambioClave.html" />
+    <Content Include="Views\Cliente.html" />
+    <Content Include="Views\AdministradorUsuarios.html" />
+    <Content Include="Views\ContratoAgenciamiento.html" />
+    <Content Include="Views\EstadisticaActivacion.html" />
+    <Content Include="Views\Formularios.html" />
+    <Content Include="Views\GuiaUso.html" />
+    <Content Include="Views\Login.html" />
+    <Content Include="Views\Home.html" />
+    <Content Include="Views\ActivacionUsuario.html" />
+    <Content Include="Views\Parent.html" />
+    <Content Include="Views\Politica_Comisiones.html" />
+    <Content Include="Views\ReporteAsignacionCorredor.html" />
+    <Content Include="Views\ReporteLiquidacionComisiones.html" />
+    <Content Include="Views\ReportePreAutorizaciones.html" />
+    <Content Include="Views\Reportes.html" />
+    <Content Include="Views\ReporteSiniestralidad.html" />
+    <Content Include="Views\ResumenEjecutivo.html" />
+    <Content Include="Views\TerminosCondiciones.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <TypeScriptCompile Include="Scripts\ContratoAgenciamiento.ts" />
+    <TypeScriptCompile Include="Scripts\EstadisticaActivacion.ts" />
+    <TypeScriptCompile Include="Scripts\Formularios.ts" />
+    <TypeScriptCompile Include="Scripts\GuiaUso.ts" />
+    <TypeScriptCompile Include="Scripts\Politica_Comisiones.ts" />
+    <TypeScriptCompile Include="Scripts\ReactivacionDependiente.ts" />
+    <TypeScriptCompile Include="Scripts\ReporteAsignacionCorredor.ts" />
+    <TypeScriptCompile Include="Scripts\ReporteLiquidacionComisiones.ts" />
+    <TypeScriptCompile Include="Scripts\ReportePreAutorizaciones.ts" />
+    <TypeScriptCompile Include="Scripts\Reportes.ts" />
+    <TypeScriptCompile Include="Scripts\ReporteSiniestralidad.ts" />
+    <TypeScriptCompile Include="Scripts\ResumenEjecutivo.ts" />
+    <TypeScriptCompile Include="Scripts\TerminosCondiciones.ts" />
+    <TypeScriptCompile Include="Scripts\typings\cryptojs\cryptojs.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\filesaver\filesaver.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\headjs\headjs.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\kendo-ui\kendo-ui.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\ReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Reporte.aspx.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Reporte.aspx.designer.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ParametrosReporte.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Config.ts" />
+    <TypeScriptCompile Include="js\kendoui\typescript\Jquery.d.ts" />
+    <TypeScriptCompile Include="js\kendoui\typescript\kendo.all.d.ts" />
+    <TypeScriptCompile Include="js\kendoui\typescript\kendo.dataviz.d.ts" />
+    <TypeScriptCompile Include="js\kendoui\typescript\kendo.mobile.d.ts" />
+    <TypeScriptCompile Include="js\kendoui\typescript\kendo.web.d.ts" />
+    <TypeScriptCompile Include="Scripts\ActivacionUsuario.ts" />
+    <TypeScriptCompile Include="Scripts\AdministradorUsuarios.ts" />
+    <TypeScriptCompile Include="Scripts\CambioClave.ts" />
+    <TypeScriptCompile Include="Scripts\Cliente.ts" />
+    <TypeScriptCompile Include="Scripts\Home.ts" />
+    <TypeScriptCompile Include="Scripts\Init.ts" />
+    <TypeScriptCompile Include="Scripts\Login.ts" />
+    <TypeScriptCompile Include="Scripts\Proxy.ts" />
+    <TypeScriptCompile Include="Scripts\typings\cryptojs\cryptojs.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\filesaver\filesaver.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\headjs\headjs.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\kendo-ui\kendo-ui.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\ReporteContrCorp.rdlc" />
+    <EmbeddedResource Include="Reports\ReporteContrInd.rdlc" />
+    <EmbeddedResource Include="Reports\ReporteCopagos.rdlc" />
+    <EmbeddedResource Include="Reports\ReporteFacturacionGeneral.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReporteFacturacion.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReporteMovimientos.rdlc" />
+    <EmbeddedResource Include="Reports\ReportePreAutorizacionesGeneral.rdlc" />
+    <EmbeddedResource Include="Reports\ReportePreAutorizaciones.rdlc" />
+    <EmbeddedResource Include="Reports\ReporteReclamos.rdlc" />
+    <EmbeddedResource Include="Reports\ReporteSiniestralidad.rdlc" />
+    <EmbeddedResource Include="Reports\ReporteSiniestralidadMensualizada.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>44522</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:44522/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

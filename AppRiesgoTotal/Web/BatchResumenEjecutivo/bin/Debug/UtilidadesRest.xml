@@ -1,0 +1,1144 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UtilidadesRest</name>
+    </assembly>
+    <members>
+        <member name="T:Saludsa.UtilidadesRest.AppConfig">
+            <summary>
+            Utilidades del app config
+            </summary>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.AppConfig.ValidarConfiguracion(System.String)">
+            <summary>
+            Valida que un parámetro en AppSettings exista, si no existe lanza un error tipo <see cref="T:Saludsa.UtilidadesRest.ExcepcionNegocio"/>
+            </summary>
+            <param name="nombreConfiguracion">Nombre del parámetro a verificar</param>
+            <returns>
+            Valor de la configuración
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.AppConfig.ValidarConfiguracion``1(System.String)">
+            <summary>
+            Valida que un parámetro en AppSettings exista, si no existe lanza un error tipo <see cref="T:Saludsa.UtilidadesRest.ExcepcionNegocio" />
+            </summary>
+            <typeparam name="T">Dato genérico a covertir</typeparam>
+            <param name="nombreConfiguracion">Nombre del parámetro a verificar</param>
+            <returns>
+            Valor de la configuración
+            </returns>
+            <exception cref="T:Saludsa.UtilidadesRest.ExcepcionNegocio"></exception>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.AppConfig.ValidarConfiguracion``1(System.String,``0)">
+            <summary>
+            Valida que un parámetro en AppSettings exista, si no existe devuelve el valor por defecto enviado
+            </summary>
+            <typeparam name="T">Dato genérico a covertir</typeparam>
+            <param name="nombreConfiguracion">Nombre del parámetro a verificar</param>
+            <param name="valorDefecto">Valor por defecto en caso de no existir</param>
+            <returns>
+            Valor de la configuración
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.AppConfig.ValidarConfiguracion(System.String,System.String@)">
+            <summary>
+            Valida que un parámetro en AppSettings exista, si no existe devuelve el mensaje en el parámetro
+            </summary>
+            <param name="nombreConfiguracion">Nombre del parámetro a verificar</param>
+            <param name="parametro">Dato del parametro a devolver</param>
+            <returns>
+            Valor de la configuración
+            </returns>
+            <exception cref="T:System.ArgumentNullException">nombreConfiguracion - El nombre del parámetro de configuración enviado no puede ser NUll o vacío</exception>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.AppConfig.ValidarConexion(System.String)">
+            <summary>
+            Valida que un parámetro en ConnectionString exista, si no existe lanza un error tipo <see cref="T:Saludsa.UtilidadesRest.ExcepcionNegocio"/>
+            </summary>
+            <param name="nombreConexion">Nombre del parámetro a verificar</param>
+            <returns>
+            Valor de la configuración
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.AppConfig.ValidarConexion``1(System.String)">
+            <summary>
+            Valida que un parámetro en ConnectionString exista, si no existe lanza un error tipo <see cref="T:Saludsa.UtilidadesRest.ExcepcionNegocio" />
+            </summary>
+            <typeparam name="T">Dato genérico a covertir</typeparam>
+            <param name="nombreConexion">Nombre del parámetro a verificar</param>
+            <returns>
+            Valor de la configuración
+            </returns>
+            <exception cref="T:Saludsa.UtilidadesRest.ExcepcionNegocio"></exception>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.AppConfig.ValidarConexion``1(System.String,``0)">
+            <summary>
+            Valida que un parámetro en ConnectionString exista, si no existe devuelve el valor por defecto enviado
+            </summary>
+            <typeparam name="T">Dato genérico a covertir</typeparam>
+            <param name="nombreConexion">Nombre del parámetro a verificar</param>
+            <param name="valorDefecto">Valor por defecto en caso de no existir</param>
+            <returns>
+            Valor de la configuración
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.AppConfig.ValidarConexion(System.String,System.String@)">
+            <summary>
+            Valida que un parámetro en ConnectionString exista, si no existe devuelve el mensaje en el parámetro
+            </summary>
+            <param name="nombreConexion">Nombre del parámetro a verificar</param>
+            <param name="parametro">Dato del parametro a devolver</param>
+            <returns>
+            Valor de la configuración
+            </returns>
+            <exception cref="T:System.ArgumentNullException">nombreConexion - El nombre del parámetro de ConnectionString enviado no puede ser NUll o vacío</exception>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.ConfiguracionAutenticacion">
+            <summary>
+            Clase que realiza la configuración de seguridad con Owin
+            </summary>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.ConfiguracionAutenticacion.ConfigurarOwin(Owin.IAppBuilder)">
+            <summary>
+            Realiza la configuración de Owin para la aplicación enviada en el parámetro
+            </summary>
+            <param name="app">Interface a la aplicación</param>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.ConfiguracionServiciosRest">
+            <summary>
+            Clase que configura el estándar de rutas para controladores Web Api
+            </summary>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.ConfiguracionServiciosRest.Configurar(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Configura las ruta estándares para aplicaciones de servicios web rest
+            </summary>
+            <param name="config">Objeto de configuración de Http</param>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.ConsumirRest">
+            <summary>
+            Utilidades para consumir un servicio REST
+            </summary>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.ConsumirRest.CrearClienteApi(System.String,Saludsa.UtilidadesRest.AutorizacionRest)">
+            <summary>
+            Crea un cliente http con la cabecera y autorización
+            </summary>
+            <param name="uri">Uri base del servicio</param>
+            <param name="autorizacion">Autorización del servicio</param>
+            <returns>
+            HttpClient
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.ConsumirRest.CrearClienteApi(System.String)">
+            <summary>
+            Crea un cliente http con la cabecera y autorización
+            </summary>
+            <param name="uri">Uri base del servicio</param>
+            <returns>
+            HttpClient
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.ConsumirRest.CrearClienteApi(System.String,System.String)">
+            <summary>
+            Crea un cliente http con la cabecera y autorización
+            </summary>
+            <param name="uri">Uri base del servicio</param>
+            <param name="mediaTypeHeader">Tipo de cabecera EJ: application/json </param>
+            <returns>
+            HttpClient
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.ConsumirRest.ConsultarApiPost(System.Net.Http.HttpClient,System.String,System.String,System.Object)">
+            <summary>
+            Realiza el consumo del servicio como POST
+            </summary>
+            <param name="cliente">Cliente REST</param>
+            <param name="api">Nombre de la api a consumir</param>
+            <param name="query">Parámetros de query</param>
+            <param name="cuerpo">Dato del cuerpo a enviar</param>
+            <returns>
+            RespuestaGenericaServicio
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.ConsumirRest.ConsultarApiPostObject(System.Net.Http.HttpClient,System.String,System.String,System.Object)">
+            <summary>
+            Realiza el consumo del servicio como POST
+            </summary>
+            <param name="cliente">Cliente REST</param>
+            <param name="api">Nombre de la api a consumir</param>
+            <param name="query">Parámetros de query</param>
+            <param name="cuerpo">Dato del cuerpo a enviar</param>
+            <returns>
+            RespuestaGenericaServicio
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.ConsumirRest.ConsultarApiGet(System.Net.Http.HttpClient,System.String,System.String)">
+            <summary>
+            Realiza el consumo del servicio como GET
+            </summary>
+            <param name="cliente">Cliente REST</param>
+            <param name="api">Nombre de la api a consumir</param>
+            <param name="query">Parámetros de query</param>
+            <returns>
+            RespuestaGenericaServicio
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.ConsumirRest.ConsultarApiGetObject(System.Net.Http.HttpClient,System.String,System.String)">
+            <summary>
+            Realiza el consumo del servicio como GET
+            </summary>
+            <param name="cliente">Cliente REST</param>
+            <param name="api">Nombre de la api a consumir</param>
+            <param name="query">Parámetros de query</param>
+            <returns>
+            RespuestaGenericaServicio
+            </returns>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.Rest">
+            <summary>
+            Servicios REST Comunes
+            </summary>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Rest.ObtenerCatalogo(Saludsa.UtilidadesRest.AutorizacionRest,System.String)">
+            <summary>
+            Obtiene un catálogo
+            </summary>
+            <param name="autorizacion">Autorización del servicio</param>
+            <param name="codigoCatalogo">Código de catálogo</param>
+            <returns>
+            RespuestaGenericaServicio
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Rest.ObtenerCatalogoItem(Saludsa.UtilidadesRest.AutorizacionRest,System.String)">
+            <summary>
+            Obtiene un catálogo
+            </summary>
+            <param name="autorizacion">Autorización del servicio</param>
+            <param name="codigoItemCatalogo">Código de item catálogo</param>
+            <returns>
+            RespuestaGenericaServicio
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Rest.ObtenerCatalogoMensaje(System.String)">
+            <summary>
+            Obtiene un mensaje de catálogo
+            </summary>
+            <param name="codigoError">Código de mensaje</param>
+            <returns>
+            RespuestaGenericaServicio
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Rest.ObtenerToken(System.String,System.String,System.String,System.String,System.DateTime@,System.Collections.Generic.List{System.String}@)">
+            <summary>
+            Permite obtener un numero de autorizacion
+            </summary>
+            <param name="username">Usuario a validar</param>
+            <param name="password">Clave de usuario a validar</param>
+            <param name="grantType">Tipo de validacion</param>
+            <param name="clientId">Id de la aplicación cliente</param>
+            <param name="expiration">Fecha en la que expira la autorización</param>
+            <param name="mensajesError">Mensajes de error</param>
+            <returns>
+            AuthenticationHeaderValue
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Rest.EnviarEmail(Saludsa.UtilidadesRest.AutorizacionRest,Saludsa.Comunicaciones.Entidades.AtMail.RequerimientoSimple)">
+            <summary>
+            Envial un correo
+            </summary>
+            <param name="autorizacion">Autorización del servicio</param>
+            <param name="emailDatos">Datos del correo <seealso cref="T:Saludsa.Comunicaciones.Entidades.AtMail.RequerimientoSimple"/></param>
+            <returns>
+            RespuestaGenericaServicio
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Rest.EnviarEmailAdjunto(Saludsa.UtilidadesRest.AutorizacionRest,Saludsa.Comunicaciones.Entidades.AtMail.RequerimientoAdjuntos)">
+            <summary>
+            Envial un correo con adjuntos
+            </summary>
+            <param name="autorizacion">Autorización del servicio</param>
+            <param name="emailDatos">Datos del correo <seealso cref="T:Saludsa.Comunicaciones.Entidades.AtMail.RequerimientoAdjuntos"/></param>
+            <returns>
+            RespuestaGenericaServicio
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Rest.EnviarEmailAdjuntoPlantilla(Saludsa.UtilidadesRest.AutorizacionRest,Saludsa.Comunicaciones.Entidades.AtMail.RequerimientoAdjuntosPlantilla)">
+            <summary>
+            Envial un correo tipo plantilla con adjuntos
+            </summary>
+            <param name="autorizacion">Autorización del servicio</param>
+            <param name="emailDatos">Datos del correo <seealso cref="T:Saludsa.Comunicaciones.Entidades.AtMail.RequerimientoAdjuntosPlantilla"/></param>
+            <returns>
+            RespuestaGenericaServicio
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Rest.EnviarSms(Saludsa.UtilidadesRest.AutorizacionRest,System.String,System.String,System.String,System.Boolean,System.String[])">
+            <summary>
+            Envia un sms
+            </summary>
+            <param name="autorizacion">Autorización del servicio</param>
+            <param name="idDepartamento">Identificador del departamento</param>
+            <param name="idMensaje">Identificador del mensaje</param>
+            <param name="celularDestino">Número de teléfono móvil</param>
+            <param name="esMensajeFijo">Determina si es un mensaje fijo</param>
+            <param name="data">Datos adicionales del mensaje</param>
+            <returns>
+            RespuestaGenericaServicio
+            </returns>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.AutorizacionRest">
+            <summary>
+            Datos de autorización y cabecera
+            </summary>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.AutorizacionRest.Cabecera">
+            <summary>
+            Parámetros de cabecera
+            </summary>
+            <value>
+            CabeceraServicioRest
+            </value>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.AutorizacionRest.Autorizacion">
+            <summary>
+            Autorización del servicio
+            </summary>
+            <value>
+            AuthenticationHeaderValue
+            </value>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.AutorizacionRest.#ctor(Saludsa.UtilidadesRest.CabeceraServicioRest,System.Net.Http.Headers.AuthenticationHeaderValue)">
+            <summary>
+            Inicializa una nueva instancia de la clase <see cref="T:Saludsa.UtilidadesRest.AutorizacionRest"/>.
+            </summary>
+            <param name="cabecera">Parámetros de cabecera</param>
+            <param name="autorizacion">Autorización del servicio</param>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.AutorizacionRest.#ctor(Saludsa.UtilidadesRest.CabeceraServicioRest,System.Net.Http.HttpRequestMessage)">
+            <summary>
+            Inicializa una nueva instancia de la clase <see cref="T:Saludsa.UtilidadesRest.AutorizacionRest"/>.
+            </summary>
+            <param name="cabecera">Parámetros de cabecera</param>
+            <param name="request">Petición del servicio</param>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.Respuesta.RespuestaDifare">
+            <summary>
+            Clase para la respuesta de Difare
+            </summary>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.Respuesta.RespuestaDifare.Codigo">
+            <summary>
+            Codigo de la petición: 1 Ok o 2 Error
+            </summary>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.Respuesta.RespuestaDifare.Datos">
+            <summary>
+            Contenedor de datos
+            </summary>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.Respuesta.RespuestaDifare.Mensaje">
+            <summary>
+            Mensaje de la respuesta
+            </summary>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.Swagger.ConfiguracionSwagger">
+            <summary>
+            Configuracion inicial para swagger
+            </summary>
+        </member>
+        <member name="F:Saludsa.UtilidadesRest.Swagger.ConfiguracionSwagger.DocumentacionArchivos">
+            <summary>
+            Lista de archivos que contienen la documentacion a leer. Por defecto "Documentacion.xml"
+            </summary>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Swagger.ConfiguracionSwagger.Configurar(System.String,System.String,System.String)">
+            <summary>
+            Configura swagger
+            </summary>
+            <param name="nombreVersion">Nombre de la versión a mostrar</param>
+            <param name="descripcionVersion">Descripcion para la documentación</param>
+            <param name="tituloDocumento">Título de la documentación, si no se envía se colocara el nombre de la versión</param>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.Swagger.RequiredHeaderParameter">
+            <summary>
+            Define los parametros de cabecera requeridos para swagger
+            </summary>
+            <seealso cref="T:Swashbuckle.Swagger.IOperationFilter" />
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Swagger.RequiredHeaderParameter.Apply(Swashbuckle.Swagger.Operation,Swashbuckle.Swagger.SchemaRegistry,System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Applies the specified operation.
+            </summary>
+            <param name="operation">The operation.</param>
+            <param name="schemaRegistry">The schema registry.</param>
+            <param name="apiDescription">The API description.</param>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Swagger.RequiredHeaderParameter.CrearParametroCabecera(System.String,System.String,System.String)">
+            <summary>
+            Crears the parametro cabecera.
+            </summary>
+            <param name="n">The n.</param>
+            <param name="t">The t.</param>
+            <param name="d">The d.</param>
+            <returns>
+            Parameter
+            </returns>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.Swagger.OAuth2Seguridad">
+            <summary>
+            Coloca el icono de seguridad si lo tiene
+            </summary>
+            <seealso cref="T:Swashbuckle.Swagger.IOperationFilter" />
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Swagger.OAuth2Seguridad.Apply(Swashbuckle.Swagger.Operation,Swashbuckle.Swagger.SchemaRegistry,System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Applies the specified operation.
+            </summary>
+            <param name="operation">The operation.</param>
+            <param name="schemaRegistry">The schema registry.</param>
+            <param name="apiDescription">The API description.</param>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.Swagger.DocumentacionFiltro">
+            <summary>
+            DocumentacionFiltro
+            </summary>
+            <seealso cref="T:Swashbuckle.Swagger.IDocumentFilter" />
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Swagger.DocumentacionFiltro.Apply(Swashbuckle.Swagger.SwaggerDocument,Swashbuckle.Swagger.SchemaRegistry,System.Web.Http.Description.IApiExplorer)">
+            <summary>
+            Applies the specified swagger document.
+            </summary>
+            <param name="swaggerDoc">The swagger document.</param>
+            <param name="schemaRegistry">The schema registry.</param>
+            <param name="apiExplorer">The API explorer.</param>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.Swagger.EsquemaFiltro">
+            <summary>
+            EsquemaFiltro
+            </summary>
+            <seealso cref="T:Swashbuckle.Swagger.ISchemaFilter" />
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Swagger.EsquemaFiltro.Apply(Swashbuckle.Swagger.Schema,Swashbuckle.Swagger.SchemaRegistry,System.Type)">
+            <summary>
+            Applies the specified schema.
+            </summary>
+            <param name="schema">The schema.</param>
+            <param name="schemaRegistry">The schema registry.</param>
+            <param name="type">The type.</param>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.Swagger.SwaggerDefaultValue">
+            <summary>
+            SwaggerDefaultValue
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.Swagger.SwaggerDefaultValue.Name">
+            <summary>
+            Gets or sets the nombre.
+            </summary>
+            <value>
+            The nombre.
+            </value>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.Swagger.SwaggerDefaultValue.Value">
+            <summary>
+            Gets or sets the valor.
+            </summary>
+            <value>
+            The valor.
+            </value>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Swagger.SwaggerDefaultValue.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Saludsa.UtilidadesRest.Swagger.SwaggerDefaultValue"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Swagger.SwaggerDefaultValue.#ctor(System.String,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Saludsa.UtilidadesRest.Swagger.SwaggerDefaultValue"/> class.
+            </summary>
+            <param name="name">The nombre.</param>
+            <param name="value">The valor.</param>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.Swagger.AddDefaultValues">
+            <summary>
+            AddDefaultValues
+            </summary>
+            <seealso cref="T:Swashbuckle.Swagger.IOperationFilter" />
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Swagger.AddDefaultValues.Apply(Swashbuckle.Swagger.Operation,Swashbuckle.Swagger.SchemaRegistry,System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Applies the specified operation.
+            </summary>
+            <param name="operation">The operation.</param>
+            <param name="schemaRegistry">The schema registry.</param>
+            <param name="apiDescription">The API description.</param>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.Swagger.ParametroExtension">
+            <summary>
+            Extension para <see cref="T:Swashbuckle.Swagger.Parameter"/>
+            </summary>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Swagger.ParametroExtension.RemoverParametro(System.Collections.Generic.IList{Swashbuckle.Swagger.Parameter},System.String[])">
+             <summary>
+             Remueve un parametro de swagger
+             </summary>
+             <param name="obj">Parameter</param>
+             <param name="nombreParametros">Lista de parámetros a remover</param>
+             <returns>
+            
+             </returns>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.Swagger.RedirectHandlerSwagger">
+            <summary>
+            Crea un redireccionador de swagger
+            </summary>
+            <seealso cref="T:System.Net.Http.HttpMessageHandler" />
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Swagger.RedirectHandlerSwagger.#ctor(System.Func{System.Net.Http.HttpRequestMessage,System.String},System.String)">
+            <summary>
+            Crea una nueva instancias de la clase <see cref="T:Saludsa.UtilidadesRest.Swagger.RedirectHandlerSwagger"/>
+            </summary>
+            <param name="rootUrlResolver">Request</param>
+            <param name="redirectPath">Ruta a redireccionar</param>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Swagger.RedirectHandlerSwagger.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
+            <summary>
+            Envia la peticion HTTP a una operacion asincrona
+            </summary>
+            <param name="request">Request</param>
+            <param name="cancellationToken">Toke para la concelacion</param>
+            <returns>
+            Retorna la operacion
+            </returns>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.ProveedorValorCabecera">
+            <summary>
+            Provee los valores de la cabecera
+            </summary>
+            <seealso cref="T:System.Web.Http.ValueProviders.IValueProvider" />
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.ProveedorValorCabecera.#ctor(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Cosntruye la instancia <see cref="T:Saludsa.UtilidadesRest.ProveedorValorCabecera"/>
+            </summary>
+            <param name="actionContext">Accion del contexto</param>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.ProveedorValorCabecera.ContainsPrefix(System.String)">
+            <summary>
+            Pregunta si tiene algun parametro de cabecera
+            </summary>
+            <param name="prefix">Prefijo del parametro a bsucar</param>
+            <returns>
+            Retorna verdadero en caso de encontrar
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.ProveedorValorCabecera.GetValue(System.String)">
+            <summary>
+            Obtiene el valor de una cabecera enviando un key
+            </summary>
+            <param name="key">Nombre del valor a buscar</param>
+            <returns>
+            Retorna el valor del parametro buscado
+            </returns>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.FabricaProveedorValorCabecera">
+            <summary>
+            Crea un nuevo proveedor de valores de cabecera
+            </summary>
+            <seealso cref="T:System.Web.Http.ValueProviders.ValueProviderFactory" />
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.FabricaProveedorValorCabecera.GetValueProvider(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Obtiene un proveedor de valores
+            </summary>
+            <param name="actionContext">Contiene información para la acción en ejecución</param>
+            <returns>
+            Retorna un proveedor de valores
+            </returns>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.AtributoCabecera">
+            <summary>
+            AtributoCabecera
+            </summary>
+            <seealso cref="T:System.Web.Http.ParameterBindingAttribute" />
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.AtributoCabecera.GetBinding(System.Web.Http.Controllers.HttpParameterDescriptor)">
+            <summary>
+            Obtiene el enlace al parametro
+            </summary>
+            <param name="parameter">Parametro enviado</param>
+            <returns>
+            Retorna el parametro enlazado
+            </returns>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.CabeceraServicioRest">
+            <summary>
+            Clase para guardar datos de cabecera
+            </summary>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.CabeceraServicioRest.CodigoAplicacion">
+            <summary>
+            Codigo de aplicacion desde la cual se consume el servicio
+            </summary>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.CabeceraServicioRest.CodigoPlataforma">
+            <summary>
+            Codigo de la platarma desde la cual se accede al servicio
+            </summary>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.CabeceraServicioRest.SistemaOperativo">
+            <summary>
+            Sistema operativo tanto para escriotiro y mobiles
+            </summary>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.CabeceraServicioRest.DispositivoNavegador">
+            <summary>
+            Solo para mobiles
+            </summary>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.CabeceraServicioRest.DireccionIP">
+            <summary>
+            Direccion IP de llamada de oriden del servicio
+            </summary>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.ExcepcionNegocio">
+            <summary>
+            Clase utilizada para las excepciones de negocio
+            </summary>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.ExcepcionNegocio.Parametros">
+            <summary>
+            Lista de parámetros a ser reemplazados en el mensaje.
+            </summary>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.ExcepcionNegocio.#ctor(System.String,System.String[])">
+            <summary>
+            Inicializa una nueva instancia de la clase con código de mensaje <see cref="T:Saludsa.UtilidadesRest.ExcepcionNegocio"/>
+            </summary>
+            <param name="codigoMensaje">Código de mensaje de error</param>
+            <param name="parametros">Parametros a ser reemplazados en el mensaje</param>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.ExcepcionNegocio.#ctor(System.String,Saludsa.UtilidadesRest.ExcepcionNegocio,System.String[])">
+            <summary>
+            Inicializa una nueva instancia de la clase con código de mensaje y
+            </summary>
+            <param name="codigoMensaje">Código de mensaje de error</param>
+            <param name="excepcionInterna">Excepcioón interna para anidar errores</param>
+            <param name="parametros">Parametros a ser reemplazados en el mensaje</param>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.ExcepcionNegocio.#ctor(System.Collections.Generic.List{System.String})">
+            <summary>
+            Inicializa una nueva instancia de la clase con código de mensaje <see cref="T:Saludsa.UtilidadesRest.ExcepcionNegocio"/>
+            </summary>
+            <param name="codigosMensaje">Lista de códigos de mensaje de error</param>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.InformacionBitacora">
+            <summary>
+            Registro de las peticiones de entrada y salida
+            </summary>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.InformacionBitacora.CrearRequerimientoBitacora(Saludsa.UtilidadesRest.CabeceraServicioRest,System.Reflection.MethodBase,System.Int32,System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Crea un nuevo requerimiento de bitácora
+            </summary>
+            <param name="cabecera">Parámetro de la cabecera</param>
+            <param name="metodoBase">Método base desde donde se realiza la petición</param>
+            <param name="numeroProceso">The numero proceso.</param>
+            <param name="contextoAcciones">Contexto del servicio</param>
+            <returns>
+            Retorna un objeto de bitacora
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.InformacionBitacora.CrearRequerimientoBitacora(Saludsa.UtilidadesRest.CabeceraServicioRest,System.Net.Http.HttpRequestMessage,System.Reflection.MethodBase,System.Int32,System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Crea un nuevo requerimiento de bitácora
+            </summary>
+            <param name="cabecera">Parámetro de la cabecera</param>
+            <param name="requerimiento">Peticion</param>
+            <param name="metodoBase">Método base desde donde se realiza la petición</param>
+            <param name="numeroProceso">Número de hilo de proceso</param>
+            <param name="contextoAcciones">Contexto del servicio</param>
+            <returns>
+            Retorna un objeto de bitacora
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.InformacionBitacora.CrearExcepcionBitacora(Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema,System.Exception)">
+            <summary>
+            Crea una excepción de bitácora
+            </summary>
+            <param name="bitacora">Informacion de la bitácora</param>
+            <param name="excepcion">Excepción producida</param>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.InformacionBitacora.CrearRespuestaBitacora(Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema,System.Object)">
+            <summary>
+            Crea una excepción de bitácora
+            </summary>
+            <param name="bitacora">Informacion de la bitácora</param>
+            <param name="contenidoRespuesta">Contenido a enviar como respuesta</param>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.InformacionBitacora.ObtenerIp(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            Obtiene informacion de la IP del cliente
+            </summary>
+            <param name="requerimiento">HttpRequestMessage</param>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.MensajesRespuesta">
+            <summary>
+            Clase para manejar los mensajes de respuesta mas comunes
+            </summary>
+        </member>
+        <member name="F:Saludsa.UtilidadesRest.MensajesRespuesta.EstadoOk">
+            <summary>
+            Estado = OK
+            </summary>
+        </member>
+        <member name="F:Saludsa.UtilidadesRest.MensajesRespuesta.EstadoError">
+            <summary>
+            Estado = Error
+            </summary>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.MensajeCabeceraInvalida(System.Web.Http.ApiController)">
+            <summary>
+            Mensaje de cabecera inválida
+            </summary>
+            <param name="controlador">Controlador API</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="400"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.MensajeCabeceraInvalida(System.Web.Http.ApiController,System.String[])">
+            <summary>
+            Mensaje de cabecera inválida
+            </summary>
+            <param name="controlador">Controlador API</param>
+            <param name="mensajesError">Mensajes de error</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="400"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.MensajeEnMantenimiento(System.Web.Http.ApiController)">
+            <summary>
+            Mensaje de plataforma en mantenimiento
+            </summary>
+            <param name="controlador">Controlador API</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="500"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.MensajeTipoClienteInvalido(System.Web.Http.ApiController,System.String[])">
+            <summary>
+            Mensaje de catalogo tipo cliente inválido
+            </summary>
+            <param name="controlador">Controlador API</param>
+            <param name="mensajesError">Mensajes de error</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="400"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.CrearRespuestaExito(System.Net.Http.HttpRequestMessage,System.Object,Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema)">
+            <summary>
+            Respuesta de éxito <see cref="T:System.Net.HttpStatusCode"/> 200, Estado OK
+            </summary>
+            <param name="peticion">HttpRequestMessage de la petición (Request)</param>
+            <param name="datos">Datos obtenidos de la consulta</param>
+            <param name="bitacora">Bitacora del sistema que contiene la información del servicio</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.CrearRespuestaExito(System.Net.Http.HttpRequestMessage,System.Object,System.String,Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema)">
+            <summary>
+            Respuesta de éxito <see cref="T:System.Net.HttpStatusCode"/> 200, Estado OK
+            </summary>
+            <param name="peticion">HttpRequestMessage de la petición (Request)</param>
+            <param name="datos">Datos obtenidos de la consulta</param>
+            <param name="mensaje">Mensaje a enviar</param>
+            <param name="bitacora">Bitacora del sistema que contiene la información del servicio</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.CrearRespuestaExito(System.Net.Http.HttpRequestMessage,System.Object,System.Collections.Generic.List{System.String},Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema)">
+            <summary>
+            Respuesta de éxito <see cref="T:System.Net.HttpStatusCode"/> 200, Estado OK
+            </summary>
+            <param name="peticion">HttpRequestMessage de la petición (Request)</param>
+            <param name="datos">Datos obtenidos de la consulta</param>
+            <param name="mensajes">Mensajes a visualizar</param>
+            <param name="bitacora">Bitacora del sistema que contiene la información del servicio</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.CrearRespuestaExito(System.Net.Http.HttpRequestMessage,System.Object,System.String[],Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema)">
+            <summary>
+            Respuesta de éxito <see cref="T:System.Net.HttpStatusCode" /> 200, Estado OK
+            </summary>
+            <param name="peticion">HttpRequestMessage de la petición (Request)</param>
+            <param name="datos">Datos obtenidos de la consulta</param>
+            <param name="mensajes">Mensajes a visualizar</param>
+            <param name="bitacora">Bitacora del sistema que contiene la información del servicio</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.CrearRespuestaErrorNegocio(System.Net.Http.HttpRequestMessage,Saludsa.UtilidadesRest.ExcepcionNegocio,Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema)">
+            <summary>
+            Respuesta de error de negocio <see cref="T:System.Net.HttpStatusCode" /> 200, Estado Error
+            </summary>
+            <param name="peticion">HttpRequestMessage de la petición (Request)</param>
+            <param name="excepcion">Excepcion del negocio</param>
+            <param name="bitacora">Bitacora del sistema que contiene la información del servicio</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.CrearRespuestaErrorNegocio(System.Net.Http.HttpRequestMessage,System.String,Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema)">
+            <summary>
+            Respuesta de error de negocio <see cref="T:System.Net.HttpStatusCode" /> 200, Estado Error
+            </summary>
+            <param name="peticion">HttpRequestMessage de la petición (Request)</param>
+            <param name="mensaje">Mensaje a visualizar</param>
+            <param name="bitacora">Bitacora del sistema que contiene la información del servicio</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.CrearRespuestaErrorNegocio(System.Net.Http.HttpRequestMessage,System.Collections.Generic.List{System.String},Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema)">
+            <summary>
+            Respuesta de error de negocio <see cref="T:System.Net.HttpStatusCode" /> 200, Estado Error
+            </summary>
+            <param name="peticion">HttpRequestMessage de la petición (Request)</param>
+            <param name="mensajes">Mensajes a visualizar</param>
+            <param name="bitacora">Bitacora del sistema que contiene la información del servicio</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.CrearRespuestaErrorNegocio(System.Net.Http.HttpRequestMessage,System.String[],Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema)">
+            <summary>
+            Respuesta de error de negocio <see cref="T:System.Net.HttpStatusCode" /> 200, Estado Error
+            </summary>
+            <param name="peticion">HttpRequestMessage de la petición (Request)</param>
+            <param name="mensajes">Mensajes a visualizar</param>
+            <param name="bitacora">Bitacora del sistema que contiene la información del servicio</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.CrearRespuestaErrorValidacion(System.Net.Http.HttpRequestMessage,System.String,Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema)">
+            <summary>
+            Respuesta de error de validación <see cref="T:System.Net.HttpStatusCode" /> 400, Estado Error
+            </summary>
+            <param name="peticion">HttpRequestMessage de la petición (Request)</param>
+            <param name="mensaje">Mensaje a visualizar</param>
+            <param name="bitacora">Bitacora del sistema que contiene la información del servicio</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="400"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.CrearRespuestaErrorValidacion(System.Net.Http.HttpRequestMessage,System.Collections.Generic.List{System.String},Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema)">
+            <summary>
+            Respuesta de error de validación <see cref="T:System.Net.HttpStatusCode" /> 400, Estado Error
+            </summary>
+            <param name="peticion">HttpRequestMessage de la petición (Request)</param>
+            <param name="mensajes">Mensajes a visualizar</param>
+            <param name="bitacora">Bitacora del sistema que contiene la información del servicio</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="400"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.CrearRespuestaErrorValidacion(System.Net.Http.HttpRequestMessage,System.String[],Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema)">
+            <summary>
+            Respuesta de error de validación <see cref="T:System.Net.HttpStatusCode" /> 400, Estado Error
+            </summary>
+            <param name="peticion">HttpRequestMessage de la petición (Request)</param>
+            <param name="mensajes">Mensajes a visualizar</param>
+            <param name="bitacora">Bitacora del sistema que contiene la información del servicio</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="400"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.CrearRespuestaErrorInterno(System.Net.Http.HttpRequestMessage,System.Exception,Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema)">
+            <summary>
+            Respuesta de error interno <see cref="T:System.Net.HttpStatusCode" /> 500, Estado Error
+            </summary>
+            <param name="peticion">HttpRequestMessage de la petición (Request)</param>
+            <param name="excepcion">Excepcion interna</param>
+            <param name="bitacora">Bitacora del sistema que contiene la información del servicio</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="500"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.CrearRespuestaErrorInterno(System.Net.Http.HttpRequestMessage,System.String,Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema)">
+            <summary>
+            Respuesta de error interno <see cref="T:System.Net.HttpStatusCode" /> 500, Estado Error
+            </summary>
+            <param name="peticion">HttpRequestMessage de la petición (Request)</param>
+            <param name="mensaje">Mensaje a visualizar</param>
+            <param name="bitacora">Bitacora del sistema que contiene la información del servicio</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="500"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.CrearRespuestaErrorInterno(System.Net.Http.HttpRequestMessage,System.Collections.Generic.List{System.String},Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema)">
+            <summary>
+            Respuesta de error interno <see cref="T:System.Net.HttpStatusCode" /> 500, Estado Error
+            </summary>
+            <param name="peticion">HttpRequestMessage de la petición (Request)</param>
+            <param name="mensajes">Mensajes a visualizar</param>
+            <param name="bitacora">Bitacora del sistema que contiene la información del servicio</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="500"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.CrearRespuestaErrorInterno(System.Net.Http.HttpRequestMessage,System.String[],Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema)">
+            <summary>
+            Respuesta de error interno <see cref="T:System.Net.HttpStatusCode" /> 500, Estado Error
+            </summary>
+            <param name="peticion">HttpRequestMessage de la petición (Request)</param>
+            <param name="mensajes">Mensajes a visualizar</param>
+            <param name="bitacora">Bitacora del sistema que contiene la información del servicio</param>
+            <returns>
+            HttpResponseMessage
+            </returns>
+            <response code="500"></response>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.ObtenerMensajeCatalogo(System.String,System.String[])">
+            <summary>
+            Obtiene un mensaje del catalogo, si tiene parametros hay que enviarlos
+            </summary>
+            <param name="mensaje">Codigo de mensaje a buscar</param>
+            <param name="parametros">Parámetros a enviar para ser reemplazados en el mensaje</param>
+            <returns>
+            Mensaje
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.MensajesRespuesta.ObtenerMensajeCatalogo(System.String,System.Boolean,System.String[])">
+            <summary>
+            Obtiene un mensaje del catalogo, si tiene parametros hay que enviarlos
+            </summary>
+            <param name="codigoError">Codigo de mensaje a buscar</param>
+            <param name="usarMensajeInterno">Determina si es mandatorio visualizar el mensaje interno sobre el externo</param>
+            <param name="parametros">Parámetros a enviar para ser reemplazados en el mensaje</param>
+            <returns>
+            Mensaje
+            </returns>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.OperacionBaseDatos">
+            <summary>
+            Determina si esta en operación la base de datos
+            </summary>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.OperacionBaseDatos.EnMantenimiento">
+            <summary>
+            Determina si esta o no en mantenimiento la base de datos
+            </summary>
+            <returns>
+            <see langword="true"/> o <see langword="false"/>
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.OperacionBaseDatos.EnMantenimiento(System.String@)">
+            <summary>
+            Determina si esta o no en mantenimiento la base de datos
+            </summary>
+            <param name="mensajeError">Mensaje a devolver</param>
+            <returns>
+            <see langword="true"/> o <see langword="false"/>
+            </returns>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.RespuestaPaginado">
+            <summary>
+            Resultado de una paginación
+            </summary>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.RespuestaPaginado.Entidades">
+            <summary>
+            Datos extraidos de la consulta
+            </summary>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.RespuestaPaginado.TotalRegistros">
+            <summary>
+            Total de registros encontrados
+            </summary>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.RespuestaPaginado`1">
+            <summary>
+            Resultado de una paginación
+            </summary>
+            <typeparam name="T">Dato genérico</typeparam>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.RespuestaPaginado`1.Entidades">
+            <summary>
+            Datos extraidos de la consulta
+            </summary>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.RespuestaPaginado`1.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.RespuestaGenericaServicio">
+            <summary>
+            Clase para la respuesta generica
+            </summary>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.RespuestaGenericaServicio.Estado">
+            <summary>
+            Estado de la petición. Ej: Ok o Error
+            </summary>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.RespuestaGenericaServicio.Datos">
+            <summary>
+            Contenedor de datos
+            </summary>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.RespuestaGenericaServicio.Mensajes">
+            <summary>
+            Lista de mensajes de error
+            </summary>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.RespuestaGenericaServicio.#ctor">
+            <summary>
+            Inicializa una nueva instancia de la clase <see cref="T:Saludsa.UtilidadesRest.RespuestaGenericaServicio" />.
+            </summary>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.RespuestaGenericaServicio.#ctor(System.String,System.Object,System.String[])">
+            <summary>
+            Inicializa una nueva instancia de la clase <see cref="T:Saludsa.UtilidadesRest.RespuestaGenericaServicio" />.
+            </summary>
+            <param name="estado">Estado de la petición. Ej: Ok o Error</param>
+            <param name="datos">Contenedor de datos</param>
+            <param name="mensajes">Lista de mensajes de error</param>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.RespuestaGenericaServicio`1">
+            <summary>
+            Herencia de la clase principal para devolver ejemplo response
+            </summary>
+            <typeparam name="T"></typeparam>
+            <seealso cref="T:Saludsa.UtilidadesRest.RespuestaGenericaServicio" />
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.RespuestaGenericaServicio`1.Estado">
+            <summary>
+            Estado de la petición. Ej: Ok o Error
+            </summary>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.RespuestaGenericaServicio`1.Datos">
+            <summary>
+            Contenedor de datos
+            </summary>
+        </member>
+        <member name="P:Saludsa.UtilidadesRest.RespuestaGenericaServicio`1.Mensajes">
+            <summary>
+            Lista de mensajes de error
+            </summary>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.RespuestaGenericaServicio`1.#ctor">
+            <summary>
+            Inicializa una nueva instancia de la clase <see cref="T:Saludsa.UtilidadesRest.RespuestaGenericaServicio`1" />.
+            </summary>
+        </member>
+        <member name="T:Saludsa.UtilidadesRest.Validacion.Validacion">
+            <summary>
+            Clase para la validacion
+            </summary>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Validacion.Validacion.Verificar(System.Net.Http.HttpRequestMessage,Saludsa.UtilidadesRest.CabeceraServicioRest,Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema,System.Net.Http.HttpResponseMessage@,System.Boolean,System.Boolean)">
+            <summary>
+            Valida los valores de cabecera del requerimiento y genera la respuesta HttpResponseMessage adecuada
+            </summary>
+            <param name="peticion">Objeto de tipo HttRequestMessage del método web</param>
+            <param name="cabecera">Cabecera personalizada de seguimiento</param>
+            <param name="bitacora">Objeto de bitácora de sistema</param>
+            <param name="respuesta">Objeto de tipo HttResponseMessage del método web</param>
+            <param name="validarCatalogos">Bandera que indica si se valida catálogos de la cabecera personalizada</param>
+            <param name="validarEnOperacion">Bandera que indica si se valida el estado de operación del base de datos en Progress</param>
+            <returns>
+            Estado de validación de la cabecera
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Validacion.Validacion.Verificar(System.Net.Http.HttpRequestMessage,Saludsa.UtilidadesRest.CabeceraServicioRest,System.Int16,Saludsa.UtilidadesRest.SvcBitacoraSistema.BitacoraSistema,System.Net.Http.HttpResponseMessage@,System.Boolean,System.Boolean)">
+            <summary>
+            Valida los valores de cabecera del requerimiento y genera la respuesta HttpResponseMessage adecuada
+            </summary>
+            <param name="peticion">Objeto de tipo HttRequestMessage del método web</param>
+            <param name="cabecera">Cabecera personalizada de seguimiento</param>
+            <param name="tipoCliente">Tipo de cliente, se obtiene del catálogo de tipos de cliente</param>
+            <param name="bitacora">Objeto de bitácora de sistema</param>
+            <param name="respuesta">Objeto de tipo HttResponseMessage del método web</param>
+            <param name="validarCatalogos">Bandera que indica si se valida catálogos de la cabecera personalizada</param>
+            <param name="validarEnOperacion">Bandera que indica si se valida el estado de operación del base de datos en Progress</param>
+            <returns>
+            Estado de validación de la cabecera
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Validacion.Validacion.ValidarCabeceraServicio(Saludsa.UtilidadesRest.CabeceraServicioRest,System.Net.Http.Headers.AuthenticationHeaderValue)">
+            <summary>
+            Valida los datos de <paramref name="cabecera"/>
+            </summary>
+            <param name="cabecera">Cabecera a validar</param>
+            <param name="autorizacion">Número de autorización</param>
+            <returns>
+            <see langword="true"/> o <see langword="false"/>
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Validacion.Validacion.ValidarCabeceraServicio(Saludsa.UtilidadesRest.CabeceraServicioRest,System.Net.Http.Headers.AuthenticationHeaderValue,System.Collections.Generic.List{System.String}@,System.Boolean)">
+            <summary>
+            Valida los datos de <paramref name="cabecera"/>
+            </summary>
+            <param name="cabecera">Cabecera a validar</param>
+            <param name="autorizacion">Número de autorización</param>
+            <param name="validarCatalogos">Determina si valida o no los codigos de catalogos</param>
+            <param name="mensajesError">Mensajes de error de validaciones</param>
+            <returns>
+            <see langword="true"/> o <see langword="false"/>
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Validacion.Validacion.ValidarTipoClienteCatalogo(Saludsa.UtilidadesRest.CabeceraServicioRest,System.Net.Http.Headers.AuthenticationHeaderValue,System.Int16,System.Collections.Generic.List{System.String}@)">
+            <summary>
+            Valida el catalogo de tipo de cliente
+            </summary>
+            <param name="cabecera">Cabecera a validar</param>
+            <param name="autorizacion">Número de autorización</param>
+            <param name="tipoCliente">Tipo de cliente, se obtiene del catálogo de tipos de cliente</param>
+            <param name="mensajesError">Mensajes de error de validaciones</param>
+            <returns>
+            <see langword="true"/> o <see langword="false"/>
+            </returns>
+        </member>
+        <member name="M:Saludsa.UtilidadesRest.Validacion.Validacion.ValidarCatalogo(Saludsa.UtilidadesRest.AutorizacionRest,System.String,System.Int16,System.String,System.Collections.Generic.List{System.String}@)">
+            <summary>
+            Valida un catalogo
+            </summary>
+            <param name="autorizacion">Número de autorización</param>
+            <param name="nombreCatalogo">Código del catálogo a buscar</param>
+            <param name="codigoValidar">Códido de un item de un catálogo a validar</param>
+            <param name="nombreCodigoValidar">Nombre del campo validar</param>
+            <param name="mensajesError">Mensajes de error</param>
+            <returns>
+            <see langword="true"/> or <see langword="false"/>
+            </returns>
+        </member>
+    </members>
+</doc>

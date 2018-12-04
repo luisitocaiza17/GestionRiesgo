@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Salud_CorredoresModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PC_AgenteVenta">
+    <Key>
+      <PropertyRef Name="codigo_agente_venta" />
+    </Key>
+    <Property Name="codigo_agente_venta" Type="Int32" Nullable="false" />
+    <Property Name="codigo_vendedor" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="persona_numero" Type="Int32" />
+    <Property Name="empresa_numero" Type="Int32" />
+    <Property Name="codigo_sucursal" Type="Int32" />
+    <Property Name="tipo_agente_venta" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="codigo_director" Type="Int32" />
+    <Property Name="numero_vendedores" Type="Int32" />
+    <Property Name="fecha_ingreso_agente" Type="DateTime" Precision="3" />
+    <Property Name="fecha_salida_agente" Type="DateTime" Precision="3" />
+    <Property Name="region" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="codigo_grupo" Type="Int32" />
+    <Property Name="nombre_agente_venta" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="grupo_venta" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="porcentaje_comision" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="numero_cuenta_contable" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="estado_agente_venta" Type="Int32" />
+    <Property Name="comision_renov" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="fecha_modificacion" Type="DateTime" Precision="3" />
+    <Property Name="digitador_modificacion" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="hora_creacion" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="hora_modificacion" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="prog_modificacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_creacion" Type="DateTime" Precision="3" />
+    <Property Name="digitador_creacion" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="prog_creacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_anulacion" Type="DateTime" Precision="3" />
+    <Property Name="digitador_anulacion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="hora_anulacion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="razon_social_broker" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ruc_broker" Type="String" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Name="prog_anulacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="usuarioweb" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="claveweb" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="email_broker" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="tipo_contribuyente" Type="Int32" />
+    <Property Name="nivel" Type="Int32" />
+    <Property Name="codigo_tipo" Type="Int32" />
+    <Property Name="imprime_documento" Type="Boolean" />
+    <Property Name="permiso" Type="Boolean" />
+    <Property Name="us_login" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="aplica_poo" Type="Boolean" />
+    <Property Name="aplica_cor" Type="Boolean" />
+    <Property Name="aplica_ind" Type="Boolean" />
+    <Property Name="active_directory_user" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="renovacion_email_broker" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="representante_legal" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="contacto_nombre" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="contratoAgenciamiento" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="comunicacionesEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="codigo_grupo_agentes" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PC_Auditoria">
+    <Key>
+      <PropertyRef Name="AuditoriaID" />
+    </Key>
+    <Property Name="AuditoriaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Aplicacion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Proceso" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Detalle" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="UsuarioMod" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FechaMod" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PC_AuditoriaDetalle" Relationship="Self.FK_PC_AuditoriaDetalle_PC_Auditoria" FromRole="PC_Auditoria" ToRole="PC_AuditoriaDetalle" />
+  </EntityType>
+  <EntityType Name="PC_AuditoriaDetalle">
+    <Key>
+      <PropertyRef Name="AuditoriaDetalleID" />
+    </Key>
+    <Property Name="AuditoriaDetalleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AuditoriaID" Type="Int32" Nullable="false" />
+    <Property Name="Campo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ValorAnterior" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="ValorActual" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PC_Auditoria" Relationship="Self.FK_PC_AuditoriaDetalle_PC_Auditoria" FromRole="PC_AuditoriaDetalle" ToRole="PC_Auditoria" />
+  </EntityType>
+  <EntityType Name="PC_EstadisticaNavegacion">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdUsuario" Type="Int32" />
+    <Property Name="NombreUsuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IdCorredor" Type="Int32" />
+    <Property Name="FechaHoraVisita" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IdPermiso" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PC_Permiso">
+    <Key>
+      <PropertyRef Name="IDPermiso" />
+    </Key>
+    <Property Name="IDPermiso" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" />
+    <Property Name="Seleccionable" Type="Boolean" />
+    <NavigationProperty Name="PC_PermisoUsuario" Relationship="Self.FK_SEG_PermisoUsuario_SEG_Permiso" FromRole="PC_Permiso" ToRole="PC_PermisoUsuario" />
+  </EntityType>
+  <EntityType Name="PC_PermisoUsuario">
+    <Key>
+      <PropertyRef Name="IDPermiso" />
+      <PropertyRef Name="IDUsuario" />
+      <PropertyRef Name="IDCorredor" />
+    </Key>
+    <Property Name="IDPermiso" Type="Int32" Nullable="false" />
+    <Property Name="IDUsuario" Type="Int32" Nullable="false" />
+    <Property Name="IDCorredor" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PC_Permiso" Relationship="Self.FK_SEG_PermisoUsuario_SEG_Permiso" FromRole="PC_PermisoUsuario" ToRole="PC_Permiso" />
+    <NavigationProperty Name="PC_Usuario" Relationship="Self.FK_SEG_PermisoUsuario_SEG_Usuario" FromRole="PC_PermisoUsuario" ToRole="PC_Usuario" />
+  </EntityType>
+  <EntityType Name="PC_ResumenEjecutivo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FechaCreación" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaConsulta" Type="DateTime" Precision="3" />
+    <Property Name="AgenteVentaId" Type="Int32" />
+    <Property Name="Producto" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ClientesActivos" Type="Int32" />
+    <Property Name="ClientesMora" Type="Int32" />
+    <Property Name="Anulados" Type="Int32" />
+    <Property Name="Valor" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Comision" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Region" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PC_Rol">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="PC_UsuarioRol" Relationship="Self.FK_UsuarioRol_IdRol_Rol_Id" FromRole="PC_Rol" ToRole="PC_UsuarioRol" />
+  </EntityType>
+  <EntityType Name="PC_TerminosCondiciones">
+    <Key>
+      <PropertyRef Name="TerminosCondicionesID" />
+    </Key>
+    <Property Name="TerminosCondicionesID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DescripcionCorta" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="ResumenCambios" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="ContenidoCompleto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PDFContenido" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Publicado" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="PC_Usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdCorredor" Type="Int32" Nullable="false" />
+    <Property Name="Cedula" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NombreApellido" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="NombreUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Contrasena" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TelefonoFijo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Extension" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="RUCEmpresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="Int32" Nullable="false" />
+    <Property Name="TerminosCondicionesAprobado" Type="Int32" />
+    <Property Name="Region" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PermisoPlan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TipoDocumento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PC_PermisoUsuario" Relationship="Self.FK_SEG_PermisoUsuario_SEG_Usuario" FromRole="PC_Usuario" ToRole="PC_PermisoUsuario" />
+    <NavigationProperty Name="PC_UsuarioRol" Relationship="Self.FK_UsuarioRol_IdUsuario_Usuario_Id" FromRole="PC_Usuario" ToRole="PC_UsuarioRol" />
+    <Property Name="fechaNacimiento" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PC_UsuarioRol">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+      <PropertyRef Name="IdRol" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" />
+    <Property Name="IdRol" Type="Int32" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="PC_Rol" Relationship="Self.FK_UsuarioRol_IdRol_Rol_Id" FromRole="PC_UsuarioRol" ToRole="PC_Rol" />
+    <NavigationProperty Name="PC_Usuario" Relationship="Self.FK_UsuarioRol_IdUsuario_Usuario_Id" FromRole="PC_UsuarioRol" ToRole="PC_Usuario" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="PC_UsuarioAdmin_VTA">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="IdCorredor" />
+      <PropertyRef Name="IdGrupo" />
+      <PropertyRef Name="NombreUsuario" />
+      <PropertyRef Name="Contrasena" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="IdCorredor" Type="Int32" Nullable="false" />
+    <Property Name="IdGrupo" Type="Int32" Nullable="false" />
+    <Property Name="Cedula" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NombreApellido" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="NombreUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Contrasena" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TelefonoFijo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Extension" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="RUCEmpresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_PC_AuditoriaDetalle_PC_Auditoria">
+    <End Role="PC_Auditoria" Type="Self.PC_Auditoria" Multiplicity="1" />
+    <End Role="PC_AuditoriaDetalle" Type="Self.PC_AuditoriaDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_Auditoria">
+        <PropertyRef Name="AuditoriaID" />
+      </Principal>
+      <Dependent Role="PC_AuditoriaDetalle">
+        <PropertyRef Name="AuditoriaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SEG_PermisoUsuario_SEG_Permiso">
+    <End Role="PC_Permiso" Type="Self.PC_Permiso" Multiplicity="1" />
+    <End Role="PC_PermisoUsuario" Type="Self.PC_PermisoUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_Permiso">
+        <PropertyRef Name="IDPermiso" />
+      </Principal>
+      <Dependent Role="PC_PermisoUsuario">
+        <PropertyRef Name="IDPermiso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SEG_PermisoUsuario_SEG_Usuario">
+    <End Role="PC_Usuario" Type="Self.PC_Usuario" Multiplicity="1" />
+    <End Role="PC_PermisoUsuario" Type="Self.PC_PermisoUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PC_PermisoUsuario">
+        <PropertyRef Name="IDUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsuarioRol_IdRol_Rol_Id">
+    <End Role="PC_Rol" Type="Self.PC_Rol" Multiplicity="1" />
+    <End Role="PC_UsuarioRol" Type="Self.PC_UsuarioRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_Rol">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PC_UsuarioRol">
+        <PropertyRef Name="IdRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsuarioRol_IdUsuario_Usuario_Id">
+    <End Role="PC_Usuario" Type="Self.PC_Usuario" Multiplicity="1" />
+    <End Role="PC_UsuarioRol" Type="Self.PC_UsuarioRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PC_UsuarioRol">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Salud_CorredoresEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PC_AgenteVenta" EntityType="Self.PC_AgenteVenta" />
+    <EntitySet Name="PC_Auditoria" EntityType="Self.PC_Auditoria" />
+    <EntitySet Name="PC_AuditoriaDetalle" EntityType="Self.PC_AuditoriaDetalle" />
+    <EntitySet Name="PC_EstadisticaNavegacion" EntityType="Self.PC_EstadisticaNavegacion" />
+    <EntitySet Name="PC_Permiso" EntityType="Self.PC_Permiso" />
+    <EntitySet Name="PC_PermisoUsuario" EntityType="Self.PC_PermisoUsuario" />
+    <EntitySet Name="PC_ResumenEjecutivo" EntityType="Self.PC_ResumenEjecutivo" />
+    <EntitySet Name="PC_Rol" EntityType="Self.PC_Rol" />
+    <EntitySet Name="PC_TerminosCondiciones" EntityType="Self.PC_TerminosCondiciones" />
+    <EntitySet Name="PC_Usuario" EntityType="Self.PC_Usuario" />
+    <EntitySet Name="PC_UsuarioRol" EntityType="Self.PC_UsuarioRol" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="PC_UsuarioAdmin_VTA" EntityType="Self.PC_UsuarioAdmin_VTA" />
+    <AssociationSet Name="FK_PC_AuditoriaDetalle_PC_Auditoria" Association="Self.FK_PC_AuditoriaDetalle_PC_Auditoria">
+      <End Role="PC_Auditoria" EntitySet="PC_Auditoria" />
+      <End Role="PC_AuditoriaDetalle" EntitySet="PC_AuditoriaDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SEG_PermisoUsuario_SEG_Permiso" Association="Self.FK_SEG_PermisoUsuario_SEG_Permiso">
+      <End Role="PC_Permiso" EntitySet="PC_Permiso" />
+      <End Role="PC_PermisoUsuario" EntitySet="PC_PermisoUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SEG_PermisoUsuario_SEG_Usuario" Association="Self.FK_SEG_PermisoUsuario_SEG_Usuario">
+      <End Role="PC_Usuario" EntitySet="PC_Usuario" />
+      <End Role="PC_PermisoUsuario" EntitySet="PC_PermisoUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsuarioRol_IdRol_Rol_Id" Association="Self.FK_UsuarioRol_IdRol_Rol_Id">
+      <End Role="PC_Rol" EntitySet="PC_Rol" />
+      <End Role="PC_UsuarioRol" EntitySet="PC_UsuarioRol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsuarioRol_IdUsuario_Usuario_Id" Association="Self.FK_UsuarioRol_IdUsuario_Usuario_Id">
+      <End Role="PC_Usuario" EntitySet="PC_Usuario" />
+      <End Role="PC_UsuarioRol" EntitySet="PC_UsuarioRol" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(Salud_CorredoresModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(Salud_CorredoresModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

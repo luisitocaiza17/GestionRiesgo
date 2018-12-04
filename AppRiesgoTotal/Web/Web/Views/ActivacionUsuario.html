@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Saludsa - Portal Brokers</title>
+
+  <style>
+    .loading-container {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      line-height: 100px;
+      color: #fff;
+      text-align: center;
+      z-index: 100000;
+    }
+  </style>
+
+  <script>
+    var browser = detectIE();
+    if (browser)
+      alert('El aplicativo esta optimizado para ser usado con FireFox, Chrome y Opera, por favor use cualquiera de estos navegadores para aprovechar todas las caracteristicas de la app.');
+
+    function detectIE() {
+      var ua = window.navigator.userAgent;
+      var msie = ua.indexOf('MSIE ');
+      if (msie > 0) {
+        // IE 10 or older => return version number
+        //return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+        return true;
+      }
+      var trident = ua.indexOf('Trident/');
+      if (trident > 0) {
+        // IE 11 => return version number
+        var rv = ua.indexOf('rv:');
+        //return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+        return true;
+      }
+      //var edge = ua.indexOf('Edge/');
+      //if (edge > 0) {
+      //  // Edge (IE 12+) => return version number
+      //  //return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+      //  return true;
+      //}
+      // other browser
+      return false;
+    }
+  </script>
+</head>
+
+<body id="principal" style="display:none;">
+  <!--<div id="header"></div>-->
+  <div id="content">
+    <div style="text-align:center">
+      <div class="CenterBox">
+        <div id="pnl_Editar">
+
+          <h1>Activación Usuario</h1>
+          <hr> En esta pantalla usted deberá actualizar sus datos personales y en el caso que aplique enrolar a sus beneficiarios.
+
+
+          <h2>Actualización de Datos Personales</h2>
+          <!--<button id="btn_msgOK">Mensaje OK</button>
+                <button id="btn_msgNO">Mensaje NO</button>-->
+          <fieldset>
+            <div style="width:95%">
+              <h3>Información General</h3>
+              <hr>
+              <div class="fieldBox">
+                <label for="lbl_Tipo">Tipo:</label><br />
+                <div id="lbl_Tipo" style="width:120px;"></div>
+              </div>
+
+              <div class="fieldBox">
+                <label for="lbl_Documento">Identificación:</label><br />
+                <div id="lbl_Documento" style="width:130px;"></div>
+              </div>
+
+              <div class="fieldBox">
+                <label for="lbl_Nombres">Nombres:</label><br />
+                <div id="lbl_Nombres" style="width:280px;"></div>
+              </div>
+
+              <div class="fieldBox">
+                <label for="lbl_Apellidos">Apellidos:</label><br />
+                <div id="lbl_Apellidos" style="width:280px;"></div>
+              </div>
+
+              <div class="fieldBox">
+                <label for="lbl_FechaNacimiento">Fecha<br> Nacimiento:</label><br />
+                <div id="lbl_FechaNacimiento" style="width:120px;"></div>
+              </div>
+
+              <div class="fieldBox">
+                <label for="lbl_Tarifa">Tarifa:</label><br />
+                <div id="lbl_Tarifa" style="width:130px;"></div>
+              </div>
+
+              <div class="fieldBox">
+                <label for="lbl_Plan">Plan:</label><br />
+                <div id="lbl_Plan" style="width:280px;"></div>
+              </div>
+
+              <div class="fieldBox">
+                <label for="lbl_EmailEmpresa">E-mail Empresa:</label><br />
+                <div id="lbl_EmailEmpresa" style="width:280px;"></div>
+              </div>
+              <br />
+
+              <h3>Información de Contacto</h3>
+              <hr>
+              <div class="fieldBox">
+                <label for="txt_Provincia">Provincia *:</label><br />
+                <input type="text" id="txt_Provincia" style="width:270px" required />
+              </div>
+
+              <div class="fieldBox">
+                <label for="txt_Ciudad">Ciudad *:</label><br />
+                <input type="text" id="txt_Ciudad" style="width:240px" required />
+              </div>
+
+              <!--<div class="fieldBox">
+                            <label for="txt_Sector">Sector:</label><br />
+                            <input type="text" id="txt_Sector" style="width:200px" required />
+                        </div>-->
+
+              <div class="fieldBox">
+                <label for="txt_DireccionDomicilio">Dirección Domicilio *:</label><br />
+                <input type="text" id="txt_DireccionDomicilio" style="width:280px" required />
+              </div>
+
+
+
+              <div class="fieldBox">
+                <label for="txt_TelefonoDomicilio">Teléfono Domicilio *:</label><br />
+                <input type="text" id="txt_TelefonoDomicilio" style="width:270px" required />
+              </div>
+
+              <div class="fieldBox">
+                <label for="txt_TelefonoCelular">Teléfono Celular *:</label><br />
+                <input type="text" id="txt_TelefonoCelular" style="width:240px" required />
+              </div>
+
+              <div class="fieldBox">
+                <label for="txt_Email">E-mail Personal *:</label><br />
+                <input type="email" id="txt_Email" style="width:280px" required />
+              </div>
+              <br />
+
+              <h3>Datos Bancarios</h3>
+              <hr>
+              <div class="fieldBox">
+                <label for="cmb_Banco">Banco *:</label><br />
+                <input type="text" id="cmb_Banco" style="width:270px" />
+              </div>
+
+
+              <div class="fieldBox">
+                <label for="cmb_TipoCuenta">Tipo Cuenta *:</label><br />
+                <input type="text" id="cmb_TipoCuenta" style="width:240px" />
+              </div>
+
+              <div class="fieldBox">
+                <label for="txt_NumeroCuenta">Número Cuenta *:</label><br />
+                <input type="text" id="txt_NumeroCuenta" style="width:280px" />
+              </div>
+
+              <div id="pnl_ServiciosAdicionales" style="display:none;">
+                <h3>Servicios Adicionales</h3>
+
+              </div>
+            </div>
+          </fieldset>
+
+          <br />
+          <h2 id="titulo_Dependientes">Lista de Beneficiarios *</h2>
+          <fieldset id="pnl_Dependientes">
+
+            <div id="pnl_AgregarDep">
+              <div class="fieldBox">
+                <label for="txt_TipoIdentificacion">Tipo Identificación:</label><br />
+                <input type="text" id="txt_TipoIdentificacion" placeholder="Tipo Identificación" style="width:180px" />
+              </div>
+
+              <div class="fieldBox">
+                <label for="txt_Identificacion">Identificación:</label><br />
+                <input type="text" id="txt_Identificacion" placeholder="Identificación" style="width:100px" />
+              </div>
+
+              <div class="fieldBox" style="display:none;" id="field_Nombres">
+                <label for="txt_Nombres">Nombres:</label><br />
+                <input type="text" id="txt_Nombres" placeholder="Nombres" />
+              </div>
+
+              <div class="fieldBox" style="display:none;" id="field_Apellidos">
+                <label for="txt_Apellidos">Apellidos:</label><br />
+                <input type="text" id="txt_Apellidos" placeholder="Apellidos" />
+              </div>
+
+              <div class="fieldBox" style="display:none;" id="field_FechaNacimiento">
+                <label for="txt_FechaNacimiento">Fecha Nacimiento:</label><br />
+                <input type="date" id="txt_FechaNacimiento" placeholder="Fecha Nacimiento" />
+              </div>
+
+              <div class="fieldBox" style="display:none;" id="field_Genero">
+                <label for="txt_Genero">Género:</label><br />
+                <input type="text" id="txt_Genero" placeholder="Género" style="width:180px" />
+              </div>
+
+              <div class="fieldBox">
+                <label for="txt_Parentesco">Parentesco:</label><br />
+                <input type="text" id="txt_Parentesco" placeholder="Parentesco" style="width:160px" />
+              </div>
+
+              <div class="fieldBox">
+                <br />
+                <button id="btn_AgregarDependiente">Agregar</button>
+              </div>
+            </div>
+
+            <br /><br />
+
+
+            <div id="grid_Dependientes"></div>
+
+
+            <script id="ParentescoTemplate" type="text/x-kendo-template">
+              # if (Parentesco === 2){ # CONYUGE # } else if (Parentesco === 3){ # HIJO # } else { # # } #
+
+              <!--
+                            //ESTADOS ARCHIVO
+                            //1 - CONYUGE
+                            //2 - HIJO
+                        -->
+            </script>
+
+          </fieldset>
+          <br /><br />
+          <button id="btn_Grabar">Confirmar Datos Ingresados</button>
+          <br /><br />
+        </div>
+        <div id="pnl_YaConfigurado" style="display:none;">
+          <h1>Usuario Activo</h1> Usted ya ha registrado la información personal requerida y la de los Beneficiarios. Si desea realizar cambios, por favor ponerse en contacto directo con su ejecutivo de cuenta o asesor de seguro dentro de su empresa.
+        </div>
+        <div id="pnl_NoActivo" style="display:none;">
+          <h1>INFORMACIÓN </h1> Presentamos problemas técnicos, por favor comunícate con servicio al cliente en Quito (02) 6020920 Opción 1; Guayaquil (04) 6020920 Opción 1 o escríbenos en el Chat de servicio al cliente.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--<div id="footer"></div>-->
+
+  <div id="loading-container" class="loading-container"><img src="../images/preloading.GIF" /><br>
+    <div id="loading-msg"></div>
+  </div>
+  <script src="../js/headjs/head.min.js" data-headjs-load="../Scripts/Init.js"></script>
+</body>
+
+</html>

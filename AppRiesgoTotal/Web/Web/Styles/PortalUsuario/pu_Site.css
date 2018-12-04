@@ -1,0 +1,513 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.header-list-group {
+    background-color: #f1f1f1;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 12px;
+    margin-top: 0px;
+}
+
+.page-header h2 {
+    color: #7758B3;
+}
+
+.red-tabs li.active a,
+.red-tabs li.active a:hover,
+.red-tabs li.active a:focus{
+    color: #ED4E57;
+}
+
+.violet-tabs li.active a,
+.violet-tabs li.active a:hover,
+.violet-tabs li.active a:focus{
+    color: #7758B3;
+}
+
+.blue-tabs li.active a,
+.blue-tabs li.active a:hover,
+.blue-tabs li.active a:focus{
+    color: #1F4988;
+}
+
+.btn {
+    outline-color: transparent !important;
+}
+
+.btn-primary {
+    background-color: #7758B3 !important;
+    max-width: 250px;
+}
+
+    .btn-primary:hover,
+    .btn-primary:focus {
+        background-color: white !important;
+        color: #7758B3 !important;
+        border: 1px solid #7758B3 !important;
+    }
+
+.btn-secondary {
+    background-color: #FFFFFF !important;
+    color: #7758B3;
+    border: 1px solid #7758B3 !important;
+}
+
+    .btn-secondary:hover,
+    .btn-secondary:focus {
+        background-color: #7758B3 !important;
+        color: #FFFFFF !important;
+        border: 1px solid #7758B3 !important;
+    }
+
+.btn-default {
+    color: #7758B3 !important;
+}
+
+    .btn-default:hover,
+    .btn-default:focus {
+        background-color: #7758B3 !important;
+        color: white !important;
+    }
+
+.btn-blue {
+    color: #3492c9 !important;
+    background-color: #f1f1f1;
+}
+
+    .btn-blue:hover,
+    .btn-blue:focus {
+        background-color: #3492c9 !important;
+        color: white !important;
+    }
+
+.loader {
+    border: 1rem solid #f3f3f3;
+    border-top: 1rem solid #7758B3;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    animation: spin 1s linear infinite;
+    display: block;
+    margin: 0px auto;
+}
+
+.select-beneficiary{
+    max-width: none;
+    border: 2px solid #f1f1f1 !important;
+    border-radius: 20px !important;
+    font-weight:bold;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+    text-align:center;
+    text-align-last: center;
+}
+
+.select-beneficiary-label{
+    position:relative;
+}
+
+.select-beneficiary-label:after {
+    content:"\f078";   
+    font-family: "FontAwesome";
+    font-size: 11px;
+    right:8px; top:12px;
+    padding:0 0 2px;
+    position:absolute;
+    pointer-events:none;
+}
+.select-beneficiary-label:before {
+    content:'';
+    right:4px; 
+    top:12px;
+    width:23px;
+    height:18px;
+    background:#fff;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bottom-0 {
+    bottom: 0 !important;
+}
+
+.rounded-2 {
+    border-radius: 10px;
+}
+
+
+/* ODA CARD */
+
+.oda-card-img {
+    max-width: 100% !important;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .oda-card-img {
+        width: 360px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .oda-card-img {
+        width: 100% !important;
+    }
+}
+
+.oda-card-icon {
+    width: 45px;
+    height: 45px;
+}
+
+@media (min-width: 768px) {
+    .oda-card-icon {
+        margin-top: -22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .oda-card-icon {
+        margin-top: -31px;
+    }
+}
+
+.oda-card-icon i {
+    margin-top: 7px;
+    margin-left: 4px;
+}
+
+.unbulleted-list {
+    list-style-type: none !important;
+}
+
+    .unbulleted-list li a {
+        color: #000000 !important;
+    }
+
+.no-underline:hover {
+    text-decoration: none;
+}
+
+/*BENEFIT CARD*/
+
+.ben-card-img {
+    max-width: 100% !important;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .ben-card-img {
+        width: 570px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .ben-card-img {
+        width: 100% !important;
+    }
+}
+
+.ben-card-icon {
+    width: 45px;
+    height: 45px;
+}
+
+@media (min-width: 768px) {
+    .ben-card-icon {
+        margin-top: -22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ben-card-icon {
+        margin-top: -31px;
+    }
+}
+
+.ben-card-icon i {
+    margin-top: 7px;
+    margin-left: 4px;
+}
+
+/*COLORS*/
+
+.color-white {
+    color: #FFFFFF !important;
+}
+
+.color-black {
+    color: #000000 !important;
+}
+
+.color-black-50 {
+    color: #00000080 !important;
+}
+
+.color-violet {
+    color: #7758B3 !important;
+}
+
+.color-red {
+    color: #ED4E57 !important;
+}
+
+.color-purple {
+    color: #745AAA !important;
+}
+
+.color-pink {
+    color: #D5539E !important;
+}
+
+.color-pink-dark {
+    color: #CC5080 !important;
+}
+
+.color-blue {
+    color: #1F4988 !important;
+}
+
+.color-orange {
+    color: #DE631E !important;
+}
+
+.color-green{
+    color: #00CE7C !important;
+}
+
+.color-light-blue{
+    color: #0081C3 !important;
+}
+
+/*BG-COLORS*/
+
+.bg-violet {
+    background-color: #7758B3 !important;
+}
+
+.bg-red {
+    background-color: #ED4E57 !important;
+}
+
+.bg-purple {
+    background-color: #745AAA !important;
+}
+
+.bg-pink {
+    background-color: #D5539E !important;
+}
+
+.bg-pink-dark {
+    background-color: #CC5080 !important;
+}
+
+.bg-orange{
+    background-color: #DE631E !important;
+}
+
+.bg-green{
+    background-color: #00CE7C !important;
+}
+
+.bg-light-blue{
+    background-color: #0081C3 !important;
+}
+
+/*BORDER-COLORS*/
+.border-violet {
+    border-color: #7758B3 !important;
+}
+
+.border-red {
+    border-color: #ED4E57 !important;
+}
+
+.border-purple {
+    border-color: #745AAA !important;
+}
+
+.border-pink {
+    border-color: #D5539E !important;
+}
+
+.border-pink-dark {
+    border-color: #CC5080 !important;
+}
+
+/*CUSTOM CARD HEADER*/
+.card-provider-header {
+    font-size: 20px;
+}
+
+/*CUSTOM LOCATION BUTTON*/
+
+.btn-sm {
+    padding: 4px 16px;
+}
+
+/*CUSTOM URGENCIAS */
+.bg-urgencias {
+    background: url('images/urgencias.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -20px;
+}
+
+.urg-header {
+    font-size: 57px;
+}
+
+.urg-asesorarte {
+    width: 220px;
+    height: 310px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+/*HOME DR SALUD*/
+
+.featured-drs {
+    height: 255px;
+    overflow: auto;
+}
+
+.featured-dr-row:hover {
+    background-color: #00000008;
+}
+
+.img-featured-dr {
+    height: 44px;
+    width: 44px;
+}
+
+.dr-salud-slider .carousel-caption {
+    top: 15%;
+    bottom: inherit;
+    left: 10%;
+    right: 10%;
+    text-align: left !important;
+}
+
+    .dr-salud-slider .carousel-caption .btn-slider {
+        background-color: transparent;
+        padding: 3px 25px;
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+    }
+
+        .dr-salud-slider .carousel-caption .btn-slider:hover,
+        .dr-salud-slider .carousel-caption .btn-slider:focus {
+            background-color: #FFFFFF;
+            padding: 3px 25px;
+            border: 1px solid #FFFFFF;
+            color: #1F4988;
+        }
+
+.dr-salud-slider .carousel-control .glyphicon-chevron-left {
+    margin-left: -20px !important;
+    color: #E4E4E4;
+}
+
+.dr-salud-slider .carousel-control .glyphicon-chevron-right {
+    margin-right: -20px !important;
+    color: #E4E4E4;
+}
+
+.dr-salud-slider .carousel-indicators {
+    left: 10%;
+    bottom: 25%;
+    padding-left: 3.5rem;
+}
+
+    .dr-salud-slider .carousel-indicators li {
+        border: 1px solid #FFFFFF;
+        width: 8px;
+        height: 8px;
+    }
+
+    .dr-salud-slider .carousel-indicators .active {
+        width: 9px;
+        height: 9px;
+        background-color: #FFFFFF;
+    }
+
+.dr-salud-slider .carousel-inner {
+    max-height: 365px;
+}
+
+
+/*video List*/
+.video-list-container {
+    height: 450px;
+    overflow: auto;
+}
+
+    .video-list-container .no-underline:focus {
+        text-decoration: none;
+    }
+
+    .video-list-container .video-active {
+        background-color: #0000001A;
+    }
+
+        .video-list-container .video-active h4 {
+            color: #7758B3 !important;
+        }
+
+
+/*Slider*/
+.slider-handle {
+    background-image: none;
+    background-color: #7859B0 !important;
+}
+
+.ui-slider-handle.ui-corner-all {
+    background-color: #7859B0 !important;
+    border-radius: 15px;
+}
+
+.ui-slider-range.ui-corner-all.ui-widget-header {
+    background-color: #7859B0 !important;
+}
+
+
+/*Grid Paginator*/
+
+.grid-footer{
+
+}
