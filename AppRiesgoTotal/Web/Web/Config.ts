@@ -1,6 +1,9 @@
 ﻿/// <reference path="Scripts/typings/kendo-ui/kendo-ui.d.ts" />
 /// <reference path="Scripts/typings/jquery/jquery.d.ts" />
 /// <reference path="Scripts/Init.ts" />
+var servicioFuncionalidades = 'http://localhost:4259/WebDemo/api/';
+
+
 
 var AddressServicioPasarela = 'http://localhost:5150/api/'
 var AddressServicioUsuarioCorporativo = 'http://localhost:49935/api/';
@@ -14,7 +17,7 @@ var OAuthclientid = '8a3e4d10b2b24d6b9c55c88a95fdc324';
 var EncryptionPassword = 'QzPtMAJ7Mz5exBzGqHCGkUqQ6aKURpW3rWAYXzju4FNXmFVuPS5d64qt8fCMEDqNK5fQyThxCZq6yVH4kNQascwjVRC3stRzs3V7zdLVYH8296P6BsYLPMPh3mf6qR4u';
 
 // Rutas reportes
-
+//nuevo
 // Reporte Reclamos
 var AddressServicioLiquidacion = 'http://pruebas.servicios.saludsa.com.ec/ServicioLiquidacion/api/';
 

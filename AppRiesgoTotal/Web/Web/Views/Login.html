@@ -76,78 +76,13 @@
                         <button id="btn_Ingresar">Ingresar</button>
                         <br />
                         <br />
-
-                        <a href="javascript:abrirRecuperacion();" style="color:#808080;">Recuperar Contraseña</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
    
-    <div id="ventana_Recuperar" style="display:none; z-index:10000;">
-        <div id="pnl_Recuperar">
-            Esta ventana permitirá recuperar la clave en caso que el usuario la haya olvidado. El usuario deberá ingresar la Cédula / RUC / Pasaporte de la empres y presionar en Recuperar.
-            El sistema creará una nueva contraseña y enviará a los correos electrónicos registrados como administrador.
-            <br /><br /><br>
-            Ruc del Broker: <br />
-            <input id="txt_identificacion" type="text" placeholder="Ruc Broker" style="width:300px;" />
-            <button id="btn_Continuar">Buscar</button>                                                                                               
-            <div id="seccionBroker">
-                <br />
-                <label><b>Seleccione el Broker:</b></label><br />
-                <input id="OpcionesBusquedaCorredor" type="text" style="width:350px;" />
-                <br />
-                <label><b>Ingrese su Usuario:</b></label><br />
-                <input id="txt_nombreUsuario" type="text" placeholder="Nombre de Usuario" style="width:300px;" /><br /><br />
-                <br />
-                <button id="btn_Recuperar">Recuperar Contraseña</button>
-                <button id="btn_Regresar">Regresar</button>
-            </div>            
-        </div>
-
-        <div id="pnl_Exito" style="display:none;">
-            <h1>Su nueva contraseña ha sigo generada exitosamente. Por favor revise su correo electrónico para mayor información.</h1>
-        </div>
-
-        <div id="pnl_Fracaso" style="display:none;">
-            <h1>No se ha podido generar una nueva contraseña para su cuenta. Puede ser por el ingreso equivocado de los datos solicitados o porque existe un problema en el registro principal de Salud S.A.</h1>
-
-            Por favor tome contacto directamente siguiendo las instrucciones descritas en el siguiente link: <a href="https://www.saludsa.com/contactos/" target="_blank">Datos de Contacto</a>
-        </div>
-
-    </div>
     
-    <div id="ventana_TerminosCondiciones" style="display:none;">
-        Se ha detectado que el usuario actual requiere revisar y aceptar los Términos y Condiciones actualizados. Por favor lea a continuación los términos, siga hasta el final y acepte dichas condiciones antes de ingresar al portal.<br /><br />
-
-        <div id="DescripcionCortaTC" style="font-weight:bold; text-transform:uppercase;"></div>
-        <hr />
-        <div style="text-align:right">
-            <button id="btn_DescargarTerminos">Descargar en PDF</button>
-        </div>
-        <b>Resumen de Últimos Cambios: </b><br /><br />
-        <div id="ResumenTC" style="width:100%;"></div>
-        <br />
-        <b>Contenido Completo: </b><br /><br />
-        <div id="ContenidoTC" style="height: 200px; border: 1px solid rgba(0, 0, 0, 0.4); width:96%; overflow:scroll;padding:10px 10px 10px 10px; text-align:left"></div>
-        <br />
-        <div style="text-align:center">
-            <button id="btn_AceptarTC">Aceptar</button><button id="btn_NoAceptarTC">No Aceptar</button>
-            <br />
-        </div>
-    </div>
-
-    <div id="ventana_admin" style="display:none;">
-        <fieldset>
-            Empresa:<br />
-            <input id="cmb_Corredor" style="width:500px;" />
-            <br /><br />
-            Usuario:<br />
-            <input id="cmb_usuario" style="width:500px;" />
-        </fieldset>
-        <br />
-        <button id="btn_IngresarAdmin">Ingresar</button>
-    </div>
     
     <!--<div id="footer"></div>-->
     <div id="loading-container" class="loading-container"><img src="../images/preloading.GIF" /><br><span id="loading-msg"></span></div>

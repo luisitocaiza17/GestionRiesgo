@@ -128,8 +128,6 @@ head.ready(function () {
                                 Apellidos: { type: "string" },
                                 CompletadoEnrolamiento: { type: "boolean" },
                                 BloqueadoServicio: { type: "boolean" }
-                                //UnitPrice: { type: "number" },
-                                //UnitsInStock: { type: "number" },
                             }
                         }
                     },

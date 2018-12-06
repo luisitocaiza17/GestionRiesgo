@@ -140,70 +140,12 @@ head.load("../js/kendoui/js/jquery.min.js", "../Config.js", function () {
                             if ($("#lbl_UsuarioLogueado").length > 0) {
                                 var UsuarioLogueado = UsuarioSesion();
                                 if (UsuarioLogueado != null) {
-                                    $("#lbl_UsuarioLogueado").html(UsuarioLogueado.NombreApellido);
-                                    get$usuario$CorredoresObtenerBrokerPorId(UsuarioLogueado.IdCorredor, function (result: Msg) {
-                                        if (result == undefined) {
-                                            return alert('Ha ocurrido un problema en la obtención de datos del servidor.');
-                                        }
-                                        var corredor = <PC_AgenteVenta>result.Datos;
-                                        $('#razonSocialCorredor').text(corredor.razon_social_broker);
-
-                                    }, function (error: Msg) {
-                                       
-                                    });
+                                    $("#lbl_UsuarioLogueado").html(UsuarioLogueado.nombres + '' + UsuarioLogueado.apellidos);
+                                    
                                 }
                             }
                         }
-
-
-                        if (filename != 'Login.html' && filename != "RecuperarClave.htm" && filename != "ActivacionUsuario.html") {
-
-                            // Aplicación de Permisos de Menú
-                            // 1 Resumen Ejecutivo
-                            // 3 menu_AdministracionUsuarios
-
-
-                            var lstPermisos = Permisos();
-
-                            //Activamos Resumen Ejecutivo
-                            if (lstPermisos.filter(p => p.IDPermiso == 1).length > 0) //1	Activación de Titulares	1
-                                $('[id="Resumen_Ejecutivo"]').show();
-                            else
-                                $('[id="Resumen_Ejecutivo"]').hide();
-                                                        
-                            //Activamos menu_AdministracionUsuarios
-                            if (lstPermisos.filter(p => p.IDPermiso == 3).length > 0) //3	menu_AdministracionUsuarios
-                                $('[id="Menu_AdministracionUsuarios"]').show();
-                            else
-                                $('[id="Menu_AdministracionUsuarios"]').hide();
-
-                            //Activamos Clientes
-                            if (lstPermisos.filter(p => p.IDPermiso == 6).length > 0) //5 Clientes
-                                $('[id="Clientes"]').show();
-                            else
-                                $('[id="Clientes"]').hide();
-
-                            //Activamos Formularios
-                            if (lstPermisos.filter(p => p.IDPermiso == 7).length > 0) //7 Formularios
-                                $('[id="Formularios"]').show();
-                            else
-                                $('[id="Formularios"]').hide();
-
-                            //Activamos Reportes
-                            if (lstPermisos.filter(p => p.IDPermiso == 8).length > 0) //8 Reportes
-                                $('[id="menu_Reportes"]').show();
-                            else
-                                $('[id="menu_Reportes"]').hide();
-
-                            //Activamos Politica Comisiones
-                            if (lstPermisos.filter(p => p.IDPermiso == 9).length > 0) //8 Politica Comisiones
-                                $('[id="Politica_Comisiones"]').show();
-                            else
-                                $('[id="Politica_Comisiones"]').hide();
-                           
-                        }
-
-
+                        
                         //Increment the idle time counter every minute.
                         var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
 
@@ -257,14 +199,14 @@ function detectIE() {
 function Callback(args, argsup, callDone, callFail, timeout?) {
     Loading_Show();
 
-    GetToken(function (token) {
+   
 
         var partsOfFunctionName = argsup.callee.name.split('$');
         var argumentsArray = [].slice.apply(argsup);
         argumentsArray.pop(); // retiro
         // hago la llamada al servicio y obtengo el encriptado de retorno
         $.ajax({
-            url: AddressServicioUsuarioCorporativo + partsOfFunctionName[1] + '/' + partsOfFunctionName[2],
+            url: servicioFuncionalidades + partsOfFunctionName[1] + '/' + partsOfFunctionName[2],
             type: partsOfFunctionName[0].toString().toUpperCase(), // 'POST',
             dataType: 'text',
             data: args,
@@ -274,7 +216,6 @@ function Callback(args, argsup, callDone, callFail, timeout?) {
             cache: false,
             timeout: timeout == undefined ?300000 : timeout, // 5 min por reporteria
             headers: {
-                'Authorization': 'bearer ' + token,
                 'CodigoAplicacion': '3',
                 'DispositivoNavegador': 'Chrome',
                 'DireccionIP': '1.1.1.1',
@@ -348,7 +289,7 @@ function Callback(args, argsup, callDone, callFail, timeout?) {
         }).always(function () {
             //Loading_Hide();
         });
-    });
+   
 }
 
 
@@ -356,7 +297,7 @@ function Callback(args, argsup, callDone, callFail, timeout?) {
 function Callback2(args, argsup, callDone, callFail) {
     Loading_Show();
 
-    GetToken(function (token) {
+   
 
         var partsOfFunctionName = argsup.callee.name.split('$');
         var argumentsArray = [].slice.apply(argsup);
@@ -373,7 +314,6 @@ function Callback2(args, argsup, callDone, callFail) {
             cache: false,
             timeout: 60000, // 60 segundos
             headers: {
-                'Authorization': 'bearer ' + token,
                 'CodigoAplicacion': '3',
                 'DispositivoNavegador': 'Chrome',
                 'DireccionIP': '1.1.1.1',
@@ -447,7 +387,7 @@ function Callback2(args, argsup, callDone, callFail) {
         }).always(function () {
             //Loading_Hide();
         });
-    });
+    
 }
 
 
@@ -455,8 +395,7 @@ function Callback2(args, argsup, callDone, callFail) {
 function Callback3(args, argsbody, argsup, callDone, callFail) {
     Loading_Show();
 
-    GetToken(function (token) {
-
+    
         var partsOfFunctionName = argsup.callee.name.split('$');
         var argumentsArray = [].slice.apply(argsup);
         argumentsArray.pop(); // retiro
@@ -472,7 +411,6 @@ function Callback3(args, argsbody, argsup, callDone, callFail) {
             cache: false,
             timeout: 60000, // 60 segundos
             headers: {
-                'Authorization': 'bearer ' + token,
                 'CodigoAplicacion': '3',
                 'DispositivoNavegador': 'Chrome',
                 'DireccionIP': '1.1.1.1',
@@ -545,7 +483,6 @@ function Callback3(args, argsbody, argsup, callDone, callFail) {
         }).always(function () {
             Loading_Hide();
         });
-    });
 }
 
 
@@ -554,8 +491,7 @@ function Callback3(args, argsbody, argsup, callDone, callFail) {
 function Callback4(Address: string, argsPOST, argsGET, argsup, callDone, callFail) {
     Loading_Show();
 
-    GetToken(function (token) {
-
+   
         var partsOfFunctionName = argsup.callee.name.split('$');
         var argumentsArray = [].slice.apply(argsup);
         argumentsArray.pop(); // retiro
@@ -571,7 +507,6 @@ function Callback4(Address: string, argsPOST, argsGET, argsup, callDone, callFai
             cache: false,
             timeout: 1200000, // 60 segundos
             headers: {
-                'Authorization': 'bearer ' + token,
                 'CodigoAplicacion': '3',
                 'DispositivoNavegador': 'Chrome',
                 'DireccionIP': '1.1.1.1',
@@ -643,15 +578,14 @@ function Callback4(Address: string, argsPOST, argsGET, argsup, callDone, callFai
         }).always(function () {
             Loading_Hide();
         });
-    });
+    
 }
 
 
 function Callback5(Address: string, argsPOST, argsGET, argsup, callDone, callFail) {
     Loading_Show();
 
-    GetToken(function (token) {
-
+    
         var partsOfFunctionName = argsup.callee.name.split('$');
         var argumentsArray = [].slice.apply(argsup);
         argumentsArray.pop(); // retiro
@@ -679,7 +613,6 @@ function Callback5(Address: string, argsPOST, argsGET, argsup, callDone, callFai
             cache: false,
             timeout: 600000, // 60 segundos
             headers: {
-                'Authorization': 'bearer ' + token,
                 'CodigoAplicacion': '3',
                 'DispositivoNavegador': 'Chrome',
                 'DireccionIP': '1.1.1.1',
@@ -741,8 +674,7 @@ function Callback5(Address: string, argsPOST, argsGET, argsup, callDone, callFai
             Loading_Hide();
         }).always(function () {
             Loading_Hide();
-        });
-    });
+        });   
 }
 
 
@@ -780,177 +712,6 @@ function GetRawfromMasked(maskfieldName) {
     return lValue;
 };
 
-
-function GetToken(callDone) {
-    if (sessionStorage.getItem("token") == undefined || sessionStorage.getItem("token") == null) {
-        NewToken(callDone);
-        return;
-    }
-
-    var token = <TokenInfo>JSON.parse(Decrypt(sessionStorage.getItem("token")));
-
-    // verifico si ha expirado el token por caducidad, con un margen de 5 minutos, refresco el token
-    if (Math.abs((Date.now() - token.token_retrieve) / 1000) > token.expires_in - (5 * 60)) {
-        UpdateToken(callDone);
-        return;
-    }
-
-    if (typeof callDone === "function") {
-        // si el token anteriormente solicitado sigue vigente, devuelvo el que tengo en sesion
-        return callDone(token.access_token);
-    }
-    return "";
-}
-
-// Obtener Token
-//username=UsrServiciosSalud&password=UsrS3rv1c1os&grant_type=password&client_id=8a3e4d10b2b24d6b9c55c88a95fdc324
-
-function NewToken(callDone) {
-
-    // hago la llamada al servicio y obtengo el encriptado de retorno
-    $.ajax({
-        url: AddressServicioAutorizacion,
-        type: 'POST',
-        dataType: 'text',
-        data: {
-            "username": "UsrServiciosSalud",
-            "password": "UsrS3rv1c1os",
-            "grant_type": "password",
-            "client_id": "8a3e4d10b2b24d6b9c55c88a95fdc324"
-        },
-        contentType: 'application/x-www-form-urlencoded',
-        crossDomain: true,
-        cache: false,
-        timeout: 60000 // 60 segundos
-
-    }).done(function (PostReturn) {
-        if (!PostReturn) {
-            throw ('No se ha recibido respuesta del servidor.');
-        }
-
-        var result = <TokenInfo>JSON.parse(PostReturn);
-
-        // Si hay un error en el servidor
-        if (result.error != undefined && result.error != null) {
-            if (result.error_description != undefined && result.error_description != null)
-                return alert(result.error + " - " + result.error_description);
-            else
-                return alert(result.error);
-        }
-
-        // establece la hora de arranque de control de la sesion
-        result.token_retrieve = Date.now();
-        sessionStorage.setItem("token", Encrypt(JSON.stringify(result)));
-
-        // devuelvo el objeto de respuesta
-        if (typeof callDone === "function") {
-            callDone(result.access_token);
-        }
-
-    }).fail(function (jqXHR, textStatus, errorThrown) {
-        if (jqXHR.statusText == "timeout") {
-            alert('Tiempo de espera de respuesta de servicio agotado.');
-        }
-        else if (jqXHR.responseText != undefined) {
-            var result = <TokenInfo>JSON.parse(jqXHR.responseText);
-
-            // Si hay un error en el servidor
-            if (result.error != undefined && result.error != null) {
-                if (result.error_description != undefined && result.error_description != null)
-                    alert(result.error + " - " + result.error_description);
-                else
-                    alert(result.error);
-            }
-        }
-        else {
-            alert('No se ha recibido respuesta del servidor, #: ' + jqXHR.status);
-        }
-
-        //if (typeof callFail === "function") {
-        //    // if (res.Results.length == 1) {
-        //    //     callback(res.Results[0].ReturnObject);
-        //    // }
-        //    callFail(result);
-        //}
-    }).always(function () {
-    });
-}
-
-// Refrescar Token
-//username=UsrServiciosSalud&password=UsrS3rv1c1os&grant_type=refresh_token&client_id=8a3e4d10b2b24d6b9c55c88a95fdc324&refresh_token=eb045fb612604003a1e5a9fdc3812f6c
-
-function UpdateToken(callDone) {
-
-    var token = <TokenInfo>JSON.parse(Decrypt(sessionStorage.getItem("token")));
-
-    // hago la llamada al servicio y obtengo el encriptado de retorno
-    $.ajax({
-        url: AddressServicioAutorizacion,
-        type: 'POST',
-        dataType: 'text',
-        data: {
-            "username": "UsrServiciosSalud",
-            "password": "UsrS3rv1c1os",
-            "grant_type": "refresh_token",
-            "client_id": "8a3e4d10b2b24d6b9c55c88a95fdc324",
-            "refresh_token": token.refresh_token
-        },
-        contentType: 'application/x-www-form-urlencoded',
-        crossDomain: true,
-        cache: false,
-        timeout: 60000 // 60 segundos
-    }).done(function (PostReturn) {
-        if (!PostReturn) {
-            throw ('No se ha recibido respuesta del servidor.');
-        }
-
-        var result = <TokenInfo>JSON.parse(PostReturn);
-
-        // Si hay un error en el servidor
-        if (result.error != undefined && result.error != null) {
-            if (result.error_description != undefined && result.error_description != null)
-                alert(result.error + " - " + result.error_description);
-            else
-                alert(result.error);
-        }
-
-        // establece la hora de arranque de control de la sesion
-        result.token_retrieve = Date.now();
-        sessionStorage.setItem("token", Encrypt(JSON.stringify(result)));
-
-        // devuelvo el objeto de respuesta
-        if (typeof callDone === "function") {
-            callDone(result);
-        }
-    }).fail(function (jqXHR, textStatus, errorThrown) {
-        if (jqXHR.statusText == "timeout") {
-            alert('Tiempo de espera de respuesta de servicio agotado.');
-        }
-        else if (jqXHR.responseText != undefined && jqXHR.responseText != "") {
-            var result = <TokenInfo>JSON.parse(jqXHR.responseText);
-
-            // Si hay un error en el servidor
-            if (result.error != undefined && result.error != null) {
-                if (result.error_description != undefined && result.error_description != null)
-                    alert(result.error + " - " + result.error_description);
-                else
-                    alert(result.error);
-            }
-        }
-        else {
-            //alert('No se ha recibido respuesta del servidor, #: ' + jqXHR.status);
-            NewToken(callDone);
-        }
-
-        //if (typeof callFail === "function") {
-        //    // if (res.Results.length == 1) {
-        //    //     callback(res.Results[0].ReturnObject);
-        //    // }
-        //    callFail(result);
-        //}
-    }).always(function () {
-    });
-}
 
 //https://stackoverflow.com/questions/11591854/format-date-to-mm-dd-yyyy-in-javascript
 //formato dd/MM/yyyy
@@ -999,17 +760,12 @@ function Decrypt(encrypted: string): string {
     return CryptoJS.AES.decrypt(encrypted, EncryptionPassword).toString(CryptoJS.enc.Utf8);
 }
 
-function UsuarioSesion(): PC_UsuarioRol_Result {
+function UsuarioSesion(): UsuarioEntity {
     if (sessionStorage.getItem("user") == null || sessionStorage.getItem("user") == undefined || sessionStorage.getItem("user") == "") {
         //document.location.assign('Login.html'); // Si no está logueado, cambia la página al login //Comentado mientras se espera integracion.... para pruebas.
         return null;
     }
-    return <PC_UsuarioRol_Result>JSON.parse(Decrypt(sessionStorage.getItem("user").toString()));
-}
-
-function Permisos(): Array<PC_Permiso> {
-    if (sessionStorage.getItem("access") == null || sessionStorage.getItem("access") == undefined || sessionStorage.getItem("access") == "") return null;
-    return <Array<PC_Permiso>>JSON.parse(Decrypt(sessionStorage.getItem("access").toString()));
+    return <UsuarioEntity>JSON.parse(Decrypt(sessionStorage.getItem("user").toString()));
 }
 
 
@@ -1223,31 +979,6 @@ function ConfirmationConf(header:string, text: string, OkText:string, CancelText
     }).data("kendoConfirm").result.done(fOk).fail(fCancel);
 }
 
-//function ShowChatMessage() {
-//    $('#window_ChatMessage').data("kendoWindow").center().open();
-//}
-
-
-//ESTADISTICA DE NAVEGACION
-function RegistroEstadistica(idPermiso: number) {
-    var UsuarioLogueado = UsuarioSesion();
-    //Objeto EstadisticaNavegacion
-    var estadistica: PC_EstadisticaNavegacion = new PC_EstadisticaNavegacion();
-    if (UsuarioLogueado == undefined || UsuarioLogueado == null)
-        return false;
-    if (UsuarioLogueado.IdCorredor == 0 || UsuarioLogueado.Id == 0 || idPermiso == 0 ||
-        UsuarioLogueado.NombreUsuario == '')
-        return false;
-    estadistica.IdCorredor = UsuarioLogueado.IdCorredor;
-    estadistica.IdUsuario = UsuarioLogueado.Id;
-    estadistica.IdPermiso = idPermiso;
-    estadistica.NombreUsuario = UsuarioLogueado.NombreApellido;
-    post$Estadistica$CorredoresEstadisticaNavegacionCrearActualizar(estadistica,
-        function (res: Msg) {
-            var data = res.Datos;            
-        },
-        function () { });
-}
 
 function calcularFechas(fecha: string) {
     // Si la fecha es correcta, calculamos la edad

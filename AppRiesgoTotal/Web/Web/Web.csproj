@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
@@ -581,40 +582,15 @@
     <Content Include="Reports\ReportDataSet.xss">
       <DependentUpon>ReportDataSet.xsd</DependentUpon>
     </Content>
-    <Content Include="Scripts\ActivacionUsuario.js.map" />
-    <Content Include="Scripts\AdministradorUsuarios.js.map" />
-    <Content Include="Scripts\Cliente.js" />
-    <Content Include="Scripts\ContratoAgenciamiento.js" />
-    <Content Include="Scripts\Formularios.js" />
-    <Content Include="Scripts\GuiaUso.js" />
     <Content Include="Scripts\Home.js" />
     <Content Include="Scripts\Init.js" />
     <Content Include="Scripts\Login.js" />
-    <Content Include="Scripts\Politica_Comisiones.js" />
     <Content Include="Scripts\Proxy.js" />
-    <Content Include="Scripts\ReporteAsignacionCorredor.js" />
-    <Content Include="Scripts\ReporteLiquidacionComisiones.js" />
-    <Content Include="Scripts\ReportePreAutorizaciones.js" />
-    <Content Include="Scripts\Reportes.js" />
-    <Content Include="Scripts\ReporteSiniestralidad.js" />
-    <Content Include="Scripts\ResumenEjecutivo.js" />
-    <Content Include="Scripts\TerminosCondiciones.js.map" />
-    <Content Include="Scripts\ResumenEjecutivo.js.map" />
-    <Content Include="Scripts\ReporteSiniestralidad.js.map" />
-    <Content Include="Scripts\Reportes.js.map" />
-    <Content Include="Scripts\ReportePreAutorizaciones.js.map" />
-    <Content Include="Scripts\ReporteAsignacionCorredor.js.map" />
-    <Content Include="Scripts\ReporteLiquidacionComisiones.js.map" />
-    <Content Include="Scripts\GuiaUso.js.map" />
     <Content Include="Scripts\Home.js.map" />
     <Content Include="Scripts\Init.js.map" />
     <Content Include="Scripts\Login.js.map" />
-    <Content Include="Scripts\Politica_Comisiones.js.map" />
     <Content Include="Scripts\Proxy.js.map" />
     <Content Include="Scripts\CambioClave.js.map" />
-    <Content Include="Scripts\Cliente.js.map" />
-    <Content Include="Scripts\ContratoAgenciamiento.js.map" />
-    <Content Include="Scripts\Formularios.js.map" />
     <Content Include="Resources\FORMULARIO_DE_RECLAMACION.pdf" />
     <Content Include="Resources\SOLICITUD_DE_COBERTURA_COBERTURA_V4.pdf" />
     <None Include="Web.Debug.config">
@@ -1106,68 +1082,22 @@
     <Content Include="Navigation\Menu.html" />
     <Content Include="Reports\Reporte.aspx" />
     <Content Include="Reports\Vacio.html" />
-    <Content Include="Scripts\ActivacionUsuario.js" />
-    <Content Include="Scripts\AdministradorUsuarios.js" />
     <Content Include="Scripts\CambioClave.js" />
-    <Content Include="Scripts\TerminosCondiciones.js" />
-    <Content Include="Styles\AdministradorUsuarios.css" />
     <Content Include="Styles\CambioClave.css" />
-    <Content Include="Styles\Cliente.css" />
-    <Content Include="Styles\ContratoAgenciamiento.css" />
-    <Content Include="Styles\EstadisticaActivacion.css" />
-    <Content Include="Styles\Formularios.css" />
-    <Content Include="Styles\GuiaUso.css" />
     <Content Include="Styles\Login.css" />
     <Content Include="Styles\Home.css" />
-    <Content Include="Styles\ActivacionUsuario.css" />
-    <Content Include="Styles\Politica_Comisiones.css" />
     <Content Include="Styles\PortalUsuario\pu_bootstrap.css" />
     <Content Include="Styles\PortalUsuario\pu_font-awesome.css" />
     <Content Include="Styles\PortalUsuario\pu_override.css" />
     <Content Include="Styles\PortalUsuario\pu_Site.css" />
-    <Content Include="Styles\ReporteAsignacionCorredor.css" />
-    <Content Include="Styles\ReporteLiquidacionComisiones.css" />
-    <Content Include="Styles\ReportePreAutorizaciones.css" />
-    <Content Include="Styles\Reportes.css" />
-    <Content Include="Styles\ReporteSiniestralidad.css" />
-    <Content Include="Styles\ResumenEjecutivo.css" />
     <Content Include="Styles\Site.css" />
-    <Content Include="Styles\TerminosCondiciones.css" />
     <Content Include="Views\CambioClave.html" />
-    <Content Include="Views\Cliente.html" />
-    <Content Include="Views\AdministradorUsuarios.html" />
-    <Content Include="Views\ContratoAgenciamiento.html" />
-    <Content Include="Views\EstadisticaActivacion.html" />
-    <Content Include="Views\Formularios.html" />
-    <Content Include="Views\GuiaUso.html" />
     <Content Include="Views\Login.html" />
     <Content Include="Views\Home.html" />
-    <Content Include="Views\ActivacionUsuario.html" />
     <Content Include="Views\Parent.html" />
-    <Content Include="Views\Politica_Comisiones.html" />
-    <Content Include="Views\ReporteAsignacionCorredor.html" />
-    <Content Include="Views\ReporteLiquidacionComisiones.html" />
-    <Content Include="Views\ReportePreAutorizaciones.html" />
-    <Content Include="Views\Reportes.html" />
-    <Content Include="Views\ReporteSiniestralidad.html" />
-    <Content Include="Views\ResumenEjecutivo.html" />
-    <Content Include="Views\TerminosCondiciones.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <TypeScriptCompile Include="Scripts\ContratoAgenciamiento.ts" />
-    <TypeScriptCompile Include="Scripts\EstadisticaActivacion.ts" />
-    <TypeScriptCompile Include="Scripts\Formularios.ts" />
-    <TypeScriptCompile Include="Scripts\GuiaUso.ts" />
-    <TypeScriptCompile Include="Scripts\Politica_Comisiones.ts" />
-    <TypeScriptCompile Include="Scripts\ReactivacionDependiente.ts" />
-    <TypeScriptCompile Include="Scripts\ReporteAsignacionCorredor.ts" />
-    <TypeScriptCompile Include="Scripts\ReporteLiquidacionComisiones.ts" />
-    <TypeScriptCompile Include="Scripts\ReportePreAutorizaciones.ts" />
-    <TypeScriptCompile Include="Scripts\Reportes.ts" />
-    <TypeScriptCompile Include="Scripts\ReporteSiniestralidad.ts" />
-    <TypeScriptCompile Include="Scripts\ResumenEjecutivo.ts" />
-    <TypeScriptCompile Include="Scripts\TerminosCondiciones.ts" />
     <TypeScriptCompile Include="Scripts\typings\cryptojs\cryptojs.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\filesaver\filesaver.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\headjs\headjs.d.ts" />
@@ -1197,10 +1127,7 @@
     <TypeScriptCompile Include="js\kendoui\typescript\kendo.dataviz.d.ts" />
     <TypeScriptCompile Include="js\kendoui\typescript\kendo.mobile.d.ts" />
     <TypeScriptCompile Include="js\kendoui\typescript\kendo.web.d.ts" />
-    <TypeScriptCompile Include="Scripts\ActivacionUsuario.ts" />
-    <TypeScriptCompile Include="Scripts\AdministradorUsuarios.ts" />
     <TypeScriptCompile Include="Scripts\CambioClave.ts" />
-    <TypeScriptCompile Include="Scripts\Cliente.ts" />
     <TypeScriptCompile Include="Scripts\Home.ts" />
     <TypeScriptCompile Include="Scripts\Init.ts" />
     <TypeScriptCompile Include="Scripts\Login.ts" />
