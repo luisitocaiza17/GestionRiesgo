@@ -580,8 +580,6 @@
     <Content Include="Reports\ReportDataSet.xss">
       <DependentUpon>ReportDataSet.xsd</DependentUpon>
     </Content>
-    <Content Include="Scripts\Proxy.js" />
-    <Content Include="Scripts\Proxy.js.map" />
     <Content Include="Resources\FORMULARIO_DE_RECLAMACION.pdf" />
     <Content Include="Resources\SOLICITUD_DE_COBERTURA_COBERTURA_V4.pdf" />
     <None Include="Web.Debug.config">

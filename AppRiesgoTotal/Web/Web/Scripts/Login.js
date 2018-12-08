@@ -25,10 +25,13 @@ head.ready(function () {
         var usr = new UsuarioEntity();
         var usuario = $('#txt_username').val().toString();
         var password = $('#txt_password').val().toString();
+        if (usuario == null || usuario == '' || password == null || password == '')
+            return alert('El usuario y contraseña deben estar llenos.');
         get$Login$LoginVerificacion(usuario, password, function (result) {
-            if (result == undefined) {
+            if (result == undefined)
                 return alert('Ha ocurrido un problema en la obtención de datos del servidor.');
-            }
+            if (result.Estado == 'False')
+                return alert('EL usuario o contraseña son incorrectos');
             UsuarioLogueado = result.Datos;
             TerminarInicioSesion();
         }, function (error) {
