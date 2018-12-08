@@ -24,7 +24,7 @@ class TokenInfo {
     public token_retrieve: number;
 }
 
-
+ /// ya le cache
  /// <summary>
  /// En la cabezaran van los parametros que se solicitaran
  /// </summary>
