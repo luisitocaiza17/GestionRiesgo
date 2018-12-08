@@ -12,6 +12,19 @@ class Msg {
     ) { }
 }
 
+
+class TokenInfo {
+    public access_token: string;
+    public expires_in: number;
+    public refresh_token: string;
+    public token_type: string;
+    public user_data: string;
+    public error: string;
+    public error_description: string;
+    public token_retrieve: number;
+}
+
+
  /// <summary>
  /// En la cabezaran van los parametros que se solicitaran
  /// </summary>

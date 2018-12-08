@@ -125,8 +125,6 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Config.js" />
-    <Content Include="Config.js.map" />
     <Content Include="favicon.ico" />
     <Content Include="images\amarillo.png" />
     <Content Include="images\apagar.png" />
@@ -582,15 +580,8 @@
     <Content Include="Reports\ReportDataSet.xss">
       <DependentUpon>ReportDataSet.xsd</DependentUpon>
     </Content>
-    <Content Include="Scripts\Home.js" />
-    <Content Include="Scripts\Init.js" />
-    <Content Include="Scripts\Login.js" />
     <Content Include="Scripts\Proxy.js" />
-    <Content Include="Scripts\Home.js.map" />
-    <Content Include="Scripts\Init.js.map" />
-    <Content Include="Scripts\Login.js.map" />
     <Content Include="Scripts\Proxy.js.map" />
-    <Content Include="Scripts\CambioClave.js.map" />
     <Content Include="Resources\FORMULARIO_DE_RECLAMACION.pdf" />
     <Content Include="Resources\SOLICITUD_DE_COBERTURA_COBERTURA_V4.pdf" />
     <None Include="Web.Debug.config">
@@ -1082,7 +1073,6 @@
     <Content Include="Navigation\Menu.html" />
     <Content Include="Reports\Reporte.aspx" />
     <Content Include="Reports\Vacio.html" />
-    <Content Include="Scripts\CambioClave.js" />
     <Content Include="Styles\CambioClave.css" />
     <Content Include="Styles\Login.css" />
     <Content Include="Styles\Home.css" />

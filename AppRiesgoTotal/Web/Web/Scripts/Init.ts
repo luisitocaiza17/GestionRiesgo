@@ -196,32 +196,136 @@ function detectIE() {
 }
 
 
+//function Callback(args, argsup, callDone, callFail, timeout?) {
+//    Loading_Show();
+//    var partsOfFunctionName = argsup.callee.name.split('$');
+//    var argumentsArray = [].slice.apply(argsup);
+//    argumentsArray.pop(); // retiro
+        
+//        // hago la llamada al servicio y obtengo el encriptado de retorno
+//        $.ajax({
+//            url: servicioFuncionalidades + partsOfFunctionName[1] + '/' + partsOfFunctionName[2],
+//            type: 'GET', // 'POST',
+//            dataType: 'text',
+//            data: {
+//                key: 'f0f33936e4204a4530be9b9594ad6a84e6fb92f19cacaecec448dc422f95e681',
+//                ip: '1.1.1.1',
+//                usuario: 'admin',
+//                password:'123456'
+//            },
+//            contentType: 'application/json; charset=UTF-8',
+//            mimeType: 'application/json',
+//            crossDomain: true,
+//            cache: false,
+//            timeout: timeout == undefined ? 300000 : timeout, // 5 min por reporteria
+//            headers: {
+//                'Authorization': 'bearer  f0f33936e4204a4530be9b9594ad6a84e6fb92f19cacaecec448dc422f95e681',
+//                'CodigoAplicacion': '3',
+//                'DispositivoNavegador': 'Chrome',
+//                'DireccionIP': '1.1.1.1',
+//                'SistemaOperativo': 'Windows',
+//                'CodigoPlataforma': '7',
+//                'X-Page-Number': '1',
+//                'X-Page-Size': '0'
+//            },
+            
+//        }).done(function (PostReturn) {
+//            if (!PostReturn) {
+//                throw ('No se ha recibido respuesta del servidor.');
+//            }
+
+//            var result = <Msg>JSON.parse(PostReturn);
+
+//            // Si hay un error en el servidor
+//            if (result != null && result.Mensajes != undefined && result.Mensajes.length > 0 && result.Mensajes[0] != null) {
+//                alert(result.Mensajes.join());
+//                Loading_Hide();
+//                //throw ('Ha ocurrido un error en el procesamiento de su pedido. Por favor tome contacto con el administrador del sistema. Mensaje: ' + res.errorMessage);
+//            }
+
+//            // devuelvo el objeto de respuesta
+//            else if (typeof callDone === "function") {
+//                // if (res.Results.length == 1) {
+//                //     callback(res.Results[0].ReturnObject);
+//                // }
+//                Loading_Hide();
+//                var ret = callDone(result);
+//                //Loading_Hide();
+//            }
+//            }).fail(function (jqXHR, textStatus, errorThrown) {              
+
+//            if (jqXHR.readyState == 4) {
+//                // HTTP error (can be checked by XMLHttpRequest.status and XMLHttpRequest.statusText)
+
+//                if (jqXHR.statusText == "timeout") {
+//                    alert('Tiempo de espera de respuesta de servicio agotado.');
+//                }
+//                else if (jqXHR.responseText != undefined) {
+//                    try {
+//                        var result = <Msg>JSON.parse(jqXHR.responseText);
+
+//                        // Si hay un error en el servidor
+//                        if (result != null && result.Mensajes != undefined && result.Mensajes.length > 0 && result.Mensajes[0] != null) {
+//                            alert(result.Mensajes.join());
+//                            //throw ('Ha ocurrido un error en el procesamiento de su pedido. Por favor tome contacto con el administrador del sistema. Mensaje: ' + res.errorMessage);
+//                        }
+//                    }
+//                    catch (ex) {
+//                        alert(jqXHR.responseText);
+//                    }
+//                }
+//                else {
+//                    alert('No se ha recibido respuesta del servidor, #: ' + jqXHR.status);
+//                }
+//            }
+//            else if (jqXHR.readyState == 0) {
+//                // Network error (i.e. connection refused, access denied due to CORS, etc.)
+//                alert('Ha ocurrido un error de conexión con el servidor. Por favor intente más tarde.');
+//            }
+//            else {
+//                // something weird is happening
+//            }
+
+//            if (typeof callFail === "function") {
+//                // if (res.Results.length == 1) {
+//                //     callback(res.Results[0].ReturnObject);
+//                // }
+//                callFail(result);
+//            }
+//            Loading_Hide();
+//        }).always(function () {
+//            //Loading_Hide();
+//        });
+   
+//}
+
 function Callback(args, argsup, callDone, callFail, timeout?) {
     Loading_Show();
 
-   
 
-        var partsOfFunctionName = argsup.callee.name.split('$');
-        var argumentsArray = [].slice.apply(argsup);
-        argumentsArray.pop(); // retiro
-        // hago la llamada al servicio y obtengo el encriptado de retorno
+
+    var partsOfFunctionName = argsup.callee.name.split('$');
+    var argumentsArray = [].slice.apply(argsup);
+    argumentsArray.pop(); // retiro
+    // hago la llamada al servicio y obtengo el encriptado de retorno
+    $.get(servicioFuncionalidades + partsOfFunctionName[1] + '/' + partsOfFunctionName[2] + '?usuario=admin&password=123456', function (data) {
+        alert(data);
+    }).fail(function (jqXHR, textStatus, error) {
+        console.log("Post error: " + error);
+        });
+
+
+
         $.ajax({
             url: servicioFuncionalidades + partsOfFunctionName[1] + '/' + partsOfFunctionName[2],
-            type: partsOfFunctionName[0].toString().toUpperCase(), // 'POST',
-            dataType: 'text',
+            type: 'GET',
+            dataType: "text",
             data: args,
             contentType: 'application/json; charset=UTF-8',
             mimeType: 'application/json',
-            crossDomain: false,
             cache: false,
-            timeout: timeout == undefined ?300000 : timeout, // 5 min por reporteria
-            headers: {
-                'CodigoAplicacion': '3',
-                'DispositivoNavegador': 'Chrome',
-                'DireccionIP': '1.1.1.1',
-                'SistemaOperativo': 'Windows',
-                'CodigoPlataforma': '7'
-            },
+            timeout: timeout == undefined ? 300000 : timeout // 5 min por reporteria
+
         }).done(function (PostReturn) {
             if (!PostReturn) {
                 throw ('No se ha recibido respuesta del servidor.');
@@ -245,7 +349,7 @@ function Callback(args, argsup, callDone, callFail, timeout?) {
                 var ret = callDone(result);
                 //Loading_Hide();
             }
-            }).fail(function (jqXHR, textStatus, errorThrown) {              
+        }).fail(function (jqXHR, textStatus, errorThrown) {
 
             if (jqXHR.readyState == 4) {
                 // HTTP error (can be checked by XMLHttpRequest.status and XMLHttpRequest.statusText)
@@ -289,9 +393,180 @@ function Callback(args, argsup, callDone, callFail, timeout?) {
         }).always(function () {
             //Loading_Hide();
         });
-   
+}
+    
+
+
+function GetToken(callDone) {
+    if (sessionStorage.getItem("token") == undefined || sessionStorage.getItem("token") == null) {
+        NewToken(callDone);
+        return;
+    }
+
+    var token = <TokenInfo>JSON.parse(Decrypt(sessionStorage.getItem("token")));
+
+    // verifico si ha expirado el token por caducidad, con un margen de 5 minutos, refresco el token
+    if (Math.abs((Date.now() - token.token_retrieve) / 1000) > token.expires_in - (5 * 60)) {
+        UpdateToken(callDone);
+        return;
+    }
+
+    if (typeof callDone === "function") {
+        // si el token anteriormente solicitado sigue vigente, devuelvo el que tengo en sesion
+        return callDone(token.access_token);
+    }
+    return "";
 }
 
+// Obtener Token
+//username=UsrServiciosSalud&password=UsrS3rv1c1os&grant_type=password&client_id=8a3e4d10b2b24d6b9c55c88a95fdc324
+
+function NewToken(callDone) {
+
+    // hago la llamada al servicio y obtengo el encriptado de retorno
+    $.ajax({
+        url: AddressServicioAutorizacion,
+        type: 'POST',
+        dataType: 'text',
+        data: {
+            "username": "UsrServiciosSalud",
+            "password": "UsrS3rv1c1os",
+            "grant_type": "password",
+            "client_id": "8a3e4d10b2b24d6b9c55c88a95fdc324"
+        },
+        contentType: 'application/x-www-form-urlencoded',
+        crossDomain: true,
+        cache: false,
+        timeout: 60000 // 60 segundos
+
+    }).done(function (PostReturn) {
+        if (!PostReturn) {
+            throw ('No se ha recibido respuesta del servidor.');
+        }
+
+        var result = <TokenInfo>JSON.parse(PostReturn);
+
+        // Si hay un error en el servidor
+        if (result.error != undefined && result.error != null) {
+            if (result.error_description != undefined && result.error_description != null)
+                return alert(result.error + " - " + result.error_description);
+            else
+                return alert(result.error);
+        }
+
+        // establece la hora de arranque de control de la sesion
+        result.token_retrieve = Date.now();
+        sessionStorage.setItem("token", Encrypt(JSON.stringify(result)));
+
+        // devuelvo el objeto de respuesta
+        if (typeof callDone === "function") {
+            callDone(result.access_token);
+        }
+
+    }).fail(function (jqXHR, textStatus, errorThrown) {
+        if (jqXHR.statusText == "timeout") {
+            alert('Tiempo de espera de respuesta de servicio agotado.');
+        }
+        else if (jqXHR.responseText != undefined) {
+            var result = <TokenInfo>JSON.parse(jqXHR.responseText);
+
+            // Si hay un error en el servidor
+            if (result.error != undefined && result.error != null) {
+                if (result.error_description != undefined && result.error_description != null)
+                    alert(result.error + " - " + result.error_description);
+                else
+                    alert(result.error);
+            }
+        }
+        else {
+            alert('No se ha recibido respuesta del servidor, #: ' + jqXHR.status);
+        }
+
+        //if (typeof callFail === "function") {
+        //    // if (res.Results.length == 1) {
+        //    //     callback(res.Results[0].ReturnObject);
+        //    // }
+        //    callFail(result);
+        //}
+    }).always(function () {
+    });
+}
+
+// Refrescar Token
+//username=UsrServiciosSalud&password=UsrS3rv1c1os&grant_type=refresh_token&client_id=8a3e4d10b2b24d6b9c55c88a95fdc324&refresh_token=eb045fb612604003a1e5a9fdc3812f6c
+
+function UpdateToken(callDone) {
+
+    var token = <TokenInfo>JSON.parse(Decrypt(sessionStorage.getItem("token")));
+
+    // hago la llamada al servicio y obtengo el encriptado de retorno
+    $.ajax({
+        url: AddressServicioAutorizacion,
+        type: 'POST',
+        dataType: 'text',
+        data: {
+            "username": "UsrServiciosSalud",
+            "password": "UsrS3rv1c1os",
+            "grant_type": "refresh_token",
+            "client_id": "8a3e4d10b2b24d6b9c55c88a95fdc324",
+            "refresh_token": token.refresh_token
+        },
+        contentType: 'application/x-www-form-urlencoded',
+        crossDomain: true,
+        cache: false,
+        timeout: 60000 // 60 segundos
+    }).done(function (PostReturn) {
+        if (!PostReturn) {
+            throw ('No se ha recibido respuesta del servidor.');
+        }
+
+        var result = <TokenInfo>JSON.parse(PostReturn);
+
+        // Si hay un error en el servidor
+        if (result.error != undefined && result.error != null) {
+            if (result.error_description != undefined && result.error_description != null)
+                alert(result.error + " - " + result.error_description);
+            else
+                alert(result.error);
+        }
+
+        // establece la hora de arranque de control de la sesion
+        result.token_retrieve = Date.now();
+        sessionStorage.setItem("token", Encrypt(JSON.stringify(result)));
+
+        // devuelvo el objeto de respuesta
+        if (typeof callDone === "function") {
+            callDone(result);
+        }
+    }).fail(function (jqXHR, textStatus, errorThrown) {
+        if (jqXHR.statusText == "timeout") {
+            alert('Tiempo de espera de respuesta de servicio agotado.');
+        }
+        else if (jqXHR.responseText != undefined && jqXHR.responseText != "") {
+            var result = <TokenInfo>JSON.parse(jqXHR.responseText);
+
+            // Si hay un error en el servidor
+            if (result.error != undefined && result.error != null) {
+                if (result.error_description != undefined && result.error_description != null)
+                    alert(result.error + " - " + result.error_description);
+                else
+                    alert(result.error);
+            }
+        }
+        else {
+            //alert('No se ha recibido respuesta del servidor, #: ' + jqXHR.status);
+            NewToken(callDone);
+        }
+
+        //if (typeof callFail === "function") {
+        //    // if (res.Results.length == 1) {
+        //    //     callback(res.Results[0].ReturnObject);
+        //    // }
+        //    callFail(result);
+        //}
+    }).always(function () {
+    });
+}
 
 
 function Callback2(args, argsup, callDone, callFail) {
