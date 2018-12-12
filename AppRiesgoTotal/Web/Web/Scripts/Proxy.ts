@@ -82,3 +82,47 @@ class TokenInfo {
      public E_D_FECHA_CREACION: number;
  }
 
+ class ACTIVO_GENERAL {
+     public ID: number;
+     public ACTIVO: string;
+     public VULNERABILIDAD: string;
+     public DISPONIBILIDAD: number;
+     public CONFIDENCIALIDAD: number;
+     public INTEGRIDAD: number;
+     public CRITICIDAD: number;
+     public PROMEDIO_IMPACTO: number;
+     public AMENAZA: string;
+
+ }
+
+class RIESGO_GENERAL {
+    public ID: number;
+    public VULNERABILIDAD: string;
+    public VULNERABILIDADES_REPETIDAS: number;
+    public PROMEDIO_IMPACTO: number;
+    public AMENAZA: string;
+    public FRECUENCIA: number;
+
+}
+
+ /// <summary>
+ /// En la cabezaran van los parametros que se solicitaran
+ /// </summary>
+ /// <returns>
+ /// HttpResponseMessage
+ /// </returns>
+ /// <response code="200">Si se ejecuta con éxito y retorna el valor esperado</response>
+ /// <response code="400">Error datos enviados en la cabecera</response>
+ /// <response code="500">Si existe un error interno</response>
+ /// [Route("TraerAmenazas")]
+ function get$Amenaza$TraerAmenazas(callDone, callFail) {
+     Callback({}, arguments, callDone, callFail);
+ }
+
+ class AMENAZAS
+ {
+     public ID_AMENAZA: number;
+     public AM_NOMBRE: string;
+     public AM_DESCRIPCION: string
+     public AM_FECHA_CREACION: Date;
+}

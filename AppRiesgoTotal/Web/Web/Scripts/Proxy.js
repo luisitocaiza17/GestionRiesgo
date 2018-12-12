@@ -55,4 +55,23 @@ function get$EscalaDegradacion$TraerEscalaDegradacion(callDone, callFail) {
 }
 class ESCALA_DEGRADACION {
 }
+class ACTIVO_GENERAL {
+}
+class RIESGO_GENERAL {
+}
+/// <summary>
+/// En la cabezaran van los parametros que se solicitaran
+/// </summary>
+/// <returns>
+/// HttpResponseMessage
+/// </returns>
+/// <response code="200">Si se ejecuta con éxito y retorna el valor esperado</response>
+/// <response code="400">Error datos enviados en la cabecera</response>
+/// <response code="500">Si existe un error interno</response>
+/// [Route("TraerAmenazas")]
+function get$Amenaza$TraerAmenazas(callDone, callFail) {
+    Callback({}, arguments, callDone, callFail);
+}
+class AMENAZAS {
+}
 //# sourceMappingURL=Proxy.js.map

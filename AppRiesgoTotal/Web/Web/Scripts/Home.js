@@ -1,11 +1,16 @@
 /// <reference path="../Scripts/Init.ts" />
 var contadorElementos = 0;
+var indicesList = new Array();
 head.ready(function () {
     var UsuarioLogueado = UsuarioSesion();
     var vulnerabilidadesList;
     var escalaDegradacionList;
+    var amenazaList;
+    var riesgoList;
     $('#btnAgregar').kendoButton();
     $('#btnContinuar').kendoButton();
+    $('#btnTerminar').kendoButton();
+    $('#tablaSecundaria').hide();
     //cargamos las vulnerabilidades
     get$Vulnerabilidad$TraerVulnerabilidades(function (result) {
         if (result == undefined)
@@ -24,17 +29,73 @@ head.ready(function () {
         escalaDegradacionList = result.Datos;
     }, function (error) {
     });
+    //cargamos las amenazas
+    get$Amenaza$TraerAmenazas(function (result) {
+        if (result == undefined)
+            return alert('Ha ocurrido un problema en la obtención de datos del servidor.');
+        if (result.Estado == 'False')
+            return alert('No existen catalogos');
+        amenazaList = result.Datos;
+    }, function (error) {
+    });
     Loading_Hide();
     //continuamos a las operaciones
     $('#btnContinuar').click(function () {
-        if (confirm('Desea continuar?'))
+        if (confirm('Desea continuar?')) {
             $('#primeraSeccion').hide();
+            $('#tablaSecundaria').show();
+            riesgoList = new Array();
+            //voy a crear un objeto donde guardar la informacion
+            var listaObjetoActivo = new Array();
+            for (let indice of indicesList) {
+                var activo = new ACTIVO_GENERAL();
+                activo.ACTIVO = $('#txtActivo_' + indice).val();
+                activo.VULNERABILIDAD = $('#txtVulnerabilidad_' + indice).val();
+                activo.DISPONIBILIDAD = Number($('#txtDisponibilidad_' + indice).val());
+                activo.CONFIDENCIALIDAD = Number($('#txtConfidencialidad_' + indice).val());
+                activo.INTEGRIDAD = Number($('#txtIntegridad_' + indice).val());
+                activo.CRITICIDAD = Number($('#txtCriticidad_' + indice).val());
+                activo.PROMEDIO_IMPACTO = Number($('#txtPromedioImpacto_' + indice).val());
+                listaObjetoActivo.push(activo);
+            }
+            console.log(listaObjetoActivo);
+            //ahora voy a tomar solo las vulnerabilidades que son distintas las sumo y saco el promedio
+            //buscamos los unicos
+            var listVulnerabilidadesTemp = new Array();
+            for (let a of listaObjetoActivo) {
+                listVulnerabilidadesTemp.push(a.VULNERABILIDAD);
+            }
+            //ahora tomo solo los unicos
+            var uniqs = listVulnerabilidadesTemp.filter(function (item, index, array) {
+                return array.indexOf(item) === index;
+            });
+            //ahora voy a agrupar por valores de vulnerabilidad
+            for (let v of uniqs) {
+                var agrupacionVulnerabilidad = listaObjetoActivo.filter(x => x.VULNERABILIDAD === v);
+                //promediamos
+                var contadorRepetidos = 0;
+                var sumatoriaPromedio = 0;
+                var vulnerabilidadN = "";
+                for (let p of agrupacionVulnerabilidad) {
+                    contadorRepetidos++;
+                    sumatoriaPromedio += p.PROMEDIO_IMPACTO;
+                    vulnerabilidadN = p.VULNERABILIDAD;
+                }
+                //llenamos el objeto
+                var riesgo = new RIESGO_GENERAL();
+                riesgo.VULNERABILIDAD = vulnerabilidadN;
+                riesgo.PROMEDIO_IMPACTO = sumatoriaPromedio / contadorRepetidos;
+                riesgo.VULNERABILIDADES_REPETIDAS = contadorRepetidos;
+                riesgoList.push(riesgo);
+            }
+            console.log(riesgoList);
+        }
     });
     //Agregamos activos
     $('#btnAgregar').click(function () {
         $('#tableRiesgo').append("<tr >" +
             "<td>" +
-            "<input type='text' id='txtAmenaza_" + contadorElementos + "'>" +
+            "<input type='text' id='txtActivo_" + contadorElementos + "'>" +
             "</td>" +
             "<td>" +
             "<input type='text' id='txtVulnerabilidad_" + contadorElementos + "'>" +
@@ -55,7 +116,7 @@ head.ready(function () {
             "<input type='text' id='txtPromedioImpacto_" + contadorElementos + "'>" +
             "</td>" +
             "<td>" +
-            "<button id='btnQuitar_" + contadorElementos + "'  onclick='quitar(this)'> Quitar </button>" +
+            "<button id='btnQuitar_" + contadorElementos + "'  onclick='quitar(this," + contadorElementos + ")'> Quitar </button>" +
             "</td>" +
             "</tr>");
         //boton de quitar
@@ -64,7 +125,7 @@ head.ready(function () {
         $("#txtVulnerabilidad_" + contadorElementos).kendoDropDownList({
             filter: "startswith",
             dataTextField: "V_NOMBRE",
-            dataValueField: "ID_VULNERABILIDAD",
+            dataValueField: "V_NOMBRE",
             dataSource: vulnerabilidadesList,
             optionLabel: "Seleccione",
         });
@@ -101,34 +162,43 @@ head.ready(function () {
             optionLabel: "Seleccione",
             change: Promedio
         });
+        $("#txtAmenaza_" + contadorElementos).kendoDropDownList({
+            filter: "startswith",
+            dataTextField: "AM_NOMBRE",
+            dataValueField: "ID_AMENAZA",
+            dataSource: amenazaList,
+            optionLabel: "Seleccione",
+            change: Promedio
+        });
+        indicesList.push(contadorElementos);
         contadorElementos++;
     });
     function Promedio() {
         var i = 0;
-        for (i = 0; i < contadorElementos; i++) {
+        for (i = 0; i < indicesList.length; i++) {
             //Disponibilidad
-            var disponibilidad = $("#txtDisponibilidad_" + i).data("kendoDropDownList").value();
+            var disponibilidad = $("#txtDisponibilidad_" + indicesList[i]).data("kendoDropDownList").value();
             var disponibilidadNumber;
             if (disponibilidad == undefined || disponibilidad == null || disponibilidad == '')
                 disponibilidadNumber = 0;
             else
                 disponibilidadNumber = Number(disponibilidad);
             //Confidencialidad
-            var confidencialidad = $("#txtConfidencialidad_" + i).data("kendoDropDownList").value();
+            var confidencialidad = $("#txtConfidencialidad_" + indicesList[i]).data("kendoDropDownList").value();
             var confidencialidadNumber;
             if (confidencialidad == undefined || confidencialidad == null || confidencialidad == '')
                 confidencialidadNumber = 0;
             else
                 confidencialidadNumber = Number(confidencialidad);
             //integridad
-            var integridad = $("#txtIntegridad_" + i).data("kendoDropDownList").value();
+            var integridad = $("#txtIntegridad_" + indicesList[i]).data("kendoDropDownList").value();
             var integridadNumber;
             if (integridad == undefined || integridad == null || integridad == '')
                 integridadNumber = 0;
             else
                 integridadNumber = Number(integridad);
             //criticidad
-            var criticidad = $("#txtCriticidad_" + i).data("kendoDropDownList").value();
+            var criticidad = $("#txtCriticidad_" + indicesList[i]).data("kendoDropDownList").value();
             var criticidadNumber;
             if (criticidad == undefined || criticidad == null || criticidad == '')
                 criticidadNumber = 0;
@@ -136,17 +206,17 @@ head.ready(function () {
                 criticidadNumber = Number(criticidad);
             //promedio
             var valorTotal = (disponibilidadNumber + confidencialidadNumber + integridadNumber + criticidadNumber) / 4;
-            $("#txtPromedioImpacto_" + i).val(valorTotal);
+            $("#txtPromedioImpacto_" + indicesList[i]).val(valorTotal);
         }
     }
 });
 //Funcion para quitar elmento
-function quitar(r) {
+function quitar(r, id) {
     var c = confirm("¿Seguro desea quitar el activo?");
     if (c == true) {
         var i = r.parentNode.parentNode.rowIndex;
         document.getElementById("tablaPrincipal").deleteRow(i);
-        contadorElementos--;
+        indicesList = indicesList.filter(item => item !== id);
     }
 }
 //# sourceMappingURL=Home.js.map
