@@ -102,6 +102,7 @@ class RIESGO_GENERAL {
     public PROMEDIO_IMPACTO: number;
     public AMENAZA: string;
     public FRECUENCIA: number;
+    public AMENAZA_PROMEDIO: number;
 
 }
 
@@ -125,4 +126,27 @@ class RIESGO_GENERAL {
      public AM_NOMBRE: string;
      public AM_DESCRIPCION: string
      public AM_FECHA_CREACION: Date;
-}
+ }
+
+ /// <summary>
+ /// En la cabezaran van los parametros que se solicitaran
+ /// </summary>
+ /// <returns>
+ /// HttpResponseMessage
+ /// </returns>
+ /// <response code="200">Si se ejecuta con éxito y retorna el valor esperado</response>
+ /// <response code="400">Error datos enviados en la cabecera</response>
+ /// <response code="500">Si existe un error interno</response>
+ /// [Route("TraerFrecuencias")]
+ function get$Frecuencia$TraerFrecuencias(callDone, callFail) {
+     Callback({}, arguments, callDone, callFail);
+ }
+
+ class ESCALA_FRECUENCIA {
+     public ID_ESCALA_FRECUENCIA: number;
+     public E_F_NOMBRE: string;
+     public E_F_DESCRIPCION: string;
+     public E_F_FECHA_CREACION: Date;
+     public E_F_VALOR_LETRA: string;
+     public E_F_VALOR: number;
+    }

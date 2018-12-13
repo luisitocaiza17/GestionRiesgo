@@ -8,3 +8,10 @@
 .slick-next {
     margin-right: 40px;
 }
+
+.fieldBoxDefinidoMedio {
+    display: inline-block;
+    padding: 10px 12px 10px 10px;
+    vertical-align: top;
+    width: 600px;
+}

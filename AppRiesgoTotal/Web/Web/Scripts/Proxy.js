@@ -74,4 +74,19 @@ function get$Amenaza$TraerAmenazas(callDone, callFail) {
 }
 class AMENAZAS {
 }
+/// <summary>
+/// En la cabezaran van los parametros que se solicitaran
+/// </summary>
+/// <returns>
+/// HttpResponseMessage
+/// </returns>
+/// <response code="200">Si se ejecuta con éxito y retorna el valor esperado</response>
+/// <response code="400">Error datos enviados en la cabecera</response>
+/// <response code="500">Si existe un error interno</response>
+/// [Route("TraerFrecuencias")]
+function get$Frecuencia$TraerFrecuencias(callDone, callFail) {
+    Callback({}, arguments, callDone, callFail);
+}
+class ESCALA_FRECUENCIA {
+}
 //# sourceMappingURL=Proxy.js.map
