@@ -157,6 +157,7 @@
     <Content Include="images\CSaC.png" />
     <Content Include="images\estadisticaEnrolamiento.png" />
     <Content Include="images\Facturacion.png" />
+    <Content Include="images\fondo_pagina_inicio.png" />
     <Content Include="images\Formularios.png" />
     <Content Include="images\foto1.png" />
     <Content Include="images\Foto2.jpg" />
@@ -180,11 +181,16 @@
     <Content Include="images\Kv-presentaciones-internas-medico.jpg" />
     <Content Include="images\Kv-presentaciones-internas-Video-Consulta.jpg" />
     <Content Include="images\liquidacionComisiones.png" />
+    <Content Include="images\logo-portal-saludsa-brokers_w1.png" />
     <Content Include="images\logo-portal-saludsa-brokers_w.png" />
     <Content Include="images\logo-portal-saludsa-brokers_wm.png" />
+    <Content Include="images\logo-portal-saludsa-brokers_wm1.png" />
     <Content Include="images\logo-salud.jpg" />
     <Content Include="images\logo.png" />
     <Content Include="images\logoBrokers.png" />
+    <Content Include="images\logoEmpresa.png" />
+    <Content Include="images\logo_inicio_sgrt_c.png" />
+    <Content Include="images\logo_url.PNG" />
     <Content Include="images\mmenu.png" />
     <Content Include="images\negro.png" />
     <Content Include="images\next.png" />
@@ -204,6 +210,9 @@
     <Content Include="images\rojo.png" />
     <Content Include="images\siniestralidad.png" />
     <Content Include="images\spacer.gif" />
+    <Content Include="images\tabla_degradacion.jpg" />
+    <Content Include="images\tabla_frecuencia.jpg" />
+    <Content Include="images\tabl_color.jpg" />
     <Content Include="images\TerminosCondiciones.png" />
     <Content Include="images\verde.png" />
     <Content Include="js\cryptojs\.gitignore" />
@@ -1080,6 +1089,7 @@
     <Content Include="Styles\PortalUsuario\pu_Site.css" />
     <Content Include="Styles\Site.css" />
     <Content Include="Views\CambioClave.html" />
+    <Content Include="Views\jquery-1.4.1.min.js" />
     <Content Include="Views\Login.html" />
     <Content Include="Views\Home.html" />
     <Content Include="Views\Parent.html" />

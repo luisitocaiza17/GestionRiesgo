@@ -26,13 +26,13 @@
 }
 
 #logini {
-    background-image: url('../images/imagen-broker-Principal.jpg');
+    background-image: url('../images/fondo_pagina_inicio.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: white;
     background-position: left;
     min-height: 100vh;
-    width: 65%;
+    width: 50%;
     display: inline-block;
     vertical-align: text-top;
 }

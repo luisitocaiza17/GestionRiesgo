@@ -168,6 +168,7 @@ function Callback(args, argsup, callDone, callFail, timeout) {
         if (result != null && result.Mensajes != undefined && result.Mensajes.length > 0 && result.Mensajes[0] != null) {
             alert(result.Mensajes);
             Loading_Hide();
+            //throw ('Ha ocurrido un error en el procesamiento de su pedido. Por favor tome contacto con el administrador del sistema. Mensaje: ' + res.errorMessage);
         }
         else if (typeof callDone === "function") {
             Loading_Hide();
@@ -185,6 +186,7 @@ function Callback(args, argsup, callDone, callFail, timeout) {
                     // Si hay un error en el servidor
                     if (result != null && result.Mensajes != undefined && result.Mensajes.length > 0 && result.Mensajes[0] != null) {
                         alert(result.Mensajes.join());
+                        //throw ('Ha ocurrido un error en el procesamiento de su pedido. Por favor tome contacto con el administrador del sistema. Mensaje: ' + res.errorMessage);
                     }
                 }
                 catch (ex) {
@@ -200,6 +202,7 @@ function Callback(args, argsup, callDone, callFail, timeout) {
             alert('Ha ocurrido un error de conexión con el servidor. Por favor intente más tarde.');
         }
         else {
+            // something weird is happening
         }
         if (typeof callFail === "function") {
             // if (res.Results.length == 1) {
@@ -244,6 +247,7 @@ function Callback2(args, argsup, callDone, callFail) {
         if (result != null && result.Mensajes != undefined && result.Mensajes.length > 0 && result.Mensajes[0] != null) {
             alert(result.Mensajes.join());
             Loading_Hide();
+            //throw ('Ha ocurrido un error en el procesamiento de su pedido. Por favor tome contacto con el administrador del sistema. Mensaje: ' + res.errorMessage);
         }
         else if (typeof callDone === "function") {
             // if (res.Results.length == 1) {
@@ -251,6 +255,7 @@ function Callback2(args, argsup, callDone, callFail) {
             // }
             Loading_Hide();
             callDone(result);
+            //Loading_Hide();
         }
     }).fail(function (jqXHR, textStatus, errorThrown) {
         if (jqXHR.readyState == 4) {
@@ -264,6 +269,7 @@ function Callback2(args, argsup, callDone, callFail) {
                     // Si hay un error en el servidor
                     if (result != null && result.Mensajes != undefined && result.Mensajes.length > 0 && result.Mensajes[0] != null) {
                         alert(result.Mensajes.join());
+                        //throw ('Ha ocurrido un error en el procesamiento de su pedido. Por favor tome contacto con el administrador del sistema. Mensaje: ' + res.errorMessage);
                     }
                 }
                 catch (ex) {
@@ -279,6 +285,7 @@ function Callback2(args, argsup, callDone, callFail) {
             alert('Ha ocurrido un error de conexión con el servidor. Por favor intente más tarde.');
         }
         else {
+            // something weird is happening
         }
         if (typeof callFail === "function") {
             // if (res.Results.length == 1) {
@@ -324,6 +331,7 @@ function Callback3(args, argsbody, argsup, callDone, callFail) {
         if (result != null && result.Mensajes != undefined && result.Mensajes.length > 0 && result.Mensajes[0] != null) {
             alert(result.Mensajes.join());
             Loading_Hide();
+            //throw ('Ha ocurrido un error en el procesamiento de su pedido. Por favor tome contacto con el administrador del sistema. Mensaje: ' + res.errorMessage);
         }
         else if (typeof callDone === "function") {
             // if (res.Results.length == 1) {
@@ -344,6 +352,7 @@ function Callback3(args, argsbody, argsup, callDone, callFail) {
                     // Si hay un error en el servidor
                     if (result != null && result.Mensajes != undefined && result.Mensajes.length > 0 && result.Mensajes[0] != null) {
                         alert(result.Mensajes.join());
+                        //throw ('Ha ocurrido un error en el procesamiento de su pedido. Por favor tome contacto con el administrador del sistema. Mensaje: ' + res.errorMessage);
                     }
                 }
                 catch (ex) {
@@ -359,6 +368,7 @@ function Callback3(args, argsbody, argsup, callDone, callFail) {
             alert('Ha ocurrido un error de conexión con el servidor. Por favor intente más tarde.');
         }
         else {
+            // something weird is happening
         }
         if (typeof callFail === "function") {
             // if (res.Results.length == 1) {
@@ -403,6 +413,7 @@ function Callback4(Address, argsPOST, argsGET, argsup, callDone, callFail) {
         if (result != null && result.Mensajes != undefined && result.Mensajes.length > 0 && result.Mensajes[0] != null) {
             alert(result.Mensajes.join());
             Loading_Hide();
+            //throw ('Ha ocurrido un error en el procesamiento de su pedido. Por favor tome contacto con el administrador del sistema. Mensaje: ' + res.errorMessage);
         }
         else if (typeof callDone === "function") {
             // if (res.Results.length == 1) {
@@ -423,6 +434,7 @@ function Callback4(Address, argsPOST, argsGET, argsup, callDone, callFail) {
                     // Si hay un error en el servidor
                     if (result != null && result.Mensajes != undefined && result.Mensajes.length > 0 && result.Mensajes[0] != null) {
                         alert(result.Mensajes.join());
+                        //throw ('Ha ocurrido un error en el procesamiento de su pedido. Por favor tome contacto con el administrador del sistema. Mensaje: ' + res.errorMessage);
                     }
                 }
                 catch (ex) {
@@ -438,6 +450,7 @@ function Callback4(Address, argsPOST, argsGET, argsup, callDone, callFail) {
             alert('Ha ocurrido un error de conexión con el servidor. Por favor intente más tarde.');
         }
         else {
+            // something weird is happening
         }
         if (typeof callFail === "function") {
             // if (res.Results.length == 1) {
@@ -505,6 +518,7 @@ function Callback5(Address, argsPOST, argsGET, argsup, callDone, callFail) {
                     // Si hay un error en el servidor
                     if (result == undefined || result == null) {
                         alert(result);
+                        //throw ('Ha ocurrido un error en el procesamiento de su pedido. Por favor tome contacto con el administrador del sistema. Mensaje: ' + res.errorMessage);
                     }
                     else {
                         return result;
@@ -523,6 +537,7 @@ function Callback5(Address, argsPOST, argsGET, argsup, callDone, callFail) {
             alert('Ha ocurrido un error de conexión con el servidor. Por favor intente más tarde.');
         }
         else {
+            // something weird is happening
         }
         if (typeof callFail === "function") {
             // if (res.Results.length == 1) {

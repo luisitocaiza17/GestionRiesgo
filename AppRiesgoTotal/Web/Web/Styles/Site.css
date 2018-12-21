@@ -21,7 +21,7 @@ body {
 .barraheader {
     width: 100%;
     height: 12vh;
-    background-image: url('../images/logo-portal-saludsa-brokers_wm.png');
+    /*background-image: url('../images/logo-portal-saludsa-brokers_wm.png');*/
     background-repeat: no-repeat;
     background-position: initial;
     /*background-color: #2196f3;*/

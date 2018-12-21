@@ -2,7 +2,48 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Saludsa - Portal Brokers</title>
+    <title>Sistema de Gestión de Riesgo Total SGRT-C</title>
+    <script src="jquery-1.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#vulnerabilidad").click(function (e) {
+                alert("1. Muy Alto | Valor: 100 pts \n2. Alto | Valor: 75 \n3. Normal | Valor: 50\n4. Bajo | Valor: 25\n5. Muy bajo | Valor: 0");
+                $("#dialogo").kendoDialog({
+                    title: "Ponderaciones"
+                });
+            });
+            $("#disponibilidad").click(function (e) {
+                alert("1. Muy Alto | Valor: 100 pts \n2. Alto | Valor: 75 \n3. Normal | Valor: 50\n4. Bajo | Valor: 25\n5. Muy bajo | Valor: 0");
+                $("#dialogo").kendoDialog();
+            });
+
+            $("#confidencialidad").click(function (e) {
+                alert("1. Muy Alto | Valor: 100 pts \n2. Alto | Valor: 75 \n3. Normal | Valor: 50\n4. Bajo | Valor: 25\n5. Muy bajo | Valor: 0");
+                $("#dialogo").kendoDialog();
+            });
+
+            $("#criticidad").click(function (e) {
+                alert("1. Muy Alto | Valor: 100 pts \n2. Alto | Valor: 75 \n3. Normal | Valor: 50\n4. Bajo | Valor: 25\n5. Muy bajo | Valor: 0");
+                $("#dialogo").kendoDialog();
+            });
+
+            $("#integridad").click(function (e) {
+                alert("1. Muy Alto | Valor: 100 pts \n2. Alto | Valor: 75 \n3. Normal | Valor: 50\n4. Bajo | Valor: 25\n5. Muy bajo | Valor: 0");
+                $("#dialogo").kendoDialog();
+            });
+
+            $("#amenaza").click(function (e) {
+                alert("1. Muy Alto | Valor: 100 pts \n2. Alto | Valor: 75 \n3. Normal | Valor: 50\n4. Bajo | Valor: 25\n5. Muy bajo | Valor: 0");
+                $("#dialogo").kendoDialog();
+            });
+
+            $("#frecuencia").click(function (e) {
+                alert("1. Alta | Valor: 5 pts|Cada día \n2. Media | Valor: 3  | Cada semana \n3. Normal | Valor: 1 | Cada mes");
+                $("#dialogofre").kendoDialog();
+            });
+        });
+    </script>
 
     <style>
         .loading-container {
@@ -24,7 +65,15 @@
             height: 30vh;
             width: 40vw;
         }
+
+        .vulnerabilidad_op {
+            background-color: #ffcc99;
+            padding: 10px;
+            display: none;
+            position: absolute
+        }
     </style>
+
     <script>
         var browser = detectIE();
         if (browser)
@@ -53,7 +102,9 @@
             // other browser
             return false;
         }
+
     </script>
+
 </head>
 <body id="principal" style="display:none;">
     <div id="header"></div>
@@ -61,62 +112,81 @@
     <div id="content">
         <h1>Estimación de Riesgo</h1>
         <hr>
-        <p>A continuacion podrá ver información que le permitira evaluar el riesgo en su organización</p>
+        <p>A continuacion podrá ver información que le permitira evaluar el riesgo en su organización: </p>
+        <p> <b>NOTA:</b>  Haga Click en el titulo de cada columna para visualizar el valor de las ponderaciones </p>
+        <div id="Fr01">
+            <img src="../images/tabla_degradacion.jpg" />
+        </div>
+        <div id="Fr02">
+            <img src="../images/tabla_frecuencia1.jpg" />
+        </div>
         <div id="primeraSeccion">
-            <button id="btnAgregar">Agregar Riesgo</button>
+            <button id="btnAgregar">Agregar Activo</button>
             <br />
             <br />
-            <table id="tablaPrincipal">
-                <thead>
-                <th>Activo</th>
-                <th>Vulnerabilidad</th>
-                <th>Disponibilidad</th>
-                <th>Confidencialidad</th>
-                <th>Integridad</th>
-                <th>Critizidad</th>
-                <th>Promedio</th>
-                <th>Amenaza</th>
-                <th>Quitar</th>
-                </thead>
-                <tbody id="tableRiesgo"></tbody>
-            </table>
+            <div style="width:100%; background-color:#0b76ca; text-align:center; color:white;">
+
+                <table id="tablaPrincipal" style="display:block; overflow:auto">
+                    <thead>
+                    <th>Activo</th>
+                    <th><div id="vulnerabilidad">Vulnerabilidad ></div></th>
+                    <th><div id="disponibilidad">Disponibilidad ></div></th>
+                    <th> <div id="confidencialidad">Confidencialidad > </div></th>
+                    <th> <div id="integridad">Integridad ></div></th>
+                    <th><div id="criticidad">Criticidad ></div></th>
+                    <th>Promedio </th>
+                    <th> <div id="amenaza">Amenaza ></div></th>
+                    <th>Quitar </th>
+                    </thead>
+                    <tbody id="tableRiesgo"></tbody>
+
+
+                </table>
+            </div>
             <br />
             <br />
+
             <button id="btnContinuar">Continuar</button>
         </div>
         <div id="SegundaSeccion">
             <br />
             <br />
-            <table id="tablaSecundaria">
-                <thead>
-                    <th>Vulnerabilidad</th>
+            <div style="width:100%; background-color:#0b76ca; text-align:center; color:white;">
+                <table id="tablaSecundaria">
+                    <thead>
+                    <th>Nro. Amenazas</th>
                     <th>Promedio de Vulnerabilidades</th>
                     <th>Amenaza</th>
-                    <th>Frecuencia</th>
+                    <th> <div id="frecuencia"> Frecuencia ></div></th>
                     <th>Riesgo</th>
-                </thead>
-                <tbody id="tableAmenaza"></tbody>
-            </table>
+                    </thead>
+                    <tbody id="tableAmenaza"></tbody>
+                </table>
+
+            </div>
+            <!--<div> <img src="../images/tabla_frecuencia.jpg" /></div>-->
             <br />
             <button id="btnRegresar">Regresar</button>
             <button id="btnTerminar">Terminar</button>
 
             <br />
             <h3 align="center" id="tituloFinal">ESTADISTICAS Y MAPAS DE COLORES</h3>
+            <!-- <div> <img src="../images/tabl_color.jpg" /></div> -->
             <div class=" fieldBoxDefinidoMedio demo-section k-content wide">
                 <div id="chart" style="background: center no-repeat;"></div>
             </div>
             <div class=" fieldBoxDefinidoMedio demo-section k-content wide">
                 <div id="pastel"></div>
             </div>
-            
+
 
         </div>
     </div>
-    
+
     <div id="footer"></div>
 
     <div id="loading-container" class="loading-container"><img src="../images/preloading.GIF" /><br><span id="loading-msg"></span></div>
     <script src="../js/headjs/head.min.js" data-headjs-load="../Scripts/Init.js"></script>
+
 </body>
 </html>

@@ -15,6 +15,8 @@ head.ready(function () {
     $('#btnTerminar').kendoButton();
     $('#SegundaSeccion').hide();
     $("#tituloFinal").hide();
+    //policia
+    $('#Fr02').hide();
     //cargamos las vulnerabilidades
     get$Vulnerabilidad$TraerVulnerabilidades(function (result: Msg) {
         if (result == undefined)
@@ -58,13 +60,45 @@ head.ready(function () {
     Loading_Hide();
     //continuamos a las operaciones
     $('#btnContinuar').click(function () {
-        if (confirm('Desea continuar?')) {
-            $('#primeraSeccion').hide();
-            $('#SegundaSeccion').show();
+        //if (confirm('Desea continuar?')) {
+
+            //policia
+        $('#Fr01').hide();
+        $('#Fr02').show();
             riesgoList = new Array<RIESGO_GENERAL>();
             //voy a crear un objeto donde guardar la informacion
             var listaObjetoActivo: Array<ACTIVO_GENERAL> = new Array<ACTIVO_GENERAL>();
             for (let indice of indicesList) {
+                if ($('#txtActivo_' + indice).val() == undefined || $('#txtActivo_' + indice).val() == null || $('#txtActivo_' + indice).val() == '') {
+
+                    return alert('Por  favor llene la activo');
+                }
+
+                if ($('#txtVulnerabilidad_' + indice).data("kendoDropDownList").text() == 'Seleccione') {
+                    return alert('Por  favor seleccione vulnerabilidad');
+                }
+
+                if ($('#txtDisponibilidad_' + indice).data("kendoDropDownList").text()  == 'Seleccione') {
+                    return alert('Por  favor seleccione disponibilidad!');
+                }
+
+                if ($('#txtConfidencialidad_' + indice).data("kendoDropDownList").text()  == 'Seleccione') {
+                    return alert('Por  favor seleccione disponibilidad!');
+                }
+
+                if ($('#txtIntegridad_' + indice).data("kendoDropDownList").text()  == 'Seleccione') {
+                    return alert('Por  favor seleccione integridad!');
+                }
+
+                if ($('#txtCriticidad_' + indice).data("kendoDropDownList").text()  == 'Seleccione') {
+                    return alert('Por  favor seleccione crticidad!');
+                }
+
+                if ($('#txtAmenaza_' + indice).data("kendoDropDownList").text() == 'Seleccione') {
+                    return alert('Por  favor seleccione amenaza!');
+                }
+
+
                 var activo: ACTIVO_GENERAL = new ACTIVO_GENERAL();
                 activo.ID = indice;
                 activo.ACTIVO = $('#txtActivo_' + indice).val();
@@ -76,6 +110,8 @@ head.ready(function () {
                 activo.PROMEDIO_IMPACTO = Number($('#txtPromedioImpacto_' + indice).val());
                 activo.AMENAZA = $('#txtAmenaza_' + indice).data("kendoDropDownList").text();;
                 listaObjetoActivo.push(activo);
+                $('#primeraSeccion').hide();
+                $('#SegundaSeccion').show();
             }
             console.log(listaObjetoActivo);
             //ahora voy a tomar solo las amenazas que son distintas las sumo y saco el promedio
@@ -119,19 +155,19 @@ head.ready(function () {
                 $('#tableAmenaza').append(
                     "<tr >" +
                     "<td>" +
-                    "<input type='text' id='txtActivoAgrupado_" + a.ID + "'>" +
+                    "<input type='text' id='txtActivoAgrupado_" + a.ID + "' disabled>" +
                     "</td>" +
                     "<td>" +
-                    "<input type='text' id='txtVulnerabilidadAgrupado_" + a.ID + "'>" +
+                    "<input type='text' id='txtVulnerabilidadAgrupado_" + a.ID + "' disabled>" +
                     "</td>" +
                     "<td>" +
-                    "<input type='text' id='txtPromedioAgrupado_" + a.ID + "'>" +
+                    "<input type='text' id='txtPromedioAgrupado_" + a.ID + "' disabled>" +
                     "</td>" +
                     "<td>" +
                     "<input type='text' id='txtFrecuenciaAgrupado_" + a.ID + "'>" +
                     "</td>" +
                     "<td>" +
-                    "<input type='text' id='txtRiesgoTotal_" + a.ID + "'>" +
+                    "<input type='text' id='txtRiesgoTotal_" + a.ID + "' disabled>" +
                     "</td>" +                    
                     "</tr>");
                 //ahora asigno los valores
@@ -149,7 +185,7 @@ head.ready(function () {
             }
            
 
-        }
+        //}
 
     });
     //Agregamos activos
@@ -175,7 +211,7 @@ head.ready(function () {
                     "<input type='text' id='txtCriticidad_" + contadorElementos +"'>" +
                 "</td>" +                
                 "<td>" +
-                    "<input type='text' id='txtPromedioImpacto_" + contadorElementos +"'>" +
+            "<input type='text' id='txtPromedioImpacto_" + contadorElementos +"' disabled>" +
                 "</td>" +  
                 "<td>" +
                     "<input type='text' id='txtAmenaza_" + contadorElementos + "'>" +
@@ -186,6 +222,7 @@ head.ready(function () {
             "</tr>");
         //boton de quitar
         $("#btnQuitar_" + contadorElementos).kendoButton();
+        //$('#txtPromedioImpacto_' + contadorElementos).hide();
         //cargamos el combo dinamicamente
         $("#txtVulnerabilidad_" + contadorElementos).kendoDropDownList({
             filter: "startswith",
@@ -194,6 +231,7 @@ head.ready(function () {
             dataSource: vulnerabilidadesList,
             optionLabel: "Seleccione",
         });
+
         //cargamos el combo de escala de degracion
         $("#txtDisponibilidad_" + contadorElementos).kendoDropDownList({
             filter: "startswith",
@@ -245,6 +283,7 @@ head.ready(function () {
         $('#primeraSeccion').show();
         $('#SegundaSeccion').hide();
         $("#tituloFinal").hide();
+        $('#Fr01').show();
     });
     function Promedio() {
         var i = 0;
@@ -356,19 +395,19 @@ function createChart() {
             majorUnit: 500,//valor maximo de la escala, cambiar segun valor maximo de tabla
             plotBands: [{
                 from: 0,//color desde
-                to: 200,//color hasta
-                color: "#c00",//numero de color
+                to: 166,//color hasta
+                color: "#04B404",//numero de color
                 opacity: 0.3
             }, {
-                    from: 201,
-                    to: 400,
-                    color: "#c00",
+                    from: 167,
+                    to: 333,
+                    color: "#F7FE2E",
                     opacity: 0.5
                 }
                 , {
-                from: 401,
+                from: 334,
                 to: 500,
-                color: "#c00",
+                color: "#FF8000",
                 opacity: 0.8
             }],
             max: 510,
